@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Katomil">
+
+<title>Pokémon GO 新手指南</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="guide-zh_files/libs/clipboard/clipboard.min.js"></script>
+<script src="guide-zh_files/libs/quarto-html/quarto.js"></script>
+<script src="guide-zh_files/libs/quarto-html/popper.min.js"></script>
+<script src="guide-zh_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="guide-zh_files/libs/quarto-html/anchor.min.js"></script>
+<link href="guide-zh_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="guide-zh_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="guide-zh_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="guide-zh_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="guide-zh_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#捕捉" id="toc-捕捉" class="nav-link active" data-scroll-target="#捕捉">捕捉</a>
+  <ul class="collapse">
+  <li><a href="#技巧" id="toc-技巧" class="nav-link" data-scroll-target="#技巧">技巧</a></li>
+  <li><a href="#捕获率加成" id="toc-捕获率加成" class="nav-link" data-scroll-target="#捕获率加成">捕获率加成</a></li>
+  <li><a href="#berry-一览" id="toc-berry-一览" class="nav-link" data-scroll-target="#berry-一览">Berry 一览</a></li>
+  <li><a href="#快速捕捉法" id="toc-快速捕捉法" class="nav-link" data-scroll-target="#快速捕捉法">快速捕捉法</a></li>
+  <li><a href="#捕捉奖励" id="toc-捕捉奖励" class="nav-link" data-scroll-target="#捕捉奖励">捕捉奖励</a></li>
+  <li><a href="#天气与冒险效果" id="toc-天气与冒险效果" class="nav-link" data-scroll-target="#天气与冒险效果">天气与冒险效果</a></li>
+  </ul></li>
+  <li><a href="#训练师等级" id="toc-训练师等级" class="nav-link" data-scroll-target="#训练师等级">训练师等级</a>
+  <ul class="collapse">
+  <li><a href="#野生宝可梦等级上限" id="toc-野生宝可梦等级上限" class="nav-link" data-scroll-target="#野生宝可梦等级上限">野生宝可梦等级上限</a></li>
+  <li><a href="#强化上限" id="toc-强化上限" class="nav-link" data-scroll-target="#强化上限">强化上限</a></li>
+  <li><a href="#关键等级节点" id="toc-关键等级节点" class="nav-link" data-scroll-target="#关键等级节点">关键等级节点</a></li>
+  </ul></li>
+  <li><a href="#理解属性值" id="toc-理解属性值" class="nav-link" data-scroll-target="#理解属性值">理解属性值</a>
+  <ul class="collapse">
+  <li><a href="#cp战斗力" id="toc-cp战斗力" class="nav-link" data-scroll-target="#cp战斗力">CP（战斗力）</a>
+  <ul class="collapse">
+  <li><a href="#cp-到底是怎么算的" id="toc-cp-到底是怎么算的" class="nav-link" data-scroll-target="#cp-到底是怎么算的">CP 到底是怎么算的</a></li>
+  </ul></li>
+  <li><a href="#iv个体值" id="toc-iv个体值" class="nav-link" data-scroll-target="#iv个体值">IV（个体值）</a>
+  <ul class="collapse">
+  <li><a href="#数学iv-到底有多重要" id="toc-数学iv-到底有多重要" class="nav-link" data-scroll-target="#数学iv-到底有多重要">数学：IV 到底有多重要？</a></li>
+  <li><a href="#再看看实际伤害" id="toc-再看看实际伤害" class="nav-link" data-scroll-target="#再看看实际伤害">再看看实际伤害</a></li>
+  <li><a href="#怎么查-iv" id="toc-怎么查-iv" class="nav-link" data-scroll-target="#怎么查-iv">怎么查 IV</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#属性克制" id="toc-属性克制" class="nav-link" data-scroll-target="#属性克制">属性克制</a>
+  <ul class="collapse">
+  <li><a href="#关键克制关系" id="toc-关键克制关系" class="nav-link" data-scroll-target="#关键克制关系">关键克制关系</a></li>
+  <li><a href="#伤害倍率" id="toc-伤害倍率" class="nav-link" data-scroll-target="#伤害倍率">伤害倍率</a></li>
+  </ul></li>
+  <li><a href="#shadow-和-purified-宝可梦" id="toc-shadow-和-purified-宝可梦" class="nav-link" data-scroll-target="#shadow-和-purified-宝可梦">Shadow 和 Purified 宝可梦</a>
+  <ul class="collapse">
+  <li><a href="#shadow-加成" id="toc-shadow-加成" class="nav-link" data-scroll-target="#shadow-加成">Shadow 加成</a>
+  <ul class="collapse">
+  <li><a href="#数学20-到底有多大" id="toc-数学20-到底有多大" class="nav-link" data-scroll-target="#数学20-到底有多大">数学：20% 到底有多大</a></li>
+  </ul></li>
+  <li><a href="#净化会怎样" id="toc-净化会怎样" class="nav-link" data-scroll-target="#净化会怎样">净化会怎样</a></li>
+  <li><a href="#什么时候该净化" id="toc-什么时候该净化" class="nav-link" data-scroll-target="#什么时候该净化">什么时候该净化</a></li>
+  </ul></li>
+  <li><a href="#raid" id="toc-raid" class="nav-link" data-scroll-target="#raid">Raid</a>
+  <ul class="collapse">
+  <li><a href="#raid-难度" id="toc-raid-难度" class="nav-link" data-scroll-target="#raid-难度">Raid 难度</a></li>
+  <li><a href="#raid-小贴士" id="toc-raid-小贴士" class="nav-link" data-scroll-target="#raid-小贴士">Raid 小贴士</a></li>
+  </ul></li>
+  <li><a href="#每周安排-活动" id="toc-每周安排-活动" class="nav-link" data-scroll-target="#每周安排-活动">每周安排 &amp; 活动</a>
+  <ul class="collapse">
+  <li><a href="#每日发现forever-forward-赛季" id="toc-每日发现forever-forward-赛季" class="nav-link" data-scroll-target="#每日发现forever-forward-赛季">每日发现（Forever Forward 赛季）</a></li>
+  <li><a href="#community-day" id="toc-community-day" class="nav-link" data-scroll-target="#community-day">Community Day</a></li>
+  </ul></li>
+  <li><a href="#buddy-系统" id="toc-buddy-系统" class="nav-link" data-scroll-target="#buddy-系统">Buddy 系统</a>
+  <ul class="collapse">
+  <li><a href="#buddy-等级" id="toc-buddy-等级" class="nav-link" data-scroll-target="#buddy-等级">Buddy 等级</a></li>
+  </ul></li>
+  <li><a href="#好友-交换" id="toc-好友-交换" class="nav-link" data-scroll-target="#好友-交换">好友 &amp; 交换</a>
+  <ul class="collapse">
+  <li><a href="#好友等级" id="toc-好友等级" class="nav-link" data-scroll-target="#好友等级">好友等级</a></li>
+  <li><a href="#交换" id="toc-交换" class="nav-link" data-scroll-target="#交换">交换</a></li>
+  <li><a href="#lucky-宝可梦" id="toc-lucky-宝可梦" class="nav-link" data-scroll-target="#lucky-宝可梦">Lucky 宝可梦</a></li>
+  </ul></li>
+  <li><a href="#蛋" id="toc-蛋" class="nav-link" data-scroll-target="#蛋">蛋</a>
+  <ul class="collapse">
+  <li><a href="#蛋的种类" id="toc-蛋的种类" class="nav-link" data-scroll-target="#蛋的种类">蛋的种类</a></li>
+  <li><a href="#蛋的小贴士" id="toc-蛋的小贴士" class="nav-link" data-scroll-target="#蛋的小贴士">蛋的小贴士</a></li>
+  </ul></li>
+  <li><a href="#资源-经济" id="toc-资源-经济" class="nav-link" data-scroll-target="#资源-经济">资源 &amp; 经济</a>
+  <ul class="collapse">
+  <li><a href="#星尘" id="toc-星尘" class="nav-link" data-scroll-target="#星尘">星尘</a></li>
+  <li><a href="#糖果" id="toc-糖果" class="nav-link" data-scroll-target="#糖果">糖果</a></li>
+  <li><a href="#道具取舍" id="toc-道具取舍" class="nav-link" data-scroll-target="#道具取舍">道具取舍</a></li>
+  </ul></li>
+  <li><a href="#术语表" id="toc-术语表" class="nav-link" data-scroll-target="#术语表">术语表</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Pokémon GO 新手指南</h1>
+<p class="subtitle lead">我为朋友Jay写的入门指南</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Katomil </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="捕捉" class="level1">
+<h1>捕捉</h1>
+<p>每次捕捉都能获得星尘、经验值和糖果。这是游戏的核心循环——其他所有玩法（Raid、PvP、交换）都建立在你捉了大量宝可梦的基础上。</p>
+<section id="技巧" class="level2">
+<h2 class="anchored" data-anchor-id="技巧">技巧</h2>
+<ul>
+<li><strong>Curveball（曲线球）。</strong> 扔球之前先旋转球。每次 Curveball 都有 <strong>1.7 倍捕获率加成</strong>——比用 Razz Berry（1.5 倍）还高。如果你还没养成每次都扔曲线球的习惯，现在就开始。</li>
+<li><strong>锁圈法。</strong> 按住球，等彩色圆圈缩到你想要的大小，然后<em>松手</em>，等宝可梦发动攻击。在攻击动画期间扔球——圆圈会锁定在那个大小不变。这就是高手能稳定打出 Excellent 的秘诀。</li>
+<li><strong>Nice / Great / Excellent。</strong> 球落在彩色圆圈内会获得额外经验和捕获率加成。圆圈越小 = 越难命中但加成越高。先瞄准 Great——Excellent 熟练了自然就来了。</li>
+</ul>
+</section>
+<section id="捕获率加成" class="level2">
+<h2 class="anchored" data-anchor-id="捕获率加成">捕获率加成</h2>
+<p>所有加成是相乘的。把技巧 + Berry + 球的类型叠在一起，就能抓到那些看起来用普通精灵球根本抓不住的东西。</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>方法</th>
+<th>加成倍率</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Curveball</td>
+<td>1.7×</td>
+</tr>
+<tr class="even">
+<td>Nice throw</td>
+<td>1.0–1.3×</td>
+</tr>
+<tr class="odd">
+<td>Great throw</td>
+<td>1.3–1.7×</td>
+</tr>
+<tr class="even">
+<td>Excellent throw</td>
+<td>1.7–2.0×</td>
+</tr>
+<tr class="odd">
+<td>Razz Berry</td>
+<td>1.5×</td>
+</tr>
+<tr class="even">
+<td>Silver Pinap Berry</td>
+<td>1.8×</td>
+</tr>
+<tr class="odd">
+<td>Golden Razz Berry</td>
+<td>2.5×</td>
+</tr>
+<tr class="even">
+<td>Great Ball（超级球）</td>
+<td>1.5×</td>
+</tr>
+<tr class="odd">
+<td>Ultra Ball（高级球）</td>
+<td>2.0×</td>
+</tr>
+</tbody>
+</table>
+<p><strong>实际计算：</strong> Curveball Excellent + Golden Razz + Ultra Ball = 1.7 × 2.0 × 2.5 × 2.0 = <strong>17 倍捕获率</strong>。技巧比道具重要得多。</p>
+</section>
+<section id="berry-一览" class="level2">
+<h2 class="anchored" data-anchor-id="berry-一览">Berry 一览</h2>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 28%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Berry</th>
+<th>效果</th>
+<th>什么时候用</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Razz Berry</td>
+<td>1.5× 捕获率</td>
+<td>默认的”我想抓住它”Berry</td>
+</tr>
+<tr class="even">
+<td>Golden Razz Berry</td>
+<td>2.5× 捕获率</td>
+<td>传说宝可梦、稀有野生、Shiny——任何你<em>绝不能让它跑掉</em>的</td>
+</tr>
+<tr class="odd">
+<td>Pinap Berry</td>
+<td>捕获后糖果 ×2</td>
+<td>你需要糖果的宝可梦都用（进化、强化）</td>
+</tr>
+<tr class="even">
+<td>Silver Pinap Berry</td>
+<td>1.8× 捕获率 + 2.33× 糖果</td>
+<td>两全其美——留给既稀有又需要糖果的宝可梦</td>
+</tr>
+<tr class="odd">
+<td>Nanab Berry</td>
+<td>让宝可梦安静下来</td>
+<td>几乎没用。喂给道馆防守宝可梦换星尘，或者直接扔掉</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小贴士：</strong> <strong>Raid 和 Team GO Rocket</strong> 出的 Shiny 是 100% 必捉的——用 Pinap 拿双倍糖果，别浪费 Razz。但野外遇到的 Shiny 是可以跑的，所以对它们用 Golden Razz。</p>
+</section>
+<section id="快速捕捉法" class="level2">
+<h2 class="anchored" data-anchor-id="快速捕捉法">快速捕捉法</h2>
+<p>这个技巧可以跳过大约 3 秒的捕捉动画。在 Community Day 或刷怪的时候能省下大量时间。</p>
+<ol type="1">
+<li>进入捕捉界面</li>
+<li>用你的<strong>副手</strong>，把 Berry/球选择栏拖到一边并<strong>按住不放</strong></li>
+<li>用你的<strong>主手</strong>，正常扔球（照样 Curveball）</li>
+<li>球碰到宝可梦后，<strong>松开</strong>副手，点击<strong>逃跑按钮</strong>（左上角）</li>
+<li>捕捉在服务器端处理——如果成功了，宝可梦会从地图上消失。如果没抓到，它还在那里，再点进去就好。</li>
+</ol>
+<p>需要练几次才能掌握节奏，但一旦学会了就再也回不去了。</p>
+</section>
+<section id="捕捉奖励" class="level2">
+<h2 class="anchored" data-anchor-id="捕捉奖励">捕捉奖励</h2>
+<p><strong>每次捕捉的星尘：</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>捕捉类型</th>
+<th>星尘</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>基础捕捉</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>天气加成</td>
+<td>125</td>
+</tr>
+<tr class="odd">
+<td>二阶进化（如 Haunter）</td>
+<td>300</td>
+</tr>
+<tr class="even">
+<td>三阶进化（如 Gengar）</td>
+<td>500</td>
+</tr>
+<tr class="odd">
+<td>Star Piece 生效时</td>
+<td>以上全部 × 1.5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>经验值加成（全部可叠加）：</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>行为</th>
+<th>经验值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>基础捕捉</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Curveball</td>
+<td>+20</td>
+</tr>
+<tr class="odd">
+<td>Nice throw</td>
+<td>+20</td>
+</tr>
+<tr class="even">
+<td>Great throw</td>
+<td>+100</td>
+</tr>
+<tr class="odd">
+<td>Excellent throw</td>
+<td>+1,000</td>
+</tr>
+<tr class="even">
+<td>一球捕获</td>
+<td>+50</td>
+</tr>
+<tr class="odd">
+<td>新图鉴登录</td>
+<td>+1,000</td>
+</tr>
+<tr class="even">
+<td>Lucky Egg 生效时</td>
+<td>以上全部 × 2</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="天气与冒险效果" class="level2">
+<h2 class="anchored" data-anchor-id="天气与冒险效果">天气与冒险效果</h2>
+<p><strong>天气加成</strong>同时做三件事：</p>
+<ol type="1">
+<li>匹配天气的宝可梦属性出现得更频繁</li>
+<li>这些宝可梦的<strong>等级比正常高 5 级</strong>（这很重要——看下面的训练师等级部分）</li>
+<li>捕捉它们多给 <strong>25% 星尘</strong>（125 而不是 100）</li>
+</ol>
+<p>游戏内的天气指示器（右上角）会显示哪些属性被加成。如果显示”Windy（大风）“，龙/飞行/超能力属性被加成，出现的等级更高，星尘也更多。</p>
+<p><strong>Adventure Sync</strong> 在你关掉 app 的情况下也能通过手机的健康 app（Google Fit / Apple Health）追踪步行距离。它影响的东西：</p>
+<ul>
+<li><strong>孵蛋</strong> ——关掉 app 也算距离</li>
+<li><strong>Buddy 糖果</strong> ——同上，关掉 app 也算步行距离</li>
+<li><strong>每周奖励</strong>（周一早上 9 点）：走 25km 拿 5km 蛋 + 星尘包；走 50km 拿 10km 蛋 + 更多星尘 + Rare Candy。永远以 50km 为目标。</li>
+</ul>
+<p><strong>Incense（熏香）</strong> 静止时每 ~5 分钟出一只宝可梦，走动时每 ~1 分钟出一只（或每 200 米，取先到者）。在野生宝可梦少的地方有用，城市里不太值得。<strong>每日冒险熏香</strong>（免费，15 分钟）只有在移动时才有效——保持走路的话大概每 ~30 秒出一只。</p>
+<p><strong>Lure（诱饵模块）</strong> 装在 PokéStop 上，吸引宝可梦 30 分钟。特殊类型的 Lure（冰川、苔藓、磁铁、雨水）吸引特定属性并且可以触发某些进化。</p>
+</section>
+</section>
+<section id="训练师等级" class="level1">
+<h1>训练师等级</h1>
+<p>你的训练师等级不只是一个数字——它决定了你在野外能遇到什么，以及你能把宝可梦强化到多高。</p>
+<section id="野生宝可梦等级上限" class="level2">
+<h2 class="anchored" data-anchor-id="野生宝可梦等级上限">野生宝可梦等级上限</h2>
+<p>每只野生宝可梦都有一个等级（隐藏的，但决定了它的 CP）。它能出现的等级受限于<strong>你的训练师等级</strong>，有一个硬性上限：</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>你的训练师等级</th>
+<th>野生宝可梦最高等级</th>
+<th>天气加成时</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1–29</td>
+<td>和你的等级相同</td>
+<td>你的等级 + 5</td>
+</tr>
+<tr class="even">
+<td>30+</td>
+<td>30</td>
+<td>35</td>
+</tr>
+</tbody>
+</table>
+<p>到 30 级之后，所有训练师看到的野生宝可梦等级和 IV 都一样。30 级之前，一个 15 级训练师和一个 25 级训练师在同一个 PokéStop 看到同一种宝可梦，但 25 级训练师看到的那只更强。</p>
+<p><strong>天气加成额外 +5 级。</strong> 这在前期非常有价值——一个 20 级的训练师能遇到 25 级的天气加成宝可梦，这在正常情况下超过了他的等级上限。随时关注天气加成。</p>
+</section>
+<section id="强化上限" class="level2">
+<h2 class="anchored" data-anchor-id="强化上限">强化上限</h2>
+<p>你可以把宝可梦强化到<strong>你的训练师等级 + 10</strong>，游戏最高上限是 50 级（Best Buddy 加成可达 51 级）。强化超过 40 级需要 XL Candy，训练师等级 31 开始才能获得。</p>
+</section>
+<section id="关键等级节点" class="level2">
+<h2 class="anchored" data-anchor-id="关键等级节点">关键等级节点</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>等级</th>
+<th>解锁内容</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>20</td>
+<td>Raid 捕获的宝可梦是 20 级（天气加成时 25 级）</td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>野生宝可梦等级封顶——你现在看到的和所有人一样了</td>
+</tr>
+<tr class="odd">
+<td>31</td>
+<td>开始掉落 XL Candy（40→50 级强化需要）</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>可以通过 Wayfarer 提名新 PokéStop（通过一个小测验后）</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>XL Candy 掉落率达到最高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>实用建议：</strong> 冲到 30 级是值得的，因为你开始看到最高等级的野生宝可梦。30 之后继续升级仍然有用（更高的强化上限、XL Candy），但没那么紧迫了。</p>
+</section>
+</section>
+<section id="理解属性值" class="level1">
+<h1>理解属性值</h1>
+<section id="cp战斗力" class="level2">
+<h2 class="anchored" data-anchor-id="cp战斗力">CP（战斗力）</h2>
+<p>每只宝可梦头上的那个数字。它把三个隐藏属性合成一个数字。CP 高一般意味着更强，但 <strong>CP 会骗人</strong>——它不能告诉你一只宝可梦到底<em>好不好</em>，只是数值大而已。</p>
+<section id="cp-到底是怎么算的" class="level3">
+<h3 class="anchored" data-anchor-id="cp-到底是怎么算的">CP 到底是怎么算的</h3>
+<p><span class="math display">\[\text{CP} = \left\lfloor \frac{(\text{Atk}_\text{base} + \text{Atk}_\text{IV}) \times \sqrt{\text{Def}_\text{base} + \text{Def}_\text{IV}} \times \sqrt{\text{Sta}_\text{base} + \text{Sta}_\text{IV}}} {10} \times \text{CPM}^2 \right\rfloor\]</span></p>
+<p>三个组成部分：</p>
+<ol type="1">
+<li><strong>基础属性</strong> ——每个物种固定不变。Machamp 的基础攻击是 234，Blissey 的是 129。永远不会变。</li>
+<li><strong>IV</strong> ——你的随机掷骰，每项属性 0–15。直接加到基础属性上。</li>
+<li><strong>CPM（CP 乘数）</strong> ——一个根据宝可梦等级（1–51）变化的缩放因子。等级越高 = CPM 越高 = CP 越高。</li>
+</ol>
+<p>关键点：<strong>攻击是直接进入公式的，但防御和耐力是以平方根的形式进入的。</strong> 这意味着 +1 攻击 IV 对 CP 的膨胀效果比 +1 防御或 +1 耐力大。这在后面讲 PvP 的时候很重要。</p>
+</section>
+</section>
+<section id="iv个体值" class="level2">
+<h2 class="anchored" data-anchor-id="iv个体值">IV（个体值）</h2>
+<p>每只宝可梦有三个隐藏属性，每个在 0 到 15 之间随机：</p>
+<ul>
+<li><strong>攻击 IV</strong>（0–15）</li>
+<li><strong>防御 IV</strong>（0–15）</li>
+<li><strong>HP / 耐力 IV</strong>（0–15）</li>
+</ul>
+<p>捕获时确定，永远无法改变。15/15/15 叫做 “Hundo”（100%，四星）。在游戏里点宝可梦 → <strong>鉴定</strong>就能看到。</p>
+<section id="数学iv-到底有多重要" class="level3">
+<h3 class="anchored" data-anchor-id="数学iv-到底有多重要">数学：IV 到底有多重要？</h3>
+<p>IV 是在一个通常已经 150–250+ 的基础属性上加 0–15 点。让我们算算这到底改变了多少。</p>
+<p><strong>Machamp</strong> ——基础属性：234 攻 / 159 防 / 207 耐</p>
+<ul>
+<li>0 攻击 IV → 总攻击 = 234。15 攻击 IV → 总攻击 = 249。</li>
+<li>差异：15/234 = <strong>6.4% 攻击提升</strong>（来自完美 IV）。</li>
+</ul>
+<p><strong>Blissey</strong> ——基础属性：129 攻 / 169 防 / 496 耐</p>
+<ul>
+<li>0 攻击 IV → 总攻击 = 129。15 攻击 IV → 总攻击 = 144。</li>
+<li>差异：15/129 = <strong>11.6% 攻击提升</strong>（来自完美 IV）。</li>
+<li>但耐力呢？15/496 = <strong>3.0%</strong>。她的 HP 基础值太高了，IV 几乎没什么影响。</li>
+</ul>
+<p><strong>规律：</strong> IV 在基础属性最低的地方影响最大。一个 230+ 基础攻击的宝可梦，IV 就是噪声。一个 120 基础攻击的宝可梦，IV 才是真正的变数。</p>
+<div id="cell-fig-iv-impact" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>pokemon <span class="op">=</span> {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Machamp'</span>: {<span class="st">'atk'</span>: <span class="dv">234</span>, <span class="st">'def'</span>: <span class="dv">159</span>, <span class="st">'sta'</span>: <span class="dv">207</span>},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Blissey'</span>: {<span class="st">'atk'</span>: <span class="dv">129</span>, <span class="st">'def'</span>: <span class="dv">169</span>, <span class="st">'sta'</span>: <span class="dv">496</span>},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">3</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="fl">0.35</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>stats <span class="op">=</span> [<span class="st">'Attack'</span>, <span class="st">'Defense'</span>, <span class="st">'Stamina'</span>]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>machamp_pct <span class="op">=</span> [<span class="dv">15</span><span class="op">/</span><span class="dv">234</span><span class="op">*</span><span class="dv">100</span>, <span class="dv">15</span><span class="op">/</span><span class="dv">159</span><span class="op">*</span><span class="dv">100</span>, <span class="dv">15</span><span class="op">/</span><span class="dv">207</span><span class="op">*</span><span class="dv">100</span>]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>blissey_pct <span class="op">=</span> [<span class="dv">15</span><span class="op">/</span><span class="dv">129</span><span class="op">*</span><span class="dv">100</span>, <span class="dv">15</span><span class="op">/</span><span class="dv">169</span><span class="op">*</span><span class="dv">100</span>, <span class="dv">15</span><span class="op">/</span><span class="dv">496</span><span class="op">*</span><span class="dv">100</span>]</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>bars1 <span class="op">=</span> ax.bar(x <span class="op">-</span> width<span class="op">/</span><span class="dv">2</span>, machamp_pct, width, label<span class="op">=</span><span class="st">'Machamp (234/159/207)'</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>               color<span class="op">=</span><span class="st">'#e74c3c'</span>, edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>bars2 <span class="op">=</span> ax.bar(x <span class="op">+</span> width<span class="op">/</span><span class="dv">2</span>, blissey_pct, width, label<span class="op">=</span><span class="st">'Blissey (129/169/496)'</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>               color<span class="op">=</span><span class="st">'#ff69b4'</span>, edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars1, machamp_pct):</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    ax.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f'</span><span class="sc">{</span>val<span class="sc">:.1f}</span><span class="ss">%'</span>, ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars2, blissey_pct):</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    ax.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f'</span><span class="sc">{</span>val<span class="sc">:.1f}</span><span class="ss">%'</span>, ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'% Stat Increase from 15 IV'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'IV Impact: 15 IV as </span><span class="sc">% o</span><span class="st">f Total Stat'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>ax.set_xticks(x)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>ax.set_xticklabels(stats, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(<span class="bu">max</span>(machamp_pct), <span class="bu">max</span>(blissey_pct)) <span class="op">+</span> <span class="dv">2</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>ax.spines[<span class="st">'top'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>ax.spines[<span class="st">'right'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-iv-impact" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iv-impact-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="guide-zh_files/figure-html/fig-iv-impact-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iv-impact-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Same 15 IV points, very different impact. IVs are a bigger deal where the base stat is low.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="再看看实际伤害" class="level3">
+<h3 class="anchored" data-anchor-id="再看看实际伤害">再看看实际伤害</h3>
+<p>真正的问题不是”属性变了多少？“——而是”它改变了我造成的伤害吗？“Pokémon GO 的伤害公式是：</p>
+<p><span class="math display">\[\text{Damage} = \left\lfloor \frac{1}{2} \times \text{Power} \times \frac{\text{Atk}_\text{effective}}{\text{Def}_\text{effective}} \times \text{STAB} \times \text{Effectiveness} \right\rfloor + 1\]</span></p>
+<p>那个取整（向下取整）是关键——微小的属性差异经常被完全抹平。</p>
+<div id="cell-fig-damage-math" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>cpm_40 <span class="op">=</span> <span class="fl">0.7903</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Machamp using Counter (12 power, Fighting) vs Tyranitar (Dark/Rock)</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Tyranitar: base def 207</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>machamp_atk_15 <span class="op">=</span> (<span class="dv">234</span> <span class="op">+</span> <span class="dv">15</span>) <span class="op">*</span> cpm_40   <span class="co"># 196.8</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>machamp_atk_0  <span class="op">=</span> (<span class="dv">234</span> <span class="op">+</span> <span class="dv">0</span>)  <span class="op">*</span> cpm_40   <span class="co"># 184.9</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>ttar_def <span class="op">=</span> (<span class="dv">207</span> <span class="op">+</span> <span class="dv">15</span>) <span class="op">*</span> cpm_40          <span class="co"># 175.4</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>stab <span class="op">=</span> <span class="fl">1.2</span>        <span class="co"># Counter is Fighting, Machamp is Fighting</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>se <span class="op">=</span> <span class="fl">1.6</span>           <span class="co"># Fighting vs Dark/Rock</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>neutral <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>power_counter <span class="op">=</span> <span class="dv">12</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>power_rock_slide <span class="op">=</span> <span class="dv">50</span>  <span class="co"># neutral move for comparison</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> damage(power, atk, defn, stab_mult, eff):</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> math.floor(<span class="fl">0.5</span> <span class="op">*</span> power <span class="op">*</span> (atk <span class="op">/</span> defn) <span class="op">*</span> stab_mult <span class="op">*</span> eff) <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Scenario 1: Perfect IVs vs zero IVs (same move, same matchup)</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>dmg_15iv <span class="op">=</span> damage(power_counter, machamp_atk_15, ttar_def, stab, se)</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>dmg_0iv  <span class="op">=</span> damage(power_counter, machamp_atk_0,  ttar_def, stab, se)</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Scenario 2: Super effective vs neutral (same pokemon, same IVs)</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>dmg_se      <span class="op">=</span> damage(power_counter, machamp_atk_0, ttar_def, stab, se)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Use Rock Slide (Rock, 50 power) — not STAB, not SE vs Tyranitar (resisted actually)</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's instead compare: Counter (Fighting, SE) vs a hypothetical neutral fast move</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>dmg_neutral <span class="op">=</span> damage(power_counter, machamp_atk_15, ttar_def, stab, neutral)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Scenario 3: Shadow vs normal (15 IV both)</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>shadow_atk <span class="op">=</span> machamp_atk_15 <span class="op">*</span> <span class="fl">1.2</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>dmg_shadow <span class="op">=</span> damage(power_counter, shadow_atk, ttar_def, stab, se)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>dmg_normal <span class="op">=</span> damage(power_counter, machamp_atk_15, ttar_def, stab, se)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">5</span>))</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 1: IV comparison</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>colors1 <span class="op">=</span> [<span class="st">'#ef4444'</span>, <span class="st">'#fbbf24'</span>]</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>bars1 <span class="op">=</span> axes[<span class="dv">0</span>].bar([<span class="st">'15/15/15</span><span class="ch">\n</span><span class="st">IVs'</span>, <span class="st">'0/0/0</span><span class="ch">\n</span><span class="st">IVs'</span>], [dmg_15iv, dmg_0iv], color<span class="op">=</span>colors1,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>                     edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, width<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars1, [dmg_15iv, dmg_0iv]):</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">0</span>].text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>                 <span class="bu">str</span>(val), ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">16</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="st">'IVs: 15 vs 0 Attack</span><span class="ch">\n</span><span class="st">(Counter vs Tyranitar)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_ylabel(<span class="st">'Damage per Hit'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>pct_diff_iv <span class="op">=</span> <span class="bu">abs</span>(dmg_15iv <span class="op">-</span> dmg_0iv) <span class="op">/</span> dmg_0iv <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].text(<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="ss">f'Δ = </span><span class="sc">{</span>pct_diff_iv<span class="sc">:.0f}</span><span class="ss">%'</span>, transform<span class="op">=</span>axes[<span class="dv">0</span>].transAxes,</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, color<span class="op">=</span><span class="st">'gray'</span>, fontstyle<span class="op">=</span><span class="st">'italic'</span>)</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 2: Type effectiveness</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>colors2 <span class="op">=</span> [<span class="st">'#22c55e'</span>, <span class="st">'#94a3b8'</span>]</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>bars2 <span class="op">=</span> axes[<span class="dv">1</span>].bar([<span class="st">'Super</span><span class="ch">\n</span><span class="st">Effective'</span>, <span class="st">'Neutral'</span>], [dmg_se, dmg_neutral], color<span class="op">=</span>colors2,</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>                     edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, width<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars2, [dmg_se, dmg_neutral]):</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">1</span>].text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>                 <span class="bu">str</span>(val), ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">16</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_title(<span class="st">'Type: Super Effective vs Neutral</span><span class="ch">\n</span><span class="st">(0 IV SE vs 15 IV Neutral)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>pct_diff_type <span class="op">=</span> (dmg_se <span class="op">-</span> dmg_neutral) <span class="op">/</span> dmg_neutral <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].text(<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="ss">f'Δ = </span><span class="sc">{</span>pct_diff_type<span class="sc">:.0f}</span><span class="ss">%'</span>, transform<span class="op">=</span>axes[<span class="dv">1</span>].transAxes,</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, color<span class="op">=</span><span class="st">'gray'</span>, fontstyle<span class="op">=</span><span class="st">'italic'</span>)</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 3: Shadow vs normal</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>colors3 <span class="op">=</span> [<span class="st">'#8b5cf6'</span>, <span class="st">'#3b82f6'</span>]</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>bars3 <span class="op">=</span> axes[<span class="dv">2</span>].bar([<span class="st">'Shadow'</span>, <span class="st">'Normal'</span>], [dmg_shadow, dmg_normal], color<span class="op">=</span>colors3,</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>                     edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, width<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars3, [dmg_shadow, dmg_normal]):</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">2</span>].text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>                 <span class="bu">str</span>(val), ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">16</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">2</span>].set_title(<span class="st">'Shadow Bonus</span><span class="ch">\n</span><span class="st">(15/15/15 both)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>pct_diff_shadow <span class="op">=</span> (dmg_shadow <span class="op">-</span> dmg_normal) <span class="op">/</span> dmg_normal <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">2</span>].text(<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="ss">f'Δ = </span><span class="sc">{</span>pct_diff_shadow<span class="sc">:.0f}</span><span class="ss">%'</span>, transform<span class="op">=</span>axes[<span class="dv">2</span>].transAxes,</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, color<span class="op">=</span><span class="st">'gray'</span>, fontstyle<span class="op">=</span><span class="st">'italic'</span>)</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax <span class="kw">in</span> axes:</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>    ax.spines[<span class="st">'top'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>    ax.spines[<span class="st">'right'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>    ax.set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(dmg_shadow, dmg_se) <span class="op">*</span> <span class="fl">1.2</span>)</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'What Actually Changes Your Damage — Machamp Counter vs Tyranitar (Level 40)'</span>,</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>             fontsize<span class="op">=</span><span class="dv">13</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-damage-math" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-damage-math-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="guide-zh_files/figure-html/fig-damage-math-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-damage-math-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Three scenarios showing what actually changes damage output: IVs barely move the needle, type effectiveness dominates everything.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>结论：</strong> 一只 0 IV 的 Machamp 用克制招式打出的伤害，比 15 IV 的 Machamp 用中立招式打的还高。先选对宝可梦和招式——IV 只是最后 5% 的优化。</p>
+</section>
+<section id="怎么查-iv" class="level3">
+<h3 class="anchored" data-anchor-id="怎么查-iv">怎么查 IV</h3>
+<p>游戏内：点宝可梦 → <strong>鉴定</strong>。柱状图显示攻击 / 防御 / HP。三项全满 = Hundo。</p>
+<p>更详细的：用 <strong>PokeGenie</strong> 或 <strong>CalcyIV</strong>（手机 app）。它们扫描你的屏幕，告诉你精确的 IV 和 PvP 排名（在 4096 种可能的 IV 组合中排第几）。</p>
+<p>先别纠结 IV——正确物种的排名 500 宝可梦，比错误物种的排名 1 宝可梦强得多。</p>
+</section>
+</section>
+</section>
+<section id="属性克制" class="level1">
+<h1>属性克制</h1>
+<p>这是最重要的战斗机制。正如上面的伤害图表所示，属性克制的价值超过 IV 和 Shadow 加成<em>加在一起</em>。</p>
+<p>每只宝可梦有一到两个属性。每个招式有一个属性。如果你的招式属性克制对方的属性，你就造成更多伤害。</p>
+<section id="关键克制关系" class="level2">
+<h2 class="anchored" data-anchor-id="关键克制关系">关键克制关系</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>攻击属性</th>
+<th>克制</th>
+<th>这个属性怕什么</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>水</td>
+<td>火、地面、岩石</td>
+<td>草、电</td>
+</tr>
+<tr class="even">
+<td>火</td>
+<td>草、虫、冰、钢</td>
+<td>水、地面、岩石</td>
+</tr>
+<tr class="odd">
+<td>草</td>
+<td>水、地面、岩石</td>
+<td>火、冰、毒、飞行、虫</td>
+</tr>
+<tr class="even">
+<td>电</td>
+<td>水、飞行</td>
+<td>地面（免疫！）</td>
+</tr>
+<tr class="odd">
+<td>格斗</td>
+<td>一般、冰、岩石、恶、钢</td>
+<td>超能力、飞行、妖精</td>
+</tr>
+<tr class="even">
+<td>地面</td>
+<td>火、电、岩石、毒、钢</td>
+<td>水、草、冰</td>
+</tr>
+<tr class="odd">
+<td>冰</td>
+<td>草、地面、飞行、龙</td>
+<td>火、格斗、岩石、钢</td>
+</tr>
+<tr class="even">
+<td>龙</td>
+<td>龙</td>
+<td>龙、冰、妖精（免疫！）</td>
+</tr>
+<tr class="odd">
+<td>妖精</td>
+<td>格斗、龙、恶</td>
+<td>毒、钢</td>
+</tr>
+<tr class="even">
+<td>钢</td>
+<td>冰、岩石、妖精</td>
+<td>火、格斗、地面</td>
+</tr>
+</tbody>
+</table>
+<p>不用把全部 18 个属性都背下来。先从前五行开始——它们覆盖了你大部分会遇到的情况。</p>
+</section>
+<section id="伤害倍率" class="level2">
+<h2 class="anchored" data-anchor-id="伤害倍率">伤害倍率</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>克制关系</th>
+<th>倍率</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>效果拔群</td>
+<td><strong>1.6×</strong></td>
+</tr>
+<tr class="even">
+<td>效果不佳</td>
+<td><strong>0.625×</strong></td>
+</tr>
+<tr class="odd">
+<td>双重克制（两个属性都弱）</td>
+<td><strong>2.56×</strong></td>
+</tr>
+<tr class="even">
+<td>双重抵抗（两个属性都抗）</td>
+<td><strong>0.391×</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Pokémon GO 里没有真正的免疫——地面对飞行（在主系列游戏里免疫）在这里只是三重抵抗（0.391×），不是零。</p>
+<p><strong>STAB（本属性加成）：</strong> 如果<em>招式</em>的属性和<em>宝可梦</em>的属性一致，伤害获得 <strong>1.2 倍加成</strong>。一只水属性宝可梦用水属性招式就有 STAB。这和克制可以叠加——一只水属性宝可梦用水属性招式打火属性宝可梦 = 1.2 × 1.6 = <strong>1.92×</strong>。</p>
+</section>
+</section>
+<section id="shadow-和-purified-宝可梦" class="level1">
+<h1>Shadow 和 Purified 宝可梦</h1>
+<p>打败 Team GO Rocket 的小兵、干部和 Giovanni 后会掉落 <strong>Shadow（暗影）宝可梦</strong>。</p>
+<section id="shadow-加成" class="level2">
+<h2 class="anchored" data-anchor-id="shadow-加成">Shadow 加成</h2>
+<p>Shadow 宝可梦在最终属性上有固定倍率：</p>
+<ul>
+<li>Shadow 攻击 = 普通攻击 × <strong>1.2</strong>（多造成 20% 伤害）</li>
+<li>Shadow 防御 = 普通防御 × <strong>0.833</strong>（多承受约 20% 伤害）</li>
+</ul>
+<p>玻璃炮的取舍：打得更疼，死得更快。</p>
+<section id="数学20-到底有多大" class="level3">
+<h3 class="anchored" data-anchor-id="数学20-到底有多大">数学：20% 到底有多大</h3>
+<p>把 Shadow 加成和 IV 放在一起比较一下规模。</p>
+<p><strong>Machamp 40 级</strong>（CPM = 0.7903）：</p>
+<table class="table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 35%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>版本</th>
+<th>有效攻击力</th>
+<th>与普通版的差异</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>普通，15 攻 IV</td>
+<td>(234 + 15) × 0.79 = 196.8</td>
+<td>基准线</td>
+</tr>
+<tr class="even">
+<td>普通，0 攻 IV</td>
+<td>(234 + 0) × 0.79 = 184.9</td>
+<td>−6.0%</td>
+</tr>
+<tr class="odd">
+<td><strong>Shadow，0 攻 IV</strong></td>
+<td>(234 + 0) × 0.79 × 1.2 = <strong>221.9</strong></td>
+<td><strong>+12.8%</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Shadow，15 攻 IV</strong></td>
+<td>(234 + 15) × 0.79 × 1.2 = <strong>236.1</strong></td>
+<td><strong>+20.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>一只<em>零</em>攻击 IV 的 Shadow Machamp 依然比<em>完美</em> IV 的普通 Machamp 打得更疼。Shadow 加成的影响大约是攻击 IV 从 0 到 15 的 3 倍。IV 是蛋糕上的樱桃，Shadow 才是多加的那一大勺。</p>
+<div id="cell-fig-shadow-comparison" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>base_atk, base_def, base_sta <span class="op">=</span> <span class="dv">234</span>, <span class="dv">159</span>, <span class="dv">207</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>iv <span class="op">=</span> <span class="dv">13</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>pure_iv <span class="op">=</span> <span class="dv">15</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>cpm <span class="op">=</span> <span class="fl">0.7903</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>forms <span class="op">=</span> [<span class="st">'Shadow</span><span class="ch">\n</span><span class="st">(13/13/13)'</span>, <span class="st">'Normal</span><span class="ch">\n</span><span class="st">(13/13/13)'</span>, <span class="st">'Purified</span><span class="ch">\n</span><span class="st">(15/15/15)'</span>]</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">'#8b5cf6'</span>, <span class="st">'#3b82f6'</span>, <span class="st">'#22c55e'</span>]</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>vals <span class="op">=</span> {</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Attack'</span>: [</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        (base_atk <span class="op">+</span> iv) <span class="op">*</span> cpm <span class="op">*</span> <span class="fl">1.2</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        (base_atk <span class="op">+</span> iv) <span class="op">*</span> cpm,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        (base_atk <span class="op">+</span> pure_iv) <span class="op">*</span> cpm,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Defense'</span>: [</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        (base_def <span class="op">+</span> iv) <span class="op">*</span> cpm <span class="op">*</span> <span class="fl">0.833</span>,</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        (base_def <span class="op">+</span> iv) <span class="op">*</span> cpm,</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        (base_def <span class="op">+</span> pure_iv) <span class="op">*</span> cpm,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Stamina'</span>: [</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>        <span class="bu">int</span>((base_sta <span class="op">+</span> iv) <span class="op">*</span> cpm),</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>        <span class="bu">int</span>((base_sta <span class="op">+</span> iv) <span class="op">*</span> cpm),</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="bu">int</span>((base_sta <span class="op">+</span> pure_iv) <span class="op">*</span> cpm),</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">13</span>, <span class="dv">5</span>))</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax, (stat_name, stat_vals) <span class="kw">in</span> <span class="bu">zip</span>(axes, vals.items()):</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    bars <span class="op">=</span> ax.bar(forms, stat_vals, color<span class="op">=</span>colors, edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars, stat_vals):</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>        label <span class="op">=</span> <span class="ss">f'</span><span class="sc">{</span>val<span class="sc">:.1f}</span><span class="ss">'</span> <span class="cf">if</span> <span class="bu">isinstance</span>(val, <span class="bu">float</span>) <span class="cf">else</span> <span class="bu">str</span>(val)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>        ax.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="dv">1</span>,</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>                label, ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    ax.set_title(stat_name, fontsize<span class="op">=</span><span class="dv">13</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    ax.spines[<span class="st">'top'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>    ax.spines[<span class="st">'right'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    ymin <span class="op">=</span> <span class="bu">min</span>(stat_vals) <span class="op">*</span> <span class="fl">0.88</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>    ymax <span class="op">=</span> <span class="bu">max</span>(stat_vals) <span class="op">*</span> <span class="fl">1.08</span></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>    ax.set_ylim(ymin, ymax)</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'Shadow vs Normal vs Purified — Machamp at Level 40'</span>,</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>             fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-shadow-comparison" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shadow-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="guide-zh_files/figure-html/fig-shadow-comparison-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shadow-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Shadow vs Normal vs Purified — Machamp with 13/13/13 IVs (becomes 15/15/15 after purifying). Level 40.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>注意：Purified（15/15/15）的基础属性比 Normal（13/13/13）<em>稍高</em>一点，因为 IV +2 的加成，但远不及 Shadow 的攻击力。净化等于拿巨大的伤害加成换了一点点属性提升和更便宜的强化费用。</p>
+</section>
+</section>
+<section id="净化会怎样" class="level2">
+<h2 class="anchored" data-anchor-id="净化会怎样">净化会怎样</h2>
+<ul>
+<li><strong>移除</strong> Shadow 加成（攻击回到 1.0×，防御回到 1.0×）</li>
+<li><strong>每项 IV +2</strong>（最高 15）</li>
+<li><strong>减少</strong> 强化星尘和糖果消耗 20%</li>
+<li>宝可梦等级变为 25（如果已经更高则不变）</li>
+<li>学会蓄力招式 <strong>Return</strong>（基本没用，但在 PvP 里有少数利基用途）</li>
+</ul>
+</section>
+<section id="什么时候该净化" class="level2">
+<h2 class="anchored" data-anchor-id="什么时候该净化">什么时候该净化</h2>
+<p><strong>默认：别净化。</strong> 20% 的伤害加成是永久的、不可逆的。但确实有合理的例外：</p>
+<table class="table">
+<colgroup>
+<col style="width: 56%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>净化的理由</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>IV 是 13/13/13 或更高</strong></td>
+<td>+2 到每项 → 变成 15/15/15 Hundo。如果这个物种本身就不适合当 Shadow 输出手（比如 Golbat、Raticate），拿个免费 Hundo 很值。</td>
+</tr>
+<tr class="even">
+<td><strong>净化奖章</strong></td>
+<td>奖章记录总净化次数（铜 → 铂金）。用<strong>便宜的净化</strong>来刷——1 糖果物种比如 Zubat、Aron、Starly。永远不要为了奖章净化好的 Shadow。</td>
+</tr>
+<tr class="odd">
+<td><strong>Mega 或 Primal 进化</strong></td>
+<td>Shadow 宝可梦<strong>不能</strong> Mega 进化或 Primal 进化。如果你需要 Mega Gengar、Mega Charizard、Primal Groudon——你<em>必须</em>先净化。这是净化强力 Shadow 的唯一正当理由。</td>
+</tr>
+<tr class="even">
+<td><strong>Return 招式（少见）</strong></td>
+<td>少数 PvP 宝可梦特别需要 Return 这个招式（比如 Purified Sableye 在 Great League）。非常小众。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>黄金法则：</strong> Shadow 留着打 Raid 和输出。净化垃圾刷奖章，净化 13+ IV 的、不需要当 Shadow 输出的物种，换个免费 Hundo。</p>
+</section>
+</section>
+<section id="raid" class="level1">
+<h1>Raid</h1>
+<p>Raid 是道馆里的限时 Boss 战。你和一群人（或者简单难度自己单刷）打一只超强宝可梦，赢了就有机会捕捉它。</p>
+<section id="raid-难度" class="level2">
+<h2 class="anchored" data-anchor-id="raid-难度">Raid 难度</h2>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 24%">
+<col style="width: 33%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>级别</th>
+<th>难度</th>
+<th>能单刷吗？</th>
+<th>能拿到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 星</td>
+<td>简单</td>
+<td>可以，轻松</td>
+<td>普通宝可梦、Rare Candy、技能机</td>
+</tr>
+<tr class="even">
+<td>3 星</td>
+<td>中等</td>
+<td>可以，需要不错的克制阵容</td>
+<td>更强的宝可梦、更多奖励</td>
+</tr>
+<tr class="odd">
+<td>5 星</td>
+<td>困难</td>
+<td>不行——需要 3–6+ 个训练师</td>
+<td><strong>传说宝可梦</strong>——打 Raid 的主要目的</td>
+</tr>
+<tr class="even">
+<td>Mega</td>
+<td>困难</td>
+<td>不行——需要 3–6+ 个训练师</td>
+<td>Mega 能量（用于 Mega 进化）</td>
+</tr>
+<tr class="odd">
+<td>Elite / Primal</td>
+<td>非常困难</td>
+<td>不行——需要 5–10+ 个</td>
+<td>Primal Groudon/Kyogre，稀有传说</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="raid-小贴士" class="level2">
+<h2 class="anchored" data-anchor-id="raid-小贴士">Raid 小贴士</h2>
+<ul>
+<li><strong>属性克制就是一切。</strong> 一队 25 级的克制宝可梦打得过一队 40 级的中立伤害宝可梦。查好 Boss 的属性，带上 Counter。</li>
+<li><strong>用 Pokégenie</strong> ——这个 app 有 Raid 大厅功能，可以和全球的远程玩家匹配。不需要本地群组。</li>
+<li><strong>Remote Raid Pass（远程突袭入场券）</strong> 可以在任何地方加入，但需要金币而且每天限量。</li>
+<li><strong>Raid 捕获的宝可梦是 20 级</strong>（天气加成时 25 级）。IV 保底 10+（下限 10/10/10）。</li>
+<li><strong>Rare Candy 留给传说宝可梦。</strong> 你没法轻易抓到或走路获得它们的糖果，所以 Rare Candy 是强化它们最靠谱的方式。</li>
+</ul>
+</section>
+</section>
+<section id="每周安排-活动" class="level1">
+<h1>每周安排 &amp; 活动</h1>
+<section id="每日发现forever-forward-赛季" class="level2">
+<h2 class="anchored" data-anchor-id="每日发现forever-forward-赛季">每日发现（Forever Forward 赛季）</h2>
+<p>每周每天都有主题加成，从当地时间午夜到午夜。这个时间表从 2026 年 6 月 2 日运行到 9 月 8 日。</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 36%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>日</th>
+<th>活动</th>
+<th>内容</th>
+<th>值得参与吗？</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>周日</td>
+<td><strong>Scenic Sunday</strong></td>
+<td>路线上更多野生、路线上 Incense 加成、路线上 Buddy 糖果距离减少、最多 3 次 Mateo 遭遇</td>
+<td>如果你走路线——适合刷 Buddy 糖果</td>
+</tr>
+<tr class="even">
+<td>周一</td>
+<td><strong>Max Monday</strong></td>
+<td>Power Spots 刷新更快、更多 Power Spots 激活（6 AM – 9 PM）</td>
+<td>如果你打极巨化/Max 战斗</td>
+</tr>
+<tr class="odd">
+<td>周二</td>
+<td><strong>Showcase Tuesday</strong></td>
+<td>可以参加最多 5 个 PokéStop 展示</td>
+<td>低优先级——展示只是装饰性的</td>
+</tr>
+<tr class="even">
+<td>周三</td>
+<td><strong>Raid Hour</strong></td>
+<td>每个道馆都出当前 5 星 Boss，6–7 PM</td>
+<td><strong>是的</strong>——组队打 Raid 的最佳时间</td>
+</tr>
+<tr class="odd">
+<td>周四</td>
+<td><strong>GO Battle Thursday</strong></td>
+<td>PvP 胜利最高 4 倍星尘，每天 10 组对战（50 场）而不是 5 组</td>
+<td><strong>是的</strong>——PvP 玩家的巨量星尘</td>
+</tr>
+<tr class="even">
+<td>周五</td>
+<td><strong>Friendship Friday</strong></td>
+<td>2 次特殊交换、Lucky 概率提高、交换星尘消耗减少 10%、交换保底 2 颗 XL Candy（31 级+）</td>
+<td><strong>是的</strong>——重要的交换留到周五做</td>
+</tr>
+<tr class="odd">
+<td>周六</td>
+<td>Community Day（每月）</td>
+<td>见下文</td>
+<td><strong>必参加</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>每周还有：</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>日</th>
+<th>时间</th>
+<th>活动</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>周一</td>
+<td>9:00 AM</td>
+<td>Adventure Sync 每周奖励（走 25/50 km）</td>
+</tr>
+<tr class="even">
+<td>周二</td>
+<td>6–7 PM</td>
+<td>Spotlight Hour（特色宝可梦 + 加成）</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="community-day" class="level2">
+<h2 class="anchored" data-anchor-id="community-day">Community Day</h2>
+<p>每月一次的活动，聚焦一个宝可梦物种，持续三小时。为什么重要：</p>
+<ul>
+<li><strong>大量野生</strong> ——三小时内可以抓几百只</li>
+<li><strong>限定招式</strong> ——在活动时间内进化（或活动结束后 5 小时内）可以获得专属蓄力招式，通常是它能学到的最强招式。错过窗口就错过招式。</li>
+<li><strong>加成星尘/经验</strong> ——通常 3 倍捕捉星尘。叠加 Star Piece 就是 4.5 倍。</li>
+</ul>
+<p><strong>永远参加 Community Day。</strong> 即使你不在意这期的宝可梦，光是星尘就值三个小时。</p>
+</section>
+</section>
+<section id="buddy-系统" class="level1">
+<h1>Buddy 系统</h1>
+<p>设一只宝可梦为你的 Buddy，通过走路赚糖果（每颗糖果需要走 1km、3km、5km 或 20km，取决于物种）。</p>
+<section id="buddy-等级" class="level2">
+<h2 class="anchored" data-anchor-id="buddy-等级">Buddy 等级</h2>
+<p>通过每天互动来提升 Buddy 等级（喂食、玩耍、对战、拍快照）。</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>等级</th>
+<th>需要爱心</th>
+<th>奖励</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Good Buddy</td>
+<td>1</td>
+<td>Buddy 显示在地图上</td>
+</tr>
+<tr class="even">
+<td>Great Buddy</td>
+<td>70</td>
+<td><strong>捕捉辅助</strong> ——Buddy 会拍掉要飞偏的球</td>
+</tr>
+<tr class="odd">
+<td>Ultra Buddy</td>
+<td>150</td>
+<td>纪念品（装饰性的）</td>
+</tr>
+<tr class="even">
+<td>Best Buddy</td>
+<td>300</td>
+<td><strong>+1 等级提升</strong>（设为当前 Buddy 时生效）</td>
+</tr>
+</tbody>
+</table>
+<p>Best Buddy 大约需要 ~30 天的每日互动。+1 等级提升对那些刚好卡在 CP 上限的宝可梦很有用——额外一级可以把它推到正常情况下达不到的高度。</p>
+<p><strong>小贴士：</strong> 你可以随时切换 Buddy。先在你要升级的那只上刷每日爱心，然后切回你的步行 Buddy 赚距离糖果。</p>
+</section>
+</section>
+<section id="好友-交换" class="level1">
+<h1>好友 &amp; 交换</h1>
+<section id="好友等级" class="level2">
+<h2 class="anchored" data-anchor-id="好友等级">好友等级</h2>
+<p>用训练师代码添加好友。通过送礼物、交换、一起打 Raid 或对战来提升好友等级。</p>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 48%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>等级</th>
+<th>互动次数</th>
+<th>加成</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Good Friend</td>
+<td>1 天</td>
+<td>可以交换；Raid +1 球</td>
+</tr>
+<tr class="even">
+<td>Great Friend</td>
+<td>7 天</td>
+<td>Raid +2 球；交换折扣</td>
+</tr>
+<tr class="odd">
+<td>Ultra Friend</td>
+<td>30 天</td>
+<td>Raid +4 球；大幅交换折扣</td>
+</tr>
+<tr class="even">
+<td>Best Friend</td>
+<td>90 天</td>
+<td>Raid +5 球；最大交换折扣；可触发 <strong>Lucky Friend</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>在达成 Best Friend 之前开一个 Lucky Egg</strong> 可以获得 200,000 经验（基础 100k × 2）。和你的好友约好同时打开礼物，确保 Lucky Egg 在生效。这是游戏中最快的经验获取方式之一。</p>
+</section>
+<section id="交换" class="level2">
+<h2 class="anchored" data-anchor-id="交换">交换</h2>
+<p>交换需要消耗星尘。费用取决于好友等级以及宝可梦对接收方来说是否是图鉴新登录。</p>
+<p>关键规则：</p>
+<ul>
+<li><strong>每只宝可梦只能交换一次。</strong> 永远不能再交换。这意味着 Lucky 宝可梦（来自交换）永远不能被再次交换。</li>
+<li><strong>交换时 IV 会重新随机。</strong> 接收方得到新的随机 IV。好友等级越高 = IV 下限越高。</li>
+<li><strong>每天一次特殊交换。</strong> 传说、Shiny、图鉴新登录都算”特殊”交换。</li>
+</ul>
+</section>
+<section id="lucky-宝可梦" class="level2">
+<h2 class="anchored" data-anchor-id="lucky-宝可梦">Lucky 宝可梦</h2>
+<p>Lucky 宝可梦 IV 下限 12/12/12，强化<strong>星尘减半</strong>。只能通过交换获得——任何交换都有随机概率变成 Lucky，但有些方法可以提高概率：</p>
+<ol type="1">
+<li><strong>Lucky Friend</strong> ——成为 Best Friend 后，每次每日互动都有小概率触发 Lucky Friend 状态。下一次交换保证是 Lucky。</li>
+<li><strong>老宝可梦</strong> ——交换一只 <strong>2020 年或更早</strong>捕获的宝可梦可以保证 Lucky 交换。每个玩家总共有 <strong>45 次保底 Lucky 交换</strong>——用完之后你这边就触发不了了，但你的交换伙伴如果还有次数，他那边仍然可以触发。这个限制对交换双方都计数，即使只有一方发送了老宝可梦。游戏内没有追踪器显示你已经用了多少次。</li>
+<li><strong>随机</strong> ——任何交换都有一个基础小概率变成 Lucky。</li>
+</ol>
+<p>如果你要练一只很贵的（比如传说宝可梦强化到 50 级），先搞到 Lucky 版本可以省下几十万星尘。</p>
+</section>
+</section>
+<section id="蛋" class="level1">
+<h1>蛋</h1>
+<p>你可以从转 PokéStop、礼物、Adventure Sync 奖励和特殊研究中获得蛋。</p>
+<section id="蛋的种类" class="level2">
+<h2 class="anchored" data-anchor-id="蛋的种类">蛋的种类</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>距离</th>
+<th>来源</th>
+<th>里面有什么</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2 km</td>
+<td>PokéStop</td>
+<td>常见物种，大部分是凑数的</td>
+</tr>
+<tr class="even">
+<td>5 km</td>
+<td>PokéStop</td>
+<td>质量参差不齐</td>
+</tr>
+<tr class="odd">
+<td>7 km</td>
+<td>好友礼物</td>
+<td>地区限定宝可梦、宝宝宝可梦、随活动变化</td>
+</tr>
+<tr class="even">
+<td>10 km</td>
+<td>PokéStop</td>
+<td>稀有物种，孵化星尘更高</td>
+</tr>
+<tr class="odd">
+<td>12 km</td>
+<td>Rocket 干部</td>
+<td>可暗影化物种，星尘不错</td>
+</tr>
+<tr class="even">
+<td>5/10 km</td>
+<td>Adventure Sync（周一 9 AM）</td>
+<td>独立蛋池——经常有稀有孵化</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="蛋的小贴士" class="level2">
+<h2 class="anchored" data-anchor-id="蛋的小贴士">蛋的小贴士</h2>
+<ul>
+<li>蛋要用<strong>无限孵化器</strong>（橙色）或<strong>限次孵化器</strong>（蓝色，3 次）。无限孵化器用在 2km 蛋上（快速循环），限次孵化器留给 10km 和 12km 蛋。</li>
+<li>蛋的物种和 IV 在<strong>你拿到蛋的时候</strong>就确定了，不是孵化时。活动前清掉老蛋，新蛋就会进入活动蛋池。</li>
+<li>孵化的宝可梦 IV <strong>下限 10/10/10</strong> ——和 Raid 捕获一样。是获得高 IV 宝可梦的靠谱途径。</li>
+<li>Adventure Sync 必须开启，关掉 app 的步行距离才会计算。</li>
+</ul>
+</section>
+</section>
+<section id="资源-经济" class="level1">
+<h1>资源 &amp; 经济</h1>
+<section id="星尘" class="level2">
+<h2 class="anchored" data-anchor-id="星尘">星尘</h2>
+<p>通用货币。强化、学第二个蓄力招式、交换都需要它。</p>
+<p><strong>怎么赚：</strong></p>
+<ul>
+<li>捕捉宝可梦（每次 100–500，天气加成 +25%）</li>
+<li>孵蛋（10km 蛋给最多）</li>
+<li>GBL（Go Battle League）对战组奖励</li>
+<li>Adventure Sync 每周奖励（50km = 大量星尘）</li>
+<li>Star Piece（30 分钟 1.5 倍星尘）——在 Community Day 或双倍星尘活动时叠加使用</li>
+</ul>
+<p><strong>怎么不浪费：</strong></p>
+<ul>
+<li>没有明确目的（Raid 阵容、PvP 阵容）不要强化任何东西</li>
+<li>第二个蓄力招式费用 10,000–100,000 星尘不等，取决于物种</li>
+<li>Lucky 宝可梦强化费用减半——如果可能，先搞到 Lucky 版本再投资</li>
+<li>最大的星尘坑是用 XL Candy 强化到 50 级。一只宝可梦从 40→50 大约需要 ~300,000 星尘。</li>
+</ul>
+</section>
+<section id="糖果" class="level2">
+<h2 class="anchored" data-anchor-id="糖果">糖果</h2>
+<p>物种专属。进化和强化都需要。</p>
+<ul>
+<li><strong>普通糖果：</strong> 捕捉（3 颗）、转移（1 颗）、孵化、Buddy 走路、Rare Candy</li>
+<li><strong>XL Candy：</strong> 训练师 31 级开始获得。40 级以上的强化需要。来源：捕捉（概率掉落）、转移、走路、交换、普通糖果转换（100 颗普通 → 1 颗 XL）。</li>
+</ul>
+<p><strong>Rare Candy</strong>（来自 Raid 和 GBL）可以转换为任何物种的糖果。留给传说宝可梦——你没法轻易抓到或走路获得它们的糖果。</p>
+</section>
+<section id="道具取舍" class="level2">
+<h2 class="anchored" data-anchor-id="道具取舍">道具取舍</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>留着</th>
+<th>优先扔掉</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ultra Ball</td>
+<td>普通药水</td>
+</tr>
+<tr class="even">
+<td>Pinap Berry</td>
+<td>普通复活石</td>
+</tr>
+<tr class="odd">
+<td>Golden Razz Berry</td>
+<td>Nanab Berry</td>
+</tr>
+<tr class="even">
+<td>Max Potion、Max Revive</td>
+<td>普通精灵球（背包满的时候）</td>
+</tr>
+<tr class="odd">
+<td>Star Piece、Lucky Egg</td>
+<td>Lure（看情况）</td>
+</tr>
+<tr class="even">
+<td>Raid Pass、技能机</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="术语表" class="level1">
+<h1>术语表</h1>
+<table class="table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>术语</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Hundo</strong></td>
+<td>15/15/15 IV 宝可梦（100% / 四星）</td>
+</tr>
+<tr class="even">
+<td><strong>Nundo</strong></td>
+<td>0/0/0 IV 宝可梦（收藏党的最爱）</td>
+</tr>
+<tr class="odd">
+<td><strong>Shiny</strong></td>
+<td>稀有颜色变体，纯装饰性。Raid 和 Rocket 出的 Shiny 必捉——野外 Shiny 可能跑</td>
+</tr>
+<tr class="even">
+<td><strong>Shundo</strong></td>
+<td>Shiny + Hundo（Shiny 且 15/15/15）。极其稀有——炫耀用的</td>
+</tr>
+<tr class="odd">
+<td><strong>Shadow</strong></td>
+<td>Rocket 捕获的宝可梦，1.2× 攻击 / 0.833× 防御</td>
+</tr>
+<tr class="even">
+<td><strong>Purified</strong></td>
+<td>净化后的 Shadow，IV +2，强化更便宜，可以 Mega 进化</td>
+</tr>
+<tr class="odd">
+<td><strong>Lucky</strong></td>
+<td>交换获得的宝可梦，IV 下限 12/12/12，强化费用半价</td>
+</tr>
+<tr class="even">
+<td><strong>STAB</strong></td>
+<td>本属性加成——招式属性和宝可梦属性一致时伤害 1.2 倍</td>
+</tr>
+<tr class="odd">
+<td><strong>CMP</strong></td>
+<td>Charged Move Priority（蓄力招先手权）——双方同时放蓄力招时，攻击力高的先出手</td>
+</tr>
+<tr class="even">
+<td><strong>Farming down</strong></td>
+<td>只用 Fast Move 击败残血宝可梦，把能量留给下一只</td>
+</tr>
+<tr class="odd">
+<td><strong>Spice pick</strong></td>
+<td>非主流宝可梦，用来出其不意</td>
+</tr>
+<tr class="even">
+<td><strong>XL Candy</strong></td>
+<td>特殊糖果（31 级+），40 级以上的强化需要</td>
+</tr>
+<tr class="odd">
+<td><strong>CPM</strong></td>
+<td>CP Multiplier——CP 公式里基于等级的缩放因子</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="guide-zh_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

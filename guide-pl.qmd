@@ -1,0 +1,682 @@
+---
+title: "Pokémon GO — Poradnik dla Początkujących"
+subtitle: "Poradnik, który napisałem dla mojego kumpla Jaya"
+author: "Katomil"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: darkly
+    smooth-scroll: true
+    code-fold: true
+---
+
+
+# Łapanie
+
+Za każde złapanie dostajesz stardust, XP i cukierki. To jest główna pętla gry — wszystko inne (Raidy, PvP, wymiana) opiera się na tym, że łapiesz dużo Pokémonów.
+
+## Technika
+
+- **Curveball.** Zakręć piłką przed rzutem. Każdy Curveball daje **mnożnik szansy łapania ×1.7** — to więcej niż Razz Berry (×1.5). Jeśli jeszcze nie kręcisz każdego rzutu, zacznij od teraz.
+- **Blokowanie kółka (circle locking).** Przytrzymaj piłkę, poczekaj aż kolorowe kółko zmniejszy się do pożądanego rozmiaru, potem *puść* i czekaj aż Pokémon zaatakuje. Rzuć podczas animacji ataku — kółko zostaje zablokowane w tym rozmiarze. Tak dobrzy gracze trafiają Excellent rzuty konsekwentnie.
+- **Nice / Great / Excellent.** Trafienie wewnątrz kolorowego kółka daje bonusowe XP i wyższą szansę łapania. Mniejsze kółko = trudniej trafić, ale lepszy bonus. Celuj w Great — Excellenty przyjdą z praktyką.
+
+## Mnożniki szansy łapania
+
+Wszystko się ze sobą mnoży. Połączenie techniki + jagody + typu piłki to sposób na złapanie rzeczy, które wydają się niemożliwe zwykłym Poké Ballem.
+
+| Metoda | Mnożnik |
+|--------|---------|
+| Curveball | 1.7× |
+| Nice throw | 1.0–1.3× |
+| Great throw | 1.3–1.7× |
+| Excellent throw | 1.7–2.0× |
+| Razz Berry | 1.5× |
+| Silver Pinap Berry | 1.8× |
+| Golden Razz Berry | 2.5× |
+| Great Ball (vs Poké Ball) | 1.5× |
+| Ultra Ball (vs Poké Ball) | 2.0× |
+
+**Przykład z liczbami:** Curveball Excellent + Golden Razz + Ultra Ball = 1.7 × 2.0 × 2.5 × 2.0 = **×17 szansy łapania**. Technika ma większe znaczenie niż przedmioty.
+
+## Jagody (Berries)
+
+| Berry | Efekt | Kiedy używać |
+|-------|-------|--------------|
+| Razz Berry | ×1.5 szansy łapania | Domyślna jagoda „chcę to złapać" |
+| Golden Razz Berry | ×2.5 szansy łapania | Legendy, rzadkie spawny, Shiny — cokolwiek, czego *nie możesz* stracić |
+| Pinap Berry | ×2 cukierków przy łapaniu | Używaj na wszystkim, do czego potrzebujesz cukierków (ewolucje, wzmacnianie) |
+| Silver Pinap Berry | ×1.8 szansy łapania + ×2.33 cukierków | Najlepsze z obu światów — oszczędzaj na rzadkie rzeczy, do których potrzebujesz też cukierków |
+| Nanab Berry | Uspokaja ruchy Pokémona | Prawie bezużyteczna. Karm nią obrońców siłowni dla stardusta albo wyrzuć |
+
+**Wskazówka:** Shiny Pokémony z **Raidów i Team GO Rocket** mają gwarantowane złapanie (100% szansy) — użyj Pinap po podwójne cukierki zamiast Razz. Dzikie Shiny nadal mogą uciec, więc na te dawaj Golden Razz.
+
+## Szybkie łapanie (Quick Catching)
+
+Ten trik pomija ~3-sekundową animację łapania. Oszczędza ogromną ilość czasu podczas Community Day lub sesji grindowania.
+
+1. Wejdź w spotkanie z Pokémonem
+2. **Drugą ręką** przesuń panel wyboru jagód/piłek na bok i **przytrzymaj go**
+3. **Główną ręką** rzuć piłkę (Curveball jak zwykle)
+4. Gdy piłka trafi, **puść** drugą rękę i wciśnij **przycisk ucieczki** (lewy górny róg)
+5. Łapanie przetwarza się po stronie serwera — jeśli się udało, Pokémon znika z mapy. Jeśli nie, nadal tam jest — wciśnij go ponownie.
+
+Wymaga kilku prób żeby złapać timing, ale jak raz się nauczysz, nie wrócisz do starego sposobu.
+
+## Nagrody za łapanie
+
+**Stardust za złapanie:**
+
+| Typ złapania | Stardust |
+|-------------|----------|
+| Zwykłe złapanie | 100 |
+| Weather-boosted (wzmocnione pogodą) | 125 |
+| 2. etap ewolucji (np. Haunter) | 300 |
+| 3. etap ewolucji (np. Gengar) | 500 |
+| Z aktywnym Star Piece | Wszystko powyżej × 1.5 |
+
+**Bonusy XP (wszystkie się sumują):**
+
+| Akcja | Bonus XP |
+|-------|----------|
+| Zwykłe złapanie | 100 |
+| Curveball | +20 |
+| Nice throw | +20 |
+| Great throw | +100 |
+| Excellent throw | +1,000 |
+| Złapanie pierwszym rzutem | +50 |
+| Nowy wpis w Pokédexie | +1,000 |
+| Z aktywnym Lucky Egg | Wszystko powyżej × 2 |
+
+## Pogoda i efekty Adventure
+
+**Weather boost** (wzmocnienie pogodowe) robi trzy rzeczy naraz:
+
+1. Pokémony pasujące do pogody pojawiają się częściej
+2. Te spawny mają **+5 poziomów** więcej niż normalnie (to istotne — patrz sekcja Poziom Trenera)
+3. Łapanie ich daje **25% więcej stardustu** (125 zamiast 100)
+
+Wskaźnik pogody w grze (prawy górny róg) pokazuje jakie typy są wzmocnione. Jeśli jest „Windy", typy Dragon/Flying/Psychic są wzmocnione i pojawiają się na wyższych poziomach z bonusowym dustem.
+
+**Adventure Sync** śledzi przebyty dystans nawet gdy aplikacja jest zamknięta, używając aplikacji zdrowotnej telefonu (Google Fit / Apple Health). Ma znaczenie dla:
+
+- **Wylęganie jaj** — dystans się liczy nawet z zamkniętą aplikacją
+- **Cukierki od Buddy** — tak samo, liczy się do dystansu spacerów z Buddy
+- **Tygodniowe nagrody** (poniedziałek 9 rano): przejdź 25 km po jajko 5 km + paczkę stardustu; 50 km po jajko 10 km + więcej stardustu + Rare Candy. Zawsze celuj w 50 km.
+
+**Incense** (kadzidło) spawnuje jednego Pokémona w pobliżu co ~5 minut na stojąco, lub co ~1 minutę podczas chodzenia (albo co 200 m, zależnie co nastąpi pierwsze). Przydatne w miejscach z małą liczbą spawnów, nie warto w miastach. **Daily Adventure Incense** (darmowe, 15 min) działa tylko w ruchu — jeden spawn co ~30 sekund jeśli idziesz.
+
+**Lure** (przynęta) przyczepia się do PokéStopów i przyciąga spawny na 30 minut. Specjalne typy Lure (Glacial, Mossy, Magnetic, Rainy) przyciągają konkretne typy i umożliwiają pewne ewolucje.
+
+
+# Poziom Trenera
+
+Twój poziom trenera to nie tylko liczba — kontroluje to, co możesz znaleźć na dziko i do jakiego poziomu możesz wzmacniać Pokémony.
+
+## Limit poziomu dzikich Pokémonów
+
+Każdy dziki Pokémon ma poziom (ukryty, ale determinujący jego CP). Poziom, na jakim może się pojawić, jest ograniczony **twoim poziomem trenera**, do twardego sufitu:
+
+| Twój poziom trenera | Maks. poziom dzikiego Pokémona | Z Weather Boost |
+|---------------------|-------------------------------|-----------------|
+| 1–29 | Taki sam jak twój | Twój poziom + 5 |
+| 30+ | 30 | 35 |
+
+Po poziomie 30 każdy trener widzi te same dzikie spawny na tym samym poziomie i z tymi samymi IV. Przed tym trener poziomu 15 i trener poziomu 25 widzą ten sam gatunek przy PokéStopie, ale wersja trenera poziomu 25 jest silniejsza.
+
+**Weather boost dodaje +5 poziomów.** To ogromna sprawa na początku — trener poziomu 20 może znaleźć pogodowo wzmocnione Pokémony poziomu 25, które normalnie byłyby powyżej jego limitu. Zawsze sprawdzaj co jest weather-boosted.
+
+## Limity wzmacniania (Power-Up)
+
+Możesz wzmocnić Pokémona do **twojego poziomu trenera + 10**, do maksimum gry, czyli poziomu 50 (poziom 51 z bonusem Best Buddy). Wzmacnianie powyżej poziomu 40 wymaga XL Candy, które zaczynasz zdobywać od poziomu trenera 31.
+
+## Kluczowe progi poziomów
+
+| Poziom | Co odblokowuje |
+|--------|----------------|
+| 20 | Pokémony z Raidów mają poziom 20 (25 jeśli weather-boosted) |
+| 30 | Sufit dzikich spawnów — widzisz teraz te same spawny co wszyscy inni |
+| 31 | Zaczynają padać XL Candy (potrzebne do wzmacniania 40→50) |
+| 35 | Możesz nominować nowe PokéStopy przez Wayfarera (po krótkim quizie) |
+| 40 | Pełna szybkość zdobywania XL Candy |
+
+**Praktyczny wniosek:** Warto się spieszyć do poziomu 30, bo wtedy zaczynasz widzieć Pokémony na maksymalnym poziomie dzikiego spawnu. Po 30 dalsze levelowanie jest nadal przydatne (wyższy limit wzmacniania, XL candy), ale mniej pilne.
+
+
+# Rozumienie statystyk
+
+## CP (Combat Power)
+
+Liczba nad każdym Pokémonem. Łączy trzy ukryte składniki w jedną liczbę. Wyższe CP ogólnie oznacza silniejszy, ale **CP kłamie** — nie mówi ci czy Pokémon jest naprawdę *dobry*, tylko jak duże są jego liczby.
+
+### Jak naprawdę oblicza się CP
+
+$$\text{CP} = \left\lfloor \frac{(\text{Atk}_\text{base} + \text{Atk}_\text{IV}) \times \sqrt{\text{Def}_\text{base} + \text{Def}_\text{IV}} \times \sqrt{\text{Sta}_\text{base} + \text{Sta}_\text{IV}}} {10} \times \text{CPM}^2 \right\rfloor$$
+
+Trzy składniki:
+
+1. **Base stats** (statystyki bazowe) — stałe dla każdego gatunku. Machamp ma 234 bazowego Ataku. Blissey ma 129. Nigdy się nie zmieniają.
+2. **IVs** — twój losowy rzut 0–15 na każdą statystykę. Dodawane bezpośrednio do bazowej statystyki.
+3. **CPM (CP Multiplier)** — współczynnik skalowania zależny od poziomu Pokémona (1–51). Wyższy poziom = wyższy CPM = wyższe CP.
+
+Kluczowa sprawa: **Atak wchodzi do formuły bezpośrednio, ale Obrona i Wytrzymałość wchodzą jako pierwiastki kwadratowe.** To znaczy, że +1 Attack IV podnosi CP bardziej niż +1 Defense czy +1 Stamina IV. To będzie miało znaczenie gdy dojdziemy do PvP.
+
+## IVs (Individual Values — wartości indywidualne)
+
+Każdy Pokémon ma trzy ukryte statystyki, każda losowana między 0 a 15:
+
+- **Attack IV** (0–15)
+- **Defense IV** (0–15)
+- **HP / Stamina IV** (0–15)
+
+Ustalone przy łapaniu, nigdy nie można ich zmienić. 15/15/15 nazywa się "Hundo" (100%, 4 gwiazdki). Sprawdzasz je w grze wciskając Pokémona → **Appraise** (Oceń).
+
+### Matematyka: ile naprawdę znaczą IV?
+
+IV to 0–15 punktów dodanych do bazowej statystyki, która często wynosi 150–250+. Policzmy ile to realnie zmienia.
+
+**Machamp** — Bazowe statystyki: 234 Atk / 159 Def / 207 Sta
+
+- 0 Attack IV → łączny Atak = 234. 15 Attack IV → łączny Atak = 249.
+- Różnica: 15/234 = **6.4% więcej Ataku** z idealnych IV.
+
+**Blissey** — Bazowe statystyki: 129 Atk / 169 Def / 496 Sta
+
+- 0 Attack IV → łączny Atak = 129. 15 Attack IV → łączny Atak = 144.
+- Różnica: 15/129 = **11.6% więcej Ataku** z idealnych IV.
+- Ale Stamina? 15/496 = **3.0%**. Jej bazowe HP jest tak ogromne, że IV ledwo je ruszają.
+
+**Zasada:** IV mają największe znaczenie tam, gdzie bazowa statystyka jest niska. Na gatunku z 230+ bazowego Ataku, IV to szum. Na gatunku z 120 bazowego Ataku, IV to realna różnica.
+
+```{python}
+#| label: fig-iv-impact
+#| fig-cap: "Same 15 IV points, very different impact. IVs are a bigger deal where the base stat is low."
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+pokemon = {
+    'Machamp': {'atk': 234, 'def': 159, 'sta': 207},
+    'Blissey': {'atk': 129, 'def': 169, 'sta': 496},
+}
+
+fig, ax = plt.subplots(figsize=(10, 5))
+
+x = np.arange(3)
+width = 0.35
+stats = ['Attack', 'Defense', 'Stamina']
+
+machamp_pct = [15/234*100, 15/159*100, 15/207*100]
+blissey_pct = [15/129*100, 15/169*100, 15/496*100]
+
+bars1 = ax.bar(x - width/2, machamp_pct, width, label='Machamp (234/159/207)',
+               color='#e74c3c', edgecolor='white', linewidth=0.5)
+bars2 = ax.bar(x + width/2, blissey_pct, width, label='Blissey (129/169/496)',
+               color='#ff69b4', edgecolor='white', linewidth=0.5)
+
+for bar, val in zip(bars1, machamp_pct):
+    ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+            f'{val:.1f}%', ha='center', va='bottom', fontsize=11, fontweight='bold')
+for bar, val in zip(bars2, blissey_pct):
+    ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+            f'{val:.1f}%', ha='center', va='bottom', fontsize=11, fontweight='bold')
+
+ax.set_ylabel('% Stat Increase from 15 IV', fontsize=12)
+ax.set_title('IV Impact: 15 IV as % of Total Stat', fontsize=14, fontweight='bold')
+ax.set_xticks(x)
+ax.set_xticklabels(stats, fontsize=12)
+ax.legend(fontsize=11)
+ax.set_ylim(0, max(max(machamp_pct), max(blissey_pct)) + 2)
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+plt.tight_layout()
+plt.show()
+```
+
+### A teraz popatrzmy na rzeczywisty obrażenia
+
+Prawdziwe pytanie to nie „jak bardzo zmienia się statystyka?" — ale „czy to zmienia obrażenia, które zadaję?" Formuła obrażeń w Pokémon GO wygląda tak:
+
+$$\text{Damage} = \left\lfloor \frac{1}{2} \times \text{Power} \times \frac{\text{Atk}_\text{effective}}{\text{Def}_\text{effective}} \times \text{STAB} \times \text{Effectiveness} \right\rfloor + 1$$
+
+To zaokrąglanie w dół (floor) jest kluczowe — małe różnice w statystykach często zostają całkowicie wymazane.
+
+```{python}
+#| label: fig-damage-math
+#| fig-cap: "Three scenarios showing what actually changes damage output: IVs barely move the needle, type effectiveness dominates everything."
+
+import matplotlib.pyplot as plt
+import math
+
+cpm_40 = 0.7903
+
+# Machamp using Counter (12 power, Fighting) vs Tyranitar (Dark/Rock)
+# Tyranitar: base def 207
+machamp_atk_15 = (234 + 15) * cpm_40   # 196.8
+machamp_atk_0  = (234 + 0)  * cpm_40   # 184.9
+ttar_def = (207 + 15) * cpm_40          # 175.4
+
+stab = 1.2        # Counter is Fighting, Machamp is Fighting
+se = 1.6           # Fighting vs Dark/Rock
+neutral = 1.0
+power_counter = 12
+power_rock_slide = 50  # neutral move for comparison
+
+def damage(power, atk, defn, stab_mult, eff):
+    return math.floor(0.5 * power * (atk / defn) * stab_mult * eff) + 1
+
+# Scenario 1: Perfect IVs vs zero IVs (same move, same matchup)
+dmg_15iv = damage(power_counter, machamp_atk_15, ttar_def, stab, se)
+dmg_0iv  = damage(power_counter, machamp_atk_0,  ttar_def, stab, se)
+
+# Scenario 2: Super effective vs neutral (same pokemon, same IVs)
+dmg_se      = damage(power_counter, machamp_atk_0, ttar_def, stab, se)
+# Use Rock Slide (Rock, 50 power) — not STAB, not SE vs Tyranitar (resisted actually)
+# Let's instead compare: Counter (Fighting, SE) vs a hypothetical neutral fast move
+dmg_neutral = damage(power_counter, machamp_atk_15, ttar_def, stab, neutral)
+
+# Scenario 3: Shadow vs normal (15 IV both)
+shadow_atk = machamp_atk_15 * 1.2
+dmg_shadow = damage(power_counter, shadow_atk, ttar_def, stab, se)
+dmg_normal = damage(power_counter, machamp_atk_15, ttar_def, stab, se)
+
+fig, axes = plt.subplots(1, 3, figsize=(14, 5))
+
+# Plot 1: IV comparison
+colors1 = ['#ef4444', '#fbbf24']
+bars1 = axes[0].bar(['15/15/15\nIVs', '0/0/0\nIVs'], [dmg_15iv, dmg_0iv], color=colors1,
+                     edgecolor='white', linewidth=0.5, width=0.5)
+for bar, val in zip(bars1, [dmg_15iv, dmg_0iv]):
+    axes[0].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+                 str(val), ha='center', va='bottom', fontsize=16, fontweight='bold')
+axes[0].set_title('IVs: 15 vs 0 Attack\n(Counter vs Tyranitar)', fontsize=11, fontweight='bold')
+axes[0].set_ylabel('Damage per Hit', fontsize=11)
+pct_diff_iv = abs(dmg_15iv - dmg_0iv) / dmg_0iv * 100
+axes[0].text(0.5, 0.5, f'Δ = {pct_diff_iv:.0f}%', transform=axes[0].transAxes,
+             ha='center', fontsize=14, color='gray', fontstyle='italic')
+
+# Plot 2: Type effectiveness
+colors2 = ['#22c55e', '#94a3b8']
+bars2 = axes[1].bar(['Super\nEffective', 'Neutral'], [dmg_se, dmg_neutral], color=colors2,
+                     edgecolor='white', linewidth=0.5, width=0.5)
+for bar, val in zip(bars2, [dmg_se, dmg_neutral]):
+    axes[1].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+                 str(val), ha='center', va='bottom', fontsize=16, fontweight='bold')
+axes[1].set_title('Type: Super Effective vs Neutral\n(0 IV SE vs 15 IV Neutral)', fontsize=11, fontweight='bold')
+pct_diff_type = (dmg_se - dmg_neutral) / dmg_neutral * 100
+axes[1].text(0.5, 0.5, f'Δ = {pct_diff_type:.0f}%', transform=axes[1].transAxes,
+             ha='center', fontsize=14, color='gray', fontstyle='italic')
+
+# Plot 3: Shadow vs normal
+colors3 = ['#8b5cf6', '#3b82f6']
+bars3 = axes[2].bar(['Shadow', 'Normal'], [dmg_shadow, dmg_normal], color=colors3,
+                     edgecolor='white', linewidth=0.5, width=0.5)
+for bar, val in zip(bars3, [dmg_shadow, dmg_normal]):
+    axes[2].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+                 str(val), ha='center', va='bottom', fontsize=16, fontweight='bold')
+axes[2].set_title('Shadow Bonus\n(15/15/15 both)', fontsize=11, fontweight='bold')
+pct_diff_shadow = (dmg_shadow - dmg_normal) / dmg_normal * 100
+axes[2].text(0.5, 0.5, f'Δ = {pct_diff_shadow:.0f}%', transform=axes[2].transAxes,
+             ha='center', fontsize=14, color='gray', fontstyle='italic')
+
+for ax in axes:
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.set_ylim(0, max(dmg_shadow, dmg_se) * 1.2)
+
+fig.suptitle('What Actually Changes Your Damage — Machamp Counter vs Tyranitar (Level 40)',
+             fontsize=13, fontweight='bold', y=1.02)
+plt.tight_layout()
+plt.show()
+```
+
+**Wniosek:** Machamp z IV 0 ale z właściwym typem ataku zadaje więcej obrażeń niż Machamp z IV 15 używający neutralnego ataku. Najpierw wybierz właściwego Pokémona i właściwy atak — IV to ostatnie 5% optymalizacji.
+
+### Jak sprawdzić IV
+
+W grze: wciśnij Pokémona → **Appraise** (Oceń). Wykres słupkowy pokazuje Attack / Defense / HP. Trzy pełne paski = Hundo.
+
+Dla większych szczegółów: użyj **PokeGenie** lub **CalcyIV** (aplikacje na telefon). Skanują ekran i mówią ci dokładne IV oraz ranking PvP (z 4096 możliwych kombinacji IV).
+
+Nie obsesjonuj się na punkcie IV — Pokémon rank 500 właściwego gatunku bije rank 1 niewłaściwego gatunku za każdym razem.
+
+
+# Skuteczność typów (Type Effectiveness)
+
+To jest najważniejsza mechanika walki. Jak pokazał wykres obrażeń powyżej, przewaga typów jest warta więcej niż IV i bonus Shadow *razem wzięte*.
+
+Każdy Pokémon ma jeden lub dwa typy. Każdy atak ma jeden typ. Jeśli typ twojego ataku jest silny przeciwko typowi obrońcy, zadajesz więcej obrażeń.
+
+## Kluczowe zestawienia
+
+| Typ atakujący | Silny przeciw | Ten Pokémon przegrywa z |
+|--------------|---------------|------------------------|
+| Water | Fire, Ground, Rock | Grass, Electric |
+| Fire | Grass, Bug, Ice, Steel | Water, Ground, Rock |
+| Grass | Water, Ground, Rock | Fire, Ice, Poison, Flying, Bug |
+| Electric | Water, Flying | Ground (odporność!) |
+| Fighting | Normal, Ice, Rock, Dark, Steel | Psychic, Flying, Fairy |
+| Ground | Fire, Electric, Rock, Poison, Steel | Water, Grass, Ice |
+| Ice | Grass, Ground, Flying, Dragon | Fire, Fighting, Rock, Steel |
+| Dragon | Dragon | Dragon, Ice, Fairy (odporność!) |
+| Fairy | Fighting, Dragon, Dark | Poison, Steel |
+| Steel | Ice, Rock, Fairy | Fire, Fighting, Ground |
+
+Nie musisz zapamiętywać wszystkich 18 typów. Zacznij od pierwszych pięciu rzędów — pokrywają większość tego, na co trafisz.
+
+## Mnożniki
+
+| Zestawienie | Mnożnik |
+|-------------|---------|
+| Super effective (super skuteczne) | **1.6×** |
+| Not very effective (mało skuteczne) | **0.625×** |
+| Double super effective (oba typy słabe) | **2.56×** |
+| Double resisted (oba typy odporne) | **0.391×** |
+
+Prawdziwej odporności (immunity) nie ma w Pokémon GO — Ground vs Flying (odporność w głównych grach) to po prostu potrójny opór (0.391×), nie zero.
+
+**STAB (Same Type Attack Bonus — bonus tego samego typu ataku):** Jeśli typ *ataku* pasuje do *typu Pokémona*, obrażenia dostają **bonus ×1.2**. Pokémon typu Water używający ataku typu Water dostaje STAB. To się łączy z super effective — Pokémon Water używający ataku Water przeciwko Pokémonowi Fire dostaje 1.2 × 1.6 = **×1.92**.
+
+
+# Pokémony Shadow i Purified
+
+Grunty, liderzy i Giovanni z Team GO Rocket zostawiają **Shadow Pokémony** gdy ich pokonasz.
+
+## Bonus Shadow
+
+Shadow Pokémony dostają stały mnożnik na końcowe statystyki:
+
+- Shadow Atak = Normalny Atak × **1.2** (+20% zadawanych obrażeń)
+- Shadow Obrona = Normalna Obrona × **0.833** (~20% więcej otrzymywanych obrażeń)
+
+Kompromis szklanego działa: uderzasz mocniej, giniesz szybciej.
+
+### Matematyka: czy 20% to dużo?
+
+Postawmy bonus Shadow obok IV żeby zobaczyć skalę.
+
+**Machamp na poziomie 40** (CPM = 0.7903):
+
+| Wariant | Efektywny Atak | Różnica od normalnego |
+|---------|---------------|-----------------------|
+| Normalny, 15 Atk IV | (234 + 15) × 0.79 = 196.8 | punkt odniesienia |
+| Normalny, 0 Atk IV | (234 + 0) × 0.79 = 184.9 | −6.0% |
+| **Shadow, 0 Atk IV** | (234 + 0) × 0.79 × 1.2 = **221.9** | **+12.8%** |
+| **Shadow, 15 Atk IV** | (234 + 15) × 0.79 × 1.2 = **236.1** | **+20.0%** |
+
+Shadow Machamp z *zerowym* Attack IV i tak uderza mocniej niż normalny Machamp z *perfekcyjnymi* IV. Bonus Shadow to mniej więcej 3× wpływ przejścia z 0 do 15 Attack IV. IV to wisienka na torcie; Shadow to cała dodatkowa gałka lodów.
+
+```{python}
+#| label: fig-shadow-comparison
+#| fig-cap: "Shadow vs Normal vs Purified — Machamp with 13/13/13 IVs (becomes 15/15/15 after purifying). Level 40."
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+base_atk, base_def, base_sta = 234, 159, 207
+iv = 13
+pure_iv = 15
+cpm = 0.7903
+
+forms = ['Shadow\n(13/13/13)', 'Normal\n(13/13/13)', 'Purified\n(15/15/15)']
+colors = ['#8b5cf6', '#3b82f6', '#22c55e']
+
+vals = {
+    'Attack': [
+        (base_atk + iv) * cpm * 1.2,
+        (base_atk + iv) * cpm,
+        (base_atk + pure_iv) * cpm,
+    ],
+    'Defense': [
+        (base_def + iv) * cpm * 0.833,
+        (base_def + iv) * cpm,
+        (base_def + pure_iv) * cpm,
+    ],
+    'Stamina': [
+        int((base_sta + iv) * cpm),
+        int((base_sta + iv) * cpm),
+        int((base_sta + pure_iv) * cpm),
+    ],
+}
+
+fig, axes = plt.subplots(1, 3, figsize=(13, 5))
+
+for ax, (stat_name, stat_vals) in zip(axes, vals.items()):
+    bars = ax.bar(forms, stat_vals, color=colors, edgecolor='white', linewidth=0.5)
+    for bar, val in zip(bars, stat_vals):
+        label = f'{val:.1f}' if isinstance(val, float) else str(val)
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
+                label, ha='center', va='bottom', fontsize=11, fontweight='bold')
+    ax.set_title(stat_name, fontsize=13, fontweight='bold')
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ymin = min(stat_vals) * 0.88
+    ymax = max(stat_vals) * 1.08
+    ax.set_ylim(ymin, ymax)
+
+fig.suptitle('Shadow vs Normal vs Purified — Machamp at Level 40',
+             fontsize=14, fontweight='bold', y=1.02)
+plt.tight_layout()
+plt.show()
+```
+
+Zauważ: Purified (15/15/15) ma *trochę* wyższe bazowe statystyki niż Normal (13/13/13) dzięki bonusowi +2 IV, ale to nigdzie blisko Ataku Shadow. Puryfikacja zamienia ogromny bonus do obrażeń na malutki wzrost statystyk i tańsze koszty wzmacniania.
+
+## Co robi puryfikacja
+
+- **Usuwa** bonus Shadow (z powrotem do ×1.0 ataku, ×1.0 obrony)
+- **Dodaje +2 do każdego IV** (z limitem 15)
+- **Zmniejsza** koszt wzmacniania (stardust i cukierki) o 20%
+- Ustawia poziom Pokémona na 25 (albo zostaje jeśli jest wyższy)
+- Uczy ataku naładowanego **Return** (w większości bezużyteczny, ale kilka niszowych zastosowań w PvP)
+
+## Kiedy puryfikować
+
+**Domyślnie: nie.** Bonus 20% obrażeń jest permanentny i nieodwracalny. Ale są realne wyjątki:
+
+| Powód do puryfikacji | Wyjaśnienie |
+|---------------------|-------------|
+| **IV są 13/13/13 lub wyżej** | +2 do każdego IV → staje się 15/15/15 Hundo. Jeśli gatunek i tak nie jest przydatny jako Shadow atakujący (np. Golbat, Raticate), weź darmowe Hundo. |
+| **Medal Purifier** | Medal śledzi łączną liczbę puryfikacji (brąz → platyna). Grind z **tanimi puryfikacjami** — gatunki za 1 cukierek jak Zubat, Aron, Starly. Nigdy nie puryfikuj dobrego Shadow dla postępu medalu. |
+| **Mega lub Primal ewolucja** | Shadow Pokémony **nie mogą** zrobić Mega Ewolucji ani Primal. Jeśli potrzebujesz Mega Gengara, Mega Charizarda, Primal Groudona — *musisz* najpierw puryfikować. To jedyny przypadek gdy puryfikacja silnego Shadow jest poprawna. |
+| **Atak Return (rzadko)** | Kilka Pokémonów PvP konkretnie chce ataku Return (np. Purified Sableye w Great League). Bardzo niszowe. |
+
+**Złota zasada:** Trzymaj Shadow do Raidów i zadawania obrażeń. Puryfikuj śmieci dla medalu, a egzemplarze z IV 13+ gatunków, których nie potrzebujesz jako Shadow atakujących, puryfikuj po darmowe Hundo.
+
+
+# Raidy
+
+Raidy to walki z bossami na czas w siłowniach. Walczysz z super-wzmocnionym Pokémonem w grupie (lub solo na łatwych tierach), a jeśli wygrasz, dostajesz szansę go złapać.
+
+## Tiery Raidów
+
+| Tier | Trudność | Czy da się solo? | Co dostajesz |
+|------|----------|-----------------|--------------|
+| 1 gwiazdka | Łatwy | Tak, bez problemu | Pospolite Pokémony, Rare Candy, TM-y |
+| 3 gwiazdki | Średni | Tak, z przyzwoitymi Counterami | Silniejsze Pokémony, więcej nagród |
+| 5 gwiazdek | Trudny | Nie — potrzeba 3–6+ trenerów | **Legendy** — główny powód robienia Raidów |
+| Mega | Trudny | Nie — potrzeba 3–6+ trenerów | Mega Energy do Mega Ewolucji |
+| Elite / Primal | Bardzo trudny | Nie — potrzeba 5–10+ | Primal Groudon/Kyogre, rzadkie legendy |
+
+## Wskazówki do Raidów
+
+- **Przewaga typów to wszystko.** Drużyna Pokémonów poziomu 25 z super effective atakami bije drużynę poziomu 40 z neutralnymi obrażeniami. Sprawdź typ bossa i weź Countery.
+- **Użyj Pokégenie** — aplikacja ma funkcję lobby Raidowego, która łączy cię ze zdalnymi raiderami z całego świata. Nie potrzeba lokalnej grupy.
+- **Remote Raid Passes** pozwalają dołączyć z dowolnego miejsca, ale kosztują monety i są ograniczone dziennie.
+- **Pokémony z Raidów mają poziom 20** (poziom 25 jeśli weather-boosted). Ich IV mają gwarantowane minimum 10 na każdej statystyce (floor 10/10/10).
+- **Oszczędzaj Rare Candy na legendy.** Nie da się ich łatwo łapać ani chodzić z nimi, więc Rare Candy to jedyny niezawodny sposób na ich wzmacnianie.
+
+
+# Harmonogram tygodniowy i eventy
+
+## Daily Discoveries (sezon Forever Forward)
+
+Każdy dzień tygodnia ma tematyczny bonus, aktywny od północy do północy czasu lokalnego. Ten harmonogram trwa od 2 czerwca do 8 września 2026.
+
+| Dzień | Event | Co robi | Warto? |
+|-------|-------|---------|--------|
+| Niedziela | **Scenic Sunday** | Więcej spawnów na Trasach, wzmocnione Incense na Trasach, zmniejszony dystans na cukierki Buddy na Trasach, do 3 spotkań z Mateo | Jeśli chodzisz Trasami — dobre na cukierki Buddy |
+| Poniedziałek | **Max Monday** | Power Spoty odnawiają się szybciej, więcej aktywnych Power Spotów (6:00 – 21:00) | Jeśli robisz Dynamax/Max Battles |
+| Wtorek | **Showcase Tuesday** | Możesz wejść do 5 Showcase na PokéStopach | Niski priorytet — Showcase to kosmetyka |
+| Środa | **Raid Hour** | Każda siłownia spawnuje aktualnego bossa 5-gwiazdkowego, 18:00–19:00 | **Tak** — najlepszy czas na Raidy z grupą |
+| Czwartek | **GO Battle Thursday** | Do ×4 Stardust z wygranych PvP, 10 zestawów dziennie (50 walk) zamiast 5 | **Tak** — ogromny dust jeśli w ogóle grasz PvP |
+| Piątek | **Friendship Friday** | 2 specjalne wymiany, lepsze szanse na Lucky, 10% mniejszy koszt dusty za wymianę, 2 gwarantowane XL candy z wymian (poziom 31+) | **Tak** — rób ważne wymiany w piątek |
+| Sobota | Community Day (miesięcznie) | Patrz niżej | **Zawsze** |
+
+**Ponadto co tydzień:**
+
+| Dzień | Godzina | Event |
+|-------|---------|-------|
+| Poniedziałek | 9:00 | Nagrody tygodniowe Adventure Sync (przejdź 25/50 km) |
+| Wtorek | 18:00–19:00 | Spotlight Hour (wyróżniony Pokémon + bonus) |
+
+## Community Days
+
+Comiesięczne eventy z jednym gatunkiem Pokémona przez trzy godziny. Dlaczego się liczą:
+
+- **Masowe spawny** — złap setki w trzy godziny
+- **Ekskluzywny atak** — wyewoluuj podczas okna eventowego (lub do 5 godzin po) żeby dostać specjalny Charged Move, który często jest najlepszym atakiem jaki może się nauczyć. Przegapisz okno, przegapisz atak.
+- **Bonus stardust/XP** — często ×3 stardust za łapanie. Dodaj Star Piece po ×4.5.
+
+**Zawsze graj Community Days.** Nawet jeśli nie obchodzi cię wyróżniony Pokémon, sam stardust jest wart tych trzech godzin.
+
+
+# System Buddy
+
+Ustaw Pokémona jako Buddy żeby zdobywać cukierki chodząc (1 km, 3 km, 5 km lub 20 km za cukierek w zależności od gatunku).
+
+## Poziomy Buddy
+
+Budujesz poziom Buddy przez codzienne interakcje (karm, baw się, walcz, rób zdjęcie).
+
+| Poziom | Wymagane serca | Nagroda |
+|--------|---------------|---------|
+| Good Buddy | 1 | Buddy widoczny na mapie |
+| Great Buddy | 70 | **Catch Assist** — Buddy odbija piłki, które by nie trafiły |
+| Ultra Buddy | 150 | Pamiątki (kosmetyczne) |
+| Best Buddy | 300 | **+1 poziom** gdy ustawiony jako aktywny Buddy |
+
+Best Buddy zajmuje ~30 dni codziennych interakcji. Bonus +1 poziomu ma znaczenie dla Pokémonów, które maxują się dokładnie na limicie CP — dodatkowy poziom może pchnąć je powyżej normalnie osiągalnego.
+
+**Wskazówka:** Możesz swobodnie zmieniać Buddy. Zdobądź dzienne serca na tym, którego levelujesz, a potem zmień z powrotem na Buddy do chodzenia po cukierki za dystans.
+
+
+# Przyjaciele i wymiana
+
+## Poziomy przyjaźni
+
+Dodawaj znajomych kodami trenerów. Zwiększaj przyjaźń wysyłając prezenty, wymieniając, robiąc Raidy razem lub walcząc.
+
+| Poziom | Interakcje | Bonus |
+|--------|-----------|-------|
+| Good Friend | 1 dzień | Można wymieniać; +1 piłka z Raidu |
+| Great Friend | 7 dni | +2 piłki z Raidu; zniżka na wymianę |
+| Ultra Friend | 30 dni | +4 piłki z Raidu; duża zniżka na wymianę |
+| Best Friend | 90 dni | +5 piłek z Raidu; max zniżka na wymianę; kwalifikacja do **Lucky Friend** |
+
+**Włączenie Lucky Egg tuż przed osiągnięciem Best Friend** daje 200,000 XP (100k bazowego × 2). Skoordynuj się ze znajomym żeby otworzyć prezent w tym samym momencie z włączonym Lucky Egg. To jeden z najszybszych sposobów na XP w grze.
+
+## Wymiana
+
+Wymiana kosztuje stardust. Koszt zależy od poziomu przyjaźni i tego, czy Pokémon jest nowy w Pokédexie odbiorcy.
+
+Kluczowe zasady:
+
+- **Każdy Pokémon może być wymieniony tylko raz.** Kiedykolwiek. Żadnych ponownych wymian. To znaczy, że Lucky Pokémony (które pochodzą z wymian) nie mogą być wymienione ponownie.
+- **IV się rerollują przy wymianie.** Odbiorca dostaje nowe losowe IV. Wyższa przyjaźń = wyższy floor IV.
+- **Jeden Special Trade dziennie.** Legendy, Shiny i nowe wpisy w Pokédexie liczą się jako „specjalne" wymiany.
+
+## Lucky Pokémony
+
+Lucky Pokémon ma floor IV 12/12/12 i kosztuje **połowę stardustu** do wzmacniania. Można je dostać tylko z wymiany — jest losowa szansa że dowolna wymiana wylosuje Lucky, ale niektóre rzeczy zwiększają szanse:
+
+1. **Lucky Friends** — gdy jesteście Best Friends, każda codzienna interakcja ma małą szansę na włączenie statusu Lucky Friend. Wasza następna wymiana jest gwarantowanie Lucky.
+2. **Stare Pokémony** — wymiana Pokémona złapanego w **2020 lub wcześniej** gwarantuje Lucky wymianę. Każdy gracz ma **45 gwarantowanych Lucky wymian** w sumie — jak je zużyjesz, nie możesz triggerować tego ze swojej strony, ale twój partner wymiany nadal może triggerować to ze swojej jeśli ma dostępne. Limit liczy się dla obu graczy w każdej wymianie, nawet jeśli tylko jeden wysłał starego Pokémona. Nie ma w grze trackera ile już zużyłeś.
+3. **Losowo** — każda wymiana ma małą bazową szansę na Lucky niezależnie od powyższego.
+
+Jeśli budujesz coś drogiego (legenda do poziomu 50), zdobycie Lucky wersji najpierw oszczędza setki tysięcy dustu.
+
+
+# Jajka
+
+Jajka dostajesz z kręcenia PokéStopów, prezentów, nagród Adventure Sync i specjalnych zadań.
+
+## Tiery jajek
+
+| Dystans | Źródło | Co jest w środku |
+|---------|--------|-----------------|
+| 2 km | PokéStopy | Pospolite gatunki, głównie wypełniacze |
+| 5 km | PokéStopy | Mieszana jakość |
+| 7 km | Prezenty od znajomych | Regionalne Pokémony, baby Pokémony, zależy od eventu |
+| 10 km | PokéStopy | Rzadkie gatunki, więcej stardustu przy wylęgu |
+| 12 km | Liderzy Rocket | Gatunki dostępne jako Shadow, dobry dust |
+| 5/10 km | Adventure Sync (pon. 9:00) | Ekskluzywna pula — często ma rzadkie wylęgi |
+
+## Wskazówki do jajek
+
+- Jajka używają twojego **nieskończonego inkubatora** (pomarańczowy) lub **inkubatorów z limitem użyć** (niebieski, 3 użycia). Używaj nieskończonego na jajka 2 km (szybki obrót), oszczędzaj limitowane na 10 km i 12 km.
+- Gatunek i IV jajka są ustalane **gdy podnosisz jajko**, nie gdy się wylęga. Wyczyszczenie starych jajek przed eventem sprawia, że nowe jajka z eventowej puli wypełniają sloty.
+- Wylęgnięte Pokémony mają **floor IV 10/10/10** — tak samo jak złapane z Raidów. To przyzwoite źródło Pokémonów z wysokimi IV.
+- Adventure Sync musi być włączony żeby dystans się liczył z zamkniętą aplikacją.
+
+
+# Zasoby i ekonomia
+
+## Stardust
+
+Uniwersalna waluta. Potrzebujesz go do wzmacniania, drugich Charged Move i wymiany.
+
+**Jak go zdobywać:**
+
+- Łapanie Pokémonów (100–500 za złapanie, +25% weather boost)
+- Wylęganie jajek (jajka 10 km dają najwięcej)
+- Nagrody z setów GBL (Go Battle League)
+- Tygodniowe nagrody Adventure Sync (50 km = duża wypłata dustu)
+- Star Pieces (×1.5 stardust na 30 min) — stackuj podczas Community Days lub eventów z podwójnym stardustem
+
+**Jak go nie marnować:**
+
+- Nie wzmacniaj niczego bez konkretnego celu (drużyna Raidowa, drużyna PvP)
+- Drugie Charged Move kosztuje 10,000–100,000 dustu w zależności od gatunku
+- Lucky Pokémony kosztują połowę za wzmacnianie — zdobądź Lucky wersję przed inwestowaniem jeśli to możliwe
+- Największy pochłaniacz stardustu to wzmacnianie do poziomu 50 z XL Candy. Jeden Pokémon z 40→50 kosztuje ~300,000 dustu.
+
+## Cukierki (Candy)
+
+Specyficzne dla gatunku. Potrzebne do ewolucji i wzmacniania.
+
+- **Zwykłe cukierki:** złapanie (3), transfer (1), wylęg, spacer z Buddy, Rare Candy
+- **XL Candy:** zdobywane od poziomu 31+. Potrzebne do wzmacniania powyżej poziomu 40. Źródła: łapanie (szansa losowa), transfer, spacer, wymiana, konwersja zwykłych cukierków (100 zwykłych → 1 XL).
+
+**Rare Candy** (z Raidów i GBL) konwertuje się na cukierki dowolnego gatunku. Oszczędzaj na legendy — nie da się ich łatwo łapać ani chodzić z nimi.
+
+## Przedmioty: co trzymać, a co wyrzucać
+
+| Trzymaj | Wyrzuć najpierw |
+|---------|----------------|
+| Ultra Balle | Zwykłe Potiony |
+| Pinap Berries | Zwykłe Revive |
+| Golden Razz Berries | Nanab Berries |
+| Max Potiony, Max Revive | Zwykłe Poké Balle (jeśli plecak jest pełny) |
+| Star Pieces, Lucky Eggs | Lure (sytuacyjne) |
+| Raid Passy, TM-y | |
+
+
+# Słowniczek
+
+| Termin | Znaczenie |
+|--------|-----------|
+| **Hundo** | Pokémon z IV 15/15/15 (100% / 4 gwiazdki) |
+| **Nundo** | Pokémon z IV 0/0/0 (kolekcjonerzy to uwielbiają) |
+| **Shiny** | Rzadka wersja kolorystyczna, czysto kosmetyczna. Gwarantowane złapanie z Raidów i Rocket — dzikie Shiny mogą nadal uciec |
+| **Shundo** | Shiny Hundo (Shiny + 15/15/15). Ekstremalnie rzadkie — materiał na flexowanie |
+| **Shadow** | Pokémon z Rocketa, ×1.2 ataku / ×0.833 obrony |
+| **Purified** (oczyszczony) | Były Shadow z +2 IV, tańszy do wzmacniania, może zrobić Mega Ewolucję |
+| **Lucky** (szczęśliwy) | Pokémon z wymiany z floor IV 12/12/12, 50% zniżki na wzmacnianie |
+| **STAB** | Same Type Attack Bonus — ×1.2 obrażeń gdy typ ataku pasuje do typu Pokémona |
+| **CMP** | Charged Move Priority — gdy obaj gracze odpalają Charged Move jednocześnie, wyższy Atak idzie pierwszy |
+| **Farming down** | Używanie tylko Fast Move do pokonania osłabionego Pokémona, oszczędzając energię na następnego |
+| **Spice pick** | Pokémon spoza mety używany żeby zaskoczyć przeciwników |
+| **XL Candy** | Specjalne cukierki (od poziomu 31+) potrzebne do wzmacniania powyżej poziomu 40 |
+| **CPM** | CP Multiplier — współczynnik skalowania bazujący na poziomie w formule CP |

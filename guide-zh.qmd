@@ -1,0 +1,682 @@
+---
+title: "Pokémon GO 新手指南"
+subtitle: "我为朋友Jay写的入门指南"
+author: "Katomil"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: darkly
+    smooth-scroll: true
+    code-fold: true
+---
+
+
+# 捕捉
+
+每次捕捉都能获得星尘、经验值和糖果。这是游戏的核心循环——其他所有玩法（Raid、PvP、交换）都建立在你捉了大量宝可梦的基础上。
+
+## 技巧
+
+- **Curveball（曲线球）。** 扔球之前先旋转球。每次 Curveball 都有 **1.7 倍捕获率加成**——比用 Razz Berry（1.5 倍）还高。如果你还没养成每次都扔曲线球的习惯，现在就开始。
+- **锁圈法。** 按住球，等彩色圆圈缩到你想要的大小，然后*松手*，等宝可梦发动攻击。在攻击动画期间扔球——圆圈会锁定在那个大小不变。这就是高手能稳定打出 Excellent 的秘诀。
+- **Nice / Great / Excellent。** 球落在彩色圆圈内会获得额外经验和捕获率加成。圆圈越小 = 越难命中但加成越高。先瞄准 Great——Excellent 熟练了自然就来了。
+
+## 捕获率加成
+
+所有加成是相乘的。把技巧 + Berry + 球的类型叠在一起，就能抓到那些看起来用普通精灵球根本抓不住的东西。
+
+| 方法 | 加成倍率 |
+|--------|-----------|
+| Curveball | 1.7× |
+| Nice throw | 1.0–1.3× |
+| Great throw | 1.3–1.7× |
+| Excellent throw | 1.7–2.0× |
+| Razz Berry | 1.5× |
+| Silver Pinap Berry | 1.8× |
+| Golden Razz Berry | 2.5× |
+| Great Ball（超级球） | 1.5× |
+| Ultra Ball（高级球） | 2.0× |
+
+**实际计算：** Curveball Excellent + Golden Razz + Ultra Ball = 1.7 × 2.0 × 2.5 × 2.0 = **17 倍捕获率**。技巧比道具重要得多。
+
+## Berry 一览
+
+| Berry | 效果 | 什么时候用 |
+|-------|--------|-------------|
+| Razz Berry | 1.5× 捕获率 | 默认的"我想抓住它"Berry |
+| Golden Razz Berry | 2.5× 捕获率 | 传说宝可梦、稀有野生、Shiny——任何你*绝不能让它跑掉*的 |
+| Pinap Berry | 捕获后糖果 ×2 | 你需要糖果的宝可梦都用（进化、强化） |
+| Silver Pinap Berry | 1.8× 捕获率 + 2.33× 糖果 | 两全其美——留给既稀有又需要糖果的宝可梦 |
+| Nanab Berry | 让宝可梦安静下来 | 几乎没用。喂给道馆防守宝可梦换星尘，或者直接扔掉 |
+
+**小贴士：** **Raid 和 Team GO Rocket** 出的 Shiny 是 100% 必捉的——用 Pinap 拿双倍糖果，别浪费 Razz。但野外遇到的 Shiny 是可以跑的，所以对它们用 Golden Razz。
+
+## 快速捕捉法
+
+这个技巧可以跳过大约 3 秒的捕捉动画。在 Community Day 或刷怪的时候能省下大量时间。
+
+1. 进入捕捉界面
+2. 用你的**副手**，把 Berry/球选择栏拖到一边并**按住不放**
+3. 用你的**主手**，正常扔球（照样 Curveball）
+4. 球碰到宝可梦后，**松开**副手，点击**逃跑按钮**（左上角）
+5. 捕捉在服务器端处理——如果成功了，宝可梦会从地图上消失。如果没抓到，它还在那里，再点进去就好。
+
+需要练几次才能掌握节奏，但一旦学会了就再也回不去了。
+
+## 捕捉奖励
+
+**每次捕捉的星尘：**
+
+| 捕捉类型 | 星尘 |
+|-----------|----------|
+| 基础捕捉 | 100 |
+| 天气加成 | 125 |
+| 二阶进化（如 Haunter） | 300 |
+| 三阶进化（如 Gengar） | 500 |
+| Star Piece 生效时 | 以上全部 × 1.5 |
+
+**经验值加成（全部可叠加）：**
+
+| 行为 | 经验值 |
+|--------|----------|
+| 基础捕捉 | 100 |
+| Curveball | +20 |
+| Nice throw | +20 |
+| Great throw | +100 |
+| Excellent throw | +1,000 |
+| 一球捕获 | +50 |
+| 新图鉴登录 | +1,000 |
+| Lucky Egg 生效时 | 以上全部 × 2 |
+
+## 天气与冒险效果
+
+**天气加成**同时做三件事：
+
+1. 匹配天气的宝可梦属性出现得更频繁
+2. 这些宝可梦的**等级比正常高 5 级**（这很重要——看下面的训练师等级部分）
+3. 捕捉它们多给 **25% 星尘**（125 而不是 100）
+
+游戏内的天气指示器（右上角）会显示哪些属性被加成。如果显示"Windy（大风）"，龙/飞行/超能力属性被加成，出现的等级更高，星尘也更多。
+
+**Adventure Sync** 在你关掉 app 的情况下也能通过手机的健康 app（Google Fit / Apple Health）追踪步行距离。它影响的东西：
+
+- **孵蛋** ——关掉 app 也算距离
+- **Buddy 糖果** ——同上，关掉 app 也算步行距离
+- **每周奖励**（周一早上 9 点）：走 25km 拿 5km 蛋 + 星尘包；走 50km 拿 10km 蛋 + 更多星尘 + Rare Candy。永远以 50km 为目标。
+
+**Incense（熏香）** 静止时每 ~5 分钟出一只宝可梦，走动时每 ~1 分钟出一只（或每 200 米，取先到者）。在野生宝可梦少的地方有用，城市里不太值得。**每日冒险熏香**（免费，15 分钟）只有在移动时才有效——保持走路的话大概每 ~30 秒出一只。
+
+**Lure（诱饵模块）** 装在 PokéStop 上，吸引宝可梦 30 分钟。特殊类型的 Lure（冰川、苔藓、磁铁、雨水）吸引特定属性并且可以触发某些进化。
+
+
+# 训练师等级
+
+你的训练师等级不只是一个数字——它决定了你在野外能遇到什么，以及你能把宝可梦强化到多高。
+
+## 野生宝可梦等级上限
+
+每只野生宝可梦都有一个等级（隐藏的，但决定了它的 CP）。它能出现的等级受限于**你的训练师等级**，有一个硬性上限：
+
+| 你的训练师等级 | 野生宝可梦最高等级 | 天气加成时 |
+|-------------------|----------------------|-------------------|
+| 1–29 | 和你的等级相同 | 你的等级 + 5 |
+| 30+ | 30 | 35 |
+
+到 30 级之后，所有训练师看到的野生宝可梦等级和 IV 都一样。30 级之前，一个 15 级训练师和一个 25 级训练师在同一个 PokéStop 看到同一种宝可梦，但 25 级训练师看到的那只更强。
+
+**天气加成额外 +5 级。** 这在前期非常有价值——一个 20 级的训练师能遇到 25 级的天气加成宝可梦，这在正常情况下超过了他的等级上限。随时关注天气加成。
+
+## 强化上限
+
+你可以把宝可梦强化到**你的训练师等级 + 10**，游戏最高上限是 50 级（Best Buddy 加成可达 51 级）。强化超过 40 级需要 XL Candy，训练师等级 31 开始才能获得。
+
+## 关键等级节点
+
+| 等级 | 解锁内容 |
+|-------|-------------|
+| 20 | Raid 捕获的宝可梦是 20 级（天气加成时 25 级） |
+| 30 | 野生宝可梦等级封顶——你现在看到的和所有人一样了 |
+| 31 | 开始掉落 XL Candy（40→50 级强化需要） |
+| 35 | 可以通过 Wayfarer 提名新 PokéStop（通过一个小测验后） |
+| 40 | XL Candy 掉落率达到最高 |
+
+**实用建议：** 冲到 30 级是值得的，因为你开始看到最高等级的野生宝可梦。30 之后继续升级仍然有用（更高的强化上限、XL Candy），但没那么紧迫了。
+
+
+# 理解属性值
+
+## CP（战斗力）
+
+每只宝可梦头上的那个数字。它把三个隐藏属性合成一个数字。CP 高一般意味着更强，但 **CP 会骗人**——它不能告诉你一只宝可梦到底*好不好*，只是数值大而已。
+
+### CP 到底是怎么算的
+
+$$\text{CP} = \left\lfloor \frac{(\text{Atk}_\text{base} + \text{Atk}_\text{IV}) \times \sqrt{\text{Def}_\text{base} + \text{Def}_\text{IV}} \times \sqrt{\text{Sta}_\text{base} + \text{Sta}_\text{IV}}} {10} \times \text{CPM}^2 \right\rfloor$$
+
+三个组成部分：
+
+1. **基础属性** ——每个物种固定不变。Machamp 的基础攻击是 234，Blissey 的是 129。永远不会变。
+2. **IV** ——你的随机掷骰，每项属性 0–15。直接加到基础属性上。
+3. **CPM（CP 乘数）** ——一个根据宝可梦等级（1–51）变化的缩放因子。等级越高 = CPM 越高 = CP 越高。
+
+关键点：**攻击是直接进入公式的，但防御和耐力是以平方根的形式进入的。** 这意味着 +1 攻击 IV 对 CP 的膨胀效果比 +1 防御或 +1 耐力大。这在后面讲 PvP 的时候很重要。
+
+## IV（个体值）
+
+每只宝可梦有三个隐藏属性，每个在 0 到 15 之间随机：
+
+- **攻击 IV**（0–15）
+- **防御 IV**（0–15）
+- **HP / 耐力 IV**（0–15）
+
+捕获时确定，永远无法改变。15/15/15 叫做 "Hundo"（100%，四星）。在游戏里点宝可梦 → **鉴定**就能看到。
+
+### 数学：IV 到底有多重要？
+
+IV 是在一个通常已经 150–250+ 的基础属性上加 0–15 点。让我们算算这到底改变了多少。
+
+**Machamp** ——基础属性：234 攻 / 159 防 / 207 耐
+
+- 0 攻击 IV → 总攻击 = 234。15 攻击 IV → 总攻击 = 249。
+- 差异：15/234 = **6.4% 攻击提升**（来自完美 IV）。
+
+**Blissey** ——基础属性：129 攻 / 169 防 / 496 耐
+
+- 0 攻击 IV → 总攻击 = 129。15 攻击 IV → 总攻击 = 144。
+- 差异：15/129 = **11.6% 攻击提升**（来自完美 IV）。
+- 但耐力呢？15/496 = **3.0%**。她的 HP 基础值太高了，IV 几乎没什么影响。
+
+**规律：** IV 在基础属性最低的地方影响最大。一个 230+ 基础攻击的宝可梦，IV 就是噪声。一个 120 基础攻击的宝可梦，IV 才是真正的变数。
+
+```{python}
+#| label: fig-iv-impact
+#| fig-cap: "Same 15 IV points, very different impact. IVs are a bigger deal where the base stat is low."
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+pokemon = {
+    'Machamp': {'atk': 234, 'def': 159, 'sta': 207},
+    'Blissey': {'atk': 129, 'def': 169, 'sta': 496},
+}
+
+fig, ax = plt.subplots(figsize=(10, 5))
+
+x = np.arange(3)
+width = 0.35
+stats = ['Attack', 'Defense', 'Stamina']
+
+machamp_pct = [15/234*100, 15/159*100, 15/207*100]
+blissey_pct = [15/129*100, 15/169*100, 15/496*100]
+
+bars1 = ax.bar(x - width/2, machamp_pct, width, label='Machamp (234/159/207)',
+               color='#e74c3c', edgecolor='white', linewidth=0.5)
+bars2 = ax.bar(x + width/2, blissey_pct, width, label='Blissey (129/169/496)',
+               color='#ff69b4', edgecolor='white', linewidth=0.5)
+
+for bar, val in zip(bars1, machamp_pct):
+    ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+            f'{val:.1f}%', ha='center', va='bottom', fontsize=11, fontweight='bold')
+for bar, val in zip(bars2, blissey_pct):
+    ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+            f'{val:.1f}%', ha='center', va='bottom', fontsize=11, fontweight='bold')
+
+ax.set_ylabel('% Stat Increase from 15 IV', fontsize=12)
+ax.set_title('IV Impact: 15 IV as % of Total Stat', fontsize=14, fontweight='bold')
+ax.set_xticks(x)
+ax.set_xticklabels(stats, fontsize=12)
+ax.legend(fontsize=11)
+ax.set_ylim(0, max(max(machamp_pct), max(blissey_pct)) + 2)
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+plt.tight_layout()
+plt.show()
+```
+
+### 再看看实际伤害
+
+真正的问题不是"属性变了多少？"——而是"它改变了我造成的伤害吗？"Pokémon GO 的伤害公式是：
+
+$$\text{Damage} = \left\lfloor \frac{1}{2} \times \text{Power} \times \frac{\text{Atk}_\text{effective}}{\text{Def}_\text{effective}} \times \text{STAB} \times \text{Effectiveness} \right\rfloor + 1$$
+
+那个取整（向下取整）是关键——微小的属性差异经常被完全抹平。
+
+```{python}
+#| label: fig-damage-math
+#| fig-cap: "Three scenarios showing what actually changes damage output: IVs barely move the needle, type effectiveness dominates everything."
+
+import matplotlib.pyplot as plt
+import math
+
+cpm_40 = 0.7903
+
+# Machamp using Counter (12 power, Fighting) vs Tyranitar (Dark/Rock)
+# Tyranitar: base def 207
+machamp_atk_15 = (234 + 15) * cpm_40   # 196.8
+machamp_atk_0  = (234 + 0)  * cpm_40   # 184.9
+ttar_def = (207 + 15) * cpm_40          # 175.4
+
+stab = 1.2        # Counter is Fighting, Machamp is Fighting
+se = 1.6           # Fighting vs Dark/Rock
+neutral = 1.0
+power_counter = 12
+power_rock_slide = 50  # neutral move for comparison
+
+def damage(power, atk, defn, stab_mult, eff):
+    return math.floor(0.5 * power * (atk / defn) * stab_mult * eff) + 1
+
+# Scenario 1: Perfect IVs vs zero IVs (same move, same matchup)
+dmg_15iv = damage(power_counter, machamp_atk_15, ttar_def, stab, se)
+dmg_0iv  = damage(power_counter, machamp_atk_0,  ttar_def, stab, se)
+
+# Scenario 2: Super effective vs neutral (same pokemon, same IVs)
+dmg_se      = damage(power_counter, machamp_atk_0, ttar_def, stab, se)
+# Use Rock Slide (Rock, 50 power) — not STAB, not SE vs Tyranitar (resisted actually)
+# Let's instead compare: Counter (Fighting, SE) vs a hypothetical neutral fast move
+dmg_neutral = damage(power_counter, machamp_atk_15, ttar_def, stab, neutral)
+
+# Scenario 3: Shadow vs normal (15 IV both)
+shadow_atk = machamp_atk_15 * 1.2
+dmg_shadow = damage(power_counter, shadow_atk, ttar_def, stab, se)
+dmg_normal = damage(power_counter, machamp_atk_15, ttar_def, stab, se)
+
+fig, axes = plt.subplots(1, 3, figsize=(14, 5))
+
+# Plot 1: IV comparison
+colors1 = ['#ef4444', '#fbbf24']
+bars1 = axes[0].bar(['15/15/15\nIVs', '0/0/0\nIVs'], [dmg_15iv, dmg_0iv], color=colors1,
+                     edgecolor='white', linewidth=0.5, width=0.5)
+for bar, val in zip(bars1, [dmg_15iv, dmg_0iv]):
+    axes[0].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+                 str(val), ha='center', va='bottom', fontsize=16, fontweight='bold')
+axes[0].set_title('IVs: 15 vs 0 Attack\n(Counter vs Tyranitar)', fontsize=11, fontweight='bold')
+axes[0].set_ylabel('Damage per Hit', fontsize=11)
+pct_diff_iv = abs(dmg_15iv - dmg_0iv) / dmg_0iv * 100
+axes[0].text(0.5, 0.5, f'Δ = {pct_diff_iv:.0f}%', transform=axes[0].transAxes,
+             ha='center', fontsize=14, color='gray', fontstyle='italic')
+
+# Plot 2: Type effectiveness
+colors2 = ['#22c55e', '#94a3b8']
+bars2 = axes[1].bar(['Super\nEffective', 'Neutral'], [dmg_se, dmg_neutral], color=colors2,
+                     edgecolor='white', linewidth=0.5, width=0.5)
+for bar, val in zip(bars2, [dmg_se, dmg_neutral]):
+    axes[1].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+                 str(val), ha='center', va='bottom', fontsize=16, fontweight='bold')
+axes[1].set_title('Type: Super Effective vs Neutral\n(0 IV SE vs 15 IV Neutral)', fontsize=11, fontweight='bold')
+pct_diff_type = (dmg_se - dmg_neutral) / dmg_neutral * 100
+axes[1].text(0.5, 0.5, f'Δ = {pct_diff_type:.0f}%', transform=axes[1].transAxes,
+             ha='center', fontsize=14, color='gray', fontstyle='italic')
+
+# Plot 3: Shadow vs normal
+colors3 = ['#8b5cf6', '#3b82f6']
+bars3 = axes[2].bar(['Shadow', 'Normal'], [dmg_shadow, dmg_normal], color=colors3,
+                     edgecolor='white', linewidth=0.5, width=0.5)
+for bar, val in zip(bars3, [dmg_shadow, dmg_normal]):
+    axes[2].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.2,
+                 str(val), ha='center', va='bottom', fontsize=16, fontweight='bold')
+axes[2].set_title('Shadow Bonus\n(15/15/15 both)', fontsize=11, fontweight='bold')
+pct_diff_shadow = (dmg_shadow - dmg_normal) / dmg_normal * 100
+axes[2].text(0.5, 0.5, f'Δ = {pct_diff_shadow:.0f}%', transform=axes[2].transAxes,
+             ha='center', fontsize=14, color='gray', fontstyle='italic')
+
+for ax in axes:
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.set_ylim(0, max(dmg_shadow, dmg_se) * 1.2)
+
+fig.suptitle('What Actually Changes Your Damage — Machamp Counter vs Tyranitar (Level 40)',
+             fontsize=13, fontweight='bold', y=1.02)
+plt.tight_layout()
+plt.show()
+```
+
+**结论：** 一只 0 IV 的 Machamp 用克制招式打出的伤害，比 15 IV 的 Machamp 用中立招式打的还高。先选对宝可梦和招式——IV 只是最后 5% 的优化。
+
+### 怎么查 IV
+
+游戏内：点宝可梦 → **鉴定**。柱状图显示攻击 / 防御 / HP。三项全满 = Hundo。
+
+更详细的：用 **PokeGenie** 或 **CalcyIV**（手机 app）。它们扫描你的屏幕，告诉你精确的 IV 和 PvP 排名（在 4096 种可能的 IV 组合中排第几）。
+
+先别纠结 IV——正确物种的排名 500 宝可梦，比错误物种的排名 1 宝可梦强得多。
+
+
+# 属性克制
+
+这是最重要的战斗机制。正如上面的伤害图表所示，属性克制的价值超过 IV 和 Shadow 加成*加在一起*。
+
+每只宝可梦有一到两个属性。每个招式有一个属性。如果你的招式属性克制对方的属性，你就造成更多伤害。
+
+## 关键克制关系
+
+| 攻击属性 | 克制 | 这个属性怕什么 |
+|---------------|---------------|--------------|
+| 水 | 火、地面、岩石 | 草、电 |
+| 火 | 草、虫、冰、钢 | 水、地面、岩石 |
+| 草 | 水、地面、岩石 | 火、冰、毒、飞行、虫 |
+| 电 | 水、飞行 | 地面（免疫！） |
+| 格斗 | 一般、冰、岩石、恶、钢 | 超能力、飞行、妖精 |
+| 地面 | 火、电、岩石、毒、钢 | 水、草、冰 |
+| 冰 | 草、地面、飞行、龙 | 火、格斗、岩石、钢 |
+| 龙 | 龙 | 龙、冰、妖精（免疫！） |
+| 妖精 | 格斗、龙、恶 | 毒、钢 |
+| 钢 | 冰、岩石、妖精 | 火、格斗、地面 |
+
+不用把全部 18 个属性都背下来。先从前五行开始——它们覆盖了你大部分会遇到的情况。
+
+## 伤害倍率
+
+| 克制关系 | 倍率 |
+|---------|-----------|
+| 效果拔群 | **1.6×** |
+| 效果不佳 | **0.625×** |
+| 双重克制（两个属性都弱） | **2.56×** |
+| 双重抵抗（两个属性都抗） | **0.391×** |
+
+Pokémon GO 里没有真正的免疫——地面对飞行（在主系列游戏里免疫）在这里只是三重抵抗（0.391×），不是零。
+
+**STAB（本属性加成）：** 如果*招式*的属性和*宝可梦*的属性一致，伤害获得 **1.2 倍加成**。一只水属性宝可梦用水属性招式就有 STAB。这和克制可以叠加——一只水属性宝可梦用水属性招式打火属性宝可梦 = 1.2 × 1.6 = **1.92×**。
+
+
+# Shadow 和 Purified 宝可梦
+
+打败 Team GO Rocket 的小兵、干部和 Giovanni 后会掉落 **Shadow（暗影）宝可梦**。
+
+## Shadow 加成
+
+Shadow 宝可梦在最终属性上有固定倍率：
+
+- Shadow 攻击 = 普通攻击 × **1.2**（多造成 20% 伤害）
+- Shadow 防御 = 普通防御 × **0.833**（多承受约 20% 伤害）
+
+玻璃炮的取舍：打得更疼，死得更快。
+
+### 数学：20% 到底有多大
+
+把 Shadow 加成和 IV 放在一起比较一下规模。
+
+**Machamp 40 级**（CPM = 0.7903）：
+
+| 版本 | 有效攻击力 | 与普通版的差异 |
+|---------|-----------------|----------------------|
+| 普通，15 攻 IV | (234 + 15) × 0.79 = 196.8 | 基准线 |
+| 普通，0 攻 IV | (234 + 0) × 0.79 = 184.9 | −6.0% |
+| **Shadow，0 攻 IV** | (234 + 0) × 0.79 × 1.2 = **221.9** | **+12.8%** |
+| **Shadow，15 攻 IV** | (234 + 15) × 0.79 × 1.2 = **236.1** | **+20.0%** |
+
+一只*零*攻击 IV 的 Shadow Machamp 依然比*完美* IV 的普通 Machamp 打得更疼。Shadow 加成的影响大约是攻击 IV 从 0 到 15 的 3 倍。IV 是蛋糕上的樱桃，Shadow 才是多加的那一大勺。
+
+```{python}
+#| label: fig-shadow-comparison
+#| fig-cap: "Shadow vs Normal vs Purified — Machamp with 13/13/13 IVs (becomes 15/15/15 after purifying). Level 40."
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+base_atk, base_def, base_sta = 234, 159, 207
+iv = 13
+pure_iv = 15
+cpm = 0.7903
+
+forms = ['Shadow\n(13/13/13)', 'Normal\n(13/13/13)', 'Purified\n(15/15/15)']
+colors = ['#8b5cf6', '#3b82f6', '#22c55e']
+
+vals = {
+    'Attack': [
+        (base_atk + iv) * cpm * 1.2,
+        (base_atk + iv) * cpm,
+        (base_atk + pure_iv) * cpm,
+    ],
+    'Defense': [
+        (base_def + iv) * cpm * 0.833,
+        (base_def + iv) * cpm,
+        (base_def + pure_iv) * cpm,
+    ],
+    'Stamina': [
+        int((base_sta + iv) * cpm),
+        int((base_sta + iv) * cpm),
+        int((base_sta + pure_iv) * cpm),
+    ],
+}
+
+fig, axes = plt.subplots(1, 3, figsize=(13, 5))
+
+for ax, (stat_name, stat_vals) in zip(axes, vals.items()):
+    bars = ax.bar(forms, stat_vals, color=colors, edgecolor='white', linewidth=0.5)
+    for bar, val in zip(bars, stat_vals):
+        label = f'{val:.1f}' if isinstance(val, float) else str(val)
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
+                label, ha='center', va='bottom', fontsize=11, fontweight='bold')
+    ax.set_title(stat_name, fontsize=13, fontweight='bold')
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ymin = min(stat_vals) * 0.88
+    ymax = max(stat_vals) * 1.08
+    ax.set_ylim(ymin, ymax)
+
+fig.suptitle('Shadow vs Normal vs Purified — Machamp at Level 40',
+             fontsize=14, fontweight='bold', y=1.02)
+plt.tight_layout()
+plt.show()
+```
+
+注意：Purified（15/15/15）的基础属性比 Normal（13/13/13）*稍高*一点，因为 IV +2 的加成，但远不及 Shadow 的攻击力。净化等于拿巨大的伤害加成换了一点点属性提升和更便宜的强化费用。
+
+## 净化会怎样
+
+- **移除** Shadow 加成（攻击回到 1.0×，防御回到 1.0×）
+- **每项 IV +2**（最高 15）
+- **减少** 强化星尘和糖果消耗 20%
+- 宝可梦等级变为 25（如果已经更高则不变）
+- 学会蓄力招式 **Return**（基本没用，但在 PvP 里有少数利基用途）
+
+## 什么时候该净化
+
+**默认：别净化。** 20% 的伤害加成是永久的、不可逆的。但确实有合理的例外：
+
+| 净化的理由 | 解释 |
+|-----------------|-------------|
+| **IV 是 13/13/13 或更高** | +2 到每项 → 变成 15/15/15 Hundo。如果这个物种本身就不适合当 Shadow 输出手（比如 Golbat、Raticate），拿个免费 Hundo 很值。 |
+| **净化奖章** | 奖章记录总净化次数（铜 → 铂金）。用**便宜的净化**来刷——1 糖果物种比如 Zubat、Aron、Starly。永远不要为了奖章净化好的 Shadow。 |
+| **Mega 或 Primal 进化** | Shadow 宝可梦**不能** Mega 进化或 Primal 进化。如果你需要 Mega Gengar、Mega Charizard、Primal Groudon——你*必须*先净化。这是净化强力 Shadow 的唯一正当理由。 |
+| **Return 招式（少见）** | 少数 PvP 宝可梦特别需要 Return 这个招式（比如 Purified Sableye 在 Great League）。非常小众。 |
+
+**黄金法则：** Shadow 留着打 Raid 和输出。净化垃圾刷奖章，净化 13+ IV 的、不需要当 Shadow 输出的物种，换个免费 Hundo。
+
+
+# Raid
+
+Raid 是道馆里的限时 Boss 战。你和一群人（或者简单难度自己单刷）打一只超强宝可梦，赢了就有机会捕捉它。
+
+## Raid 难度
+
+| 级别 | 难度 | 能单刷吗？ | 能拿到什么 |
+|------|-----------|---------------|-------------|
+| 1 星 | 简单 | 可以，轻松 | 普通宝可梦、Rare Candy、技能机 |
+| 3 星 | 中等 | 可以，需要不错的克制阵容 | 更强的宝可梦、更多奖励 |
+| 5 星 | 困难 | 不行——需要 3–6+ 个训练师 | **传说宝可梦**——打 Raid 的主要目的 |
+| Mega | 困难 | 不行——需要 3–6+ 个训练师 | Mega 能量（用于 Mega 进化） |
+| Elite / Primal | 非常困难 | 不行——需要 5–10+ 个 | Primal Groudon/Kyogre，稀有传说 |
+
+## Raid 小贴士
+
+- **属性克制就是一切。** 一队 25 级的克制宝可梦打得过一队 40 级的中立伤害宝可梦。查好 Boss 的属性，带上 Counter。
+- **用 Pokégenie** ——这个 app 有 Raid 大厅功能，可以和全球的远程玩家匹配。不需要本地群组。
+- **Remote Raid Pass（远程突袭入场券）** 可以在任何地方加入，但需要金币而且每天限量。
+- **Raid 捕获的宝可梦是 20 级**（天气加成时 25 级）。IV 保底 10+（下限 10/10/10）。
+- **Rare Candy 留给传说宝可梦。** 你没法轻易抓到或走路获得它们的糖果，所以 Rare Candy 是强化它们最靠谱的方式。
+
+
+# 每周安排 & 活动
+
+## 每日发现（Forever Forward 赛季）
+
+每周每天都有主题加成，从当地时间午夜到午夜。这个时间表从 2026 年 6 月 2 日运行到 9 月 8 日。
+
+| 日 | 活动 | 内容 | 值得参与吗？ |
+|-----|-------|-------------|-----------|
+| 周日 | **Scenic Sunday** | 路线上更多野生、路线上 Incense 加成、路线上 Buddy 糖果距离减少、最多 3 次 Mateo 遭遇 | 如果你走路线——适合刷 Buddy 糖果 |
+| 周一 | **Max Monday** | Power Spots 刷新更快、更多 Power Spots 激活（6 AM – 9 PM） | 如果你打极巨化/Max 战斗 |
+| 周二 | **Showcase Tuesday** | 可以参加最多 5 个 PokéStop 展示 | 低优先级——展示只是装饰性的 |
+| 周三 | **Raid Hour** | 每个道馆都出当前 5 星 Boss，6–7 PM | **是的**——组队打 Raid 的最佳时间 |
+| 周四 | **GO Battle Thursday** | PvP 胜利最高 4 倍星尘，每天 10 组对战（50 场）而不是 5 组 | **是的**——PvP 玩家的巨量星尘 |
+| 周五 | **Friendship Friday** | 2 次特殊交换、Lucky 概率提高、交换星尘消耗减少 10%、交换保底 2 颗 XL Candy（31 级+） | **是的**——重要的交换留到周五做 |
+| 周六 | Community Day（每月） | 见下文 | **必参加** |
+
+**每周还有：**
+
+| 日 | 时间 | 活动 |
+|-----|------|-------|
+| 周一 | 9:00 AM | Adventure Sync 每周奖励（走 25/50 km） |
+| 周二 | 6–7 PM | Spotlight Hour（特色宝可梦 + 加成） |
+
+## Community Day
+
+每月一次的活动，聚焦一个宝可梦物种，持续三小时。为什么重要：
+
+- **大量野生** ——三小时内可以抓几百只
+- **限定招式** ——在活动时间内进化（或活动结束后 5 小时内）可以获得专属蓄力招式，通常是它能学到的最强招式。错过窗口就错过招式。
+- **加成星尘/经验** ——通常 3 倍捕捉星尘。叠加 Star Piece 就是 4.5 倍。
+
+**永远参加 Community Day。** 即使你不在意这期的宝可梦，光是星尘就值三个小时。
+
+
+# Buddy 系统
+
+设一只宝可梦为你的 Buddy，通过走路赚糖果（每颗糖果需要走 1km、3km、5km 或 20km，取决于物种）。
+
+## Buddy 等级
+
+通过每天互动来提升 Buddy 等级（喂食、玩耍、对战、拍快照）。
+
+| 等级 | 需要爱心 | 奖励 |
+|-------|--------------|--------|
+| Good Buddy | 1 | Buddy 显示在地图上 |
+| Great Buddy | 70 | **捕捉辅助** ——Buddy 会拍掉要飞偏的球 |
+| Ultra Buddy | 150 | 纪念品（装饰性的） |
+| Best Buddy | 300 | **+1 等级提升**（设为当前 Buddy 时生效） |
+
+Best Buddy 大约需要 ~30 天的每日互动。+1 等级提升对那些刚好卡在 CP 上限的宝可梦很有用——额外一级可以把它推到正常情况下达不到的高度。
+
+**小贴士：** 你可以随时切换 Buddy。先在你要升级的那只上刷每日爱心，然后切回你的步行 Buddy 赚距离糖果。
+
+
+# 好友 & 交换
+
+## 好友等级
+
+用训练师代码添加好友。通过送礼物、交换、一起打 Raid 或对战来提升好友等级。
+
+| 等级 | 互动次数 | 加成 |
+|-------|-------------|-------|
+| Good Friend | 1 天 | 可以交换；Raid +1 球 |
+| Great Friend | 7 天 | Raid +2 球；交换折扣 |
+| Ultra Friend | 30 天 | Raid +4 球；大幅交换折扣 |
+| Best Friend | 90 天 | Raid +5 球；最大交换折扣；可触发 **Lucky Friend** |
+
+**在达成 Best Friend 之前开一个 Lucky Egg** 可以获得 200,000 经验（基础 100k × 2）。和你的好友约好同时打开礼物，确保 Lucky Egg 在生效。这是游戏中最快的经验获取方式之一。
+
+## 交换
+
+交换需要消耗星尘。费用取决于好友等级以及宝可梦对接收方来说是否是图鉴新登录。
+
+关键规则：
+
+- **每只宝可梦只能交换一次。** 永远不能再交换。这意味着 Lucky 宝可梦（来自交换）永远不能被再次交换。
+- **交换时 IV 会重新随机。** 接收方得到新的随机 IV。好友等级越高 = IV 下限越高。
+- **每天一次特殊交换。** 传说、Shiny、图鉴新登录都算"特殊"交换。
+
+## Lucky 宝可梦
+
+Lucky 宝可梦 IV 下限 12/12/12，强化**星尘减半**。只能通过交换获得——任何交换都有随机概率变成 Lucky，但有些方法可以提高概率：
+
+1. **Lucky Friend** ——成为 Best Friend 后，每次每日互动都有小概率触发 Lucky Friend 状态。下一次交换保证是 Lucky。
+2. **老宝可梦** ——交换一只 **2020 年或更早**捕获的宝可梦可以保证 Lucky 交换。每个玩家总共有 **45 次保底 Lucky 交换**——用完之后你这边就触发不了了，但你的交换伙伴如果还有次数，他那边仍然可以触发。这个限制对交换双方都计数，即使只有一方发送了老宝可梦。游戏内没有追踪器显示你已经用了多少次。
+3. **随机** ——任何交换都有一个基础小概率变成 Lucky。
+
+如果你要练一只很贵的（比如传说宝可梦强化到 50 级），先搞到 Lucky 版本可以省下几十万星尘。
+
+
+# 蛋
+
+你可以从转 PokéStop、礼物、Adventure Sync 奖励和特殊研究中获得蛋。
+
+## 蛋的种类
+
+| 距离 | 来源 | 里面有什么 |
+|----------|--------|-------------|
+| 2 km | PokéStop | 常见物种，大部分是凑数的 |
+| 5 km | PokéStop | 质量参差不齐 |
+| 7 km | 好友礼物 | 地区限定宝可梦、宝宝宝可梦、随活动变化 |
+| 10 km | PokéStop | 稀有物种，孵化星尘更高 |
+| 12 km | Rocket 干部 | 可暗影化物种，星尘不错 |
+| 5/10 km | Adventure Sync（周一 9 AM） | 独立蛋池——经常有稀有孵化 |
+
+## 蛋的小贴士
+
+- 蛋要用**无限孵化器**（橙色）或**限次孵化器**（蓝色，3 次）。无限孵化器用在 2km 蛋上（快速循环），限次孵化器留给 10km 和 12km 蛋。
+- 蛋的物种和 IV 在**你拿到蛋的时候**就确定了，不是孵化时。活动前清掉老蛋，新蛋就会进入活动蛋池。
+- 孵化的宝可梦 IV **下限 10/10/10** ——和 Raid 捕获一样。是获得高 IV 宝可梦的靠谱途径。
+- Adventure Sync 必须开启，关掉 app 的步行距离才会计算。
+
+
+# 资源 & 经济
+
+## 星尘
+
+通用货币。强化、学第二个蓄力招式、交换都需要它。
+
+**怎么赚：**
+
+- 捕捉宝可梦（每次 100–500，天气加成 +25%）
+- 孵蛋（10km 蛋给最多）
+- GBL（Go Battle League）对战组奖励
+- Adventure Sync 每周奖励（50km = 大量星尘）
+- Star Piece（30 分钟 1.5 倍星尘）——在 Community Day 或双倍星尘活动时叠加使用
+
+**怎么不浪费：**
+
+- 没有明确目的（Raid 阵容、PvP 阵容）不要强化任何东西
+- 第二个蓄力招式费用 10,000–100,000 星尘不等，取决于物种
+- Lucky 宝可梦强化费用减半——如果可能，先搞到 Lucky 版本再投资
+- 最大的星尘坑是用 XL Candy 强化到 50 级。一只宝可梦从 40→50 大约需要 ~300,000 星尘。
+
+## 糖果
+
+物种专属。进化和强化都需要。
+
+- **普通糖果：** 捕捉（3 颗）、转移（1 颗）、孵化、Buddy 走路、Rare Candy
+- **XL Candy：** 训练师 31 级开始获得。40 级以上的强化需要。来源：捕捉（概率掉落）、转移、走路、交换、普通糖果转换（100 颗普通 → 1 颗 XL）。
+
+**Rare Candy**（来自 Raid 和 GBL）可以转换为任何物种的糖果。留给传说宝可梦——你没法轻易抓到或走路获得它们的糖果。
+
+## 道具取舍
+
+| 留着 | 优先扔掉 |
+|------|------------|
+| Ultra Ball | 普通药水 |
+| Pinap Berry | 普通复活石 |
+| Golden Razz Berry | Nanab Berry |
+| Max Potion、Max Revive | 普通精灵球（背包满的时候） |
+| Star Piece、Lucky Egg | Lure（看情况） |
+| Raid Pass、技能机 | |
+
+
+# 术语表
+
+| 术语 | 含义 |
+|------|---------|
+| **Hundo** | 15/15/15 IV 宝可梦（100% / 四星） |
+| **Nundo** | 0/0/0 IV 宝可梦（收藏党的最爱） |
+| **Shiny** | 稀有颜色变体，纯装饰性。Raid 和 Rocket 出的 Shiny 必捉——野外 Shiny 可能跑 |
+| **Shundo** | Shiny + Hundo（Shiny 且 15/15/15）。极其稀有——炫耀用的 |
+| **Shadow** | Rocket 捕获的宝可梦，1.2× 攻击 / 0.833× 防御 |
+| **Purified** | 净化后的 Shadow，IV +2，强化更便宜，可以 Mega 进化 |
+| **Lucky** | 交换获得的宝可梦，IV 下限 12/12/12，强化费用半价 |
+| **STAB** | 本属性加成——招式属性和宝可梦属性一致时伤害 1.2 倍 |
+| **CMP** | Charged Move Priority（蓄力招先手权）——双方同时放蓄力招时，攻击力高的先出手 |
+| **Farming down** | 只用 Fast Move 击败残血宝可梦，把能量留给下一只 |
+| **Spice pick** | 非主流宝可梦，用来出其不意 |
+| **XL Candy** | 特殊糖果（31 级+），40 级以上的强化需要 |
+| **CPM** | CP Multiplier——CP 公式里基于等级的缩放因子 |
