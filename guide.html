@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Katomil">
+
+<title>Pokémon GO Beginner’s Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="guide_files/libs/clipboard/clipboard.min.js"></script>
+<script src="guide_files/libs/quarto-html/quarto.js"></script>
+<script src="guide_files/libs/quarto-html/popper.min.js"></script>
+<script src="guide_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="guide_files/libs/quarto-html/anchor.min.js"></script>
+<link href="guide_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="guide_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="guide_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="guide_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="guide_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#catching" id="toc-catching" class="nav-link active" data-scroll-target="#catching">Catching</a>
+  <ul class="collapse">
+  <li><a href="#technique" id="toc-technique" class="nav-link" data-scroll-target="#technique">Technique</a></li>
+  <li><a href="#catch-rate-multipliers" id="toc-catch-rate-multipliers" class="nav-link" data-scroll-target="#catch-rate-multipliers">Catch Rate Multipliers</a></li>
+  <li><a href="#berries" id="toc-berries" class="nav-link" data-scroll-target="#berries">Berries</a></li>
+  <li><a href="#quick-catching" id="toc-quick-catching" class="nav-link" data-scroll-target="#quick-catching">Quick Catching</a></li>
+  <li><a href="#catch-rewards" id="toc-catch-rewards" class="nav-link" data-scroll-target="#catch-rewards">Catch Rewards</a></li>
+  <li><a href="#weather-adventure-effects" id="toc-weather-adventure-effects" class="nav-link" data-scroll-target="#weather-adventure-effects">Weather &amp; Adventure Effects</a></li>
+  </ul></li>
+  <li><a href="#trainer-level" id="toc-trainer-level" class="nav-link" data-scroll-target="#trainer-level">Trainer Level</a>
+  <ul class="collapse">
+  <li><a href="#wild-pokémon-level-cap" id="toc-wild-pokémon-level-cap" class="nav-link" data-scroll-target="#wild-pokémon-level-cap">Wild Pokémon Level Cap</a></li>
+  <li><a href="#power-up-limits" id="toc-power-up-limits" class="nav-link" data-scroll-target="#power-up-limits">Power-Up Limits</a></li>
+  <li><a href="#key-level-gates" id="toc-key-level-gates" class="nav-link" data-scroll-target="#key-level-gates">Key Level Gates</a></li>
+  </ul></li>
+  <li><a href="#understanding-stats" id="toc-understanding-stats" class="nav-link" data-scroll-target="#understanding-stats">Understanding Stats</a>
+  <ul class="collapse">
+  <li><a href="#cp-combat-power" id="toc-cp-combat-power" class="nav-link" data-scroll-target="#cp-combat-power">CP (Combat Power)</a>
+  <ul class="collapse">
+  <li><a href="#how-cp-is-actually-calculated" id="toc-how-cp-is-actually-calculated" class="nav-link" data-scroll-target="#how-cp-is-actually-calculated">How CP Is Actually Calculated</a></li>
+  </ul></li>
+  <li><a href="#ivs-individual-values" id="toc-ivs-individual-values" class="nav-link" data-scroll-target="#ivs-individual-values">IVs (Individual Values)</a>
+  <ul class="collapse">
+  <li><a href="#the-math-how-much-do-ivs-actually-matter" id="toc-the-math-how-much-do-ivs-actually-matter" class="nav-link" data-scroll-target="#the-math-how-much-do-ivs-actually-matter">The Math: How Much Do IVs Actually Matter?</a></li>
+  <li><a href="#now-lets-look-at-actual-damage" id="toc-now-lets-look-at-actual-damage" class="nav-link" data-scroll-target="#now-lets-look-at-actual-damage">Now Let’s Look at Actual Damage</a></li>
+  <li><a href="#how-to-check-ivs" id="toc-how-to-check-ivs" class="nav-link" data-scroll-target="#how-to-check-ivs">How to Check IVs</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#type-effectiveness" id="toc-type-effectiveness" class="nav-link" data-scroll-target="#type-effectiveness">Type Effectiveness</a>
+  <ul class="collapse">
+  <li><a href="#the-key-matchups" id="toc-the-key-matchups" class="nav-link" data-scroll-target="#the-key-matchups">The Key Matchups</a></li>
+  <li><a href="#multipliers" id="toc-multipliers" class="nav-link" data-scroll-target="#multipliers">Multipliers</a></li>
+  </ul></li>
+  <li><a href="#shadow-purified-pokémon" id="toc-shadow-purified-pokémon" class="nav-link" data-scroll-target="#shadow-purified-pokémon">Shadow &amp; Purified Pokémon</a>
+  <ul class="collapse">
+  <li><a href="#the-shadow-bonus" id="toc-the-shadow-bonus" class="nav-link" data-scroll-target="#the-shadow-bonus">The Shadow Bonus</a>
+  <ul class="collapse">
+  <li><a href="#the-math-is-20-a-big-deal" id="toc-the-math-is-20-a-big-deal" class="nav-link" data-scroll-target="#the-math-is-20-a-big-deal">The Math: Is 20% a Big Deal?</a></li>
+  </ul></li>
+  <li><a href="#what-purifying-does" id="toc-what-purifying-does" class="nav-link" data-scroll-target="#what-purifying-does">What Purifying Does</a></li>
+  <li><a href="#when-to-purify" id="toc-when-to-purify" class="nav-link" data-scroll-target="#when-to-purify">When to Purify</a></li>
+  </ul></li>
+  <li><a href="#raids" id="toc-raids" class="nav-link" data-scroll-target="#raids">Raids</a>
+  <ul class="collapse">
+  <li><a href="#raid-tiers" id="toc-raid-tiers" class="nav-link" data-scroll-target="#raid-tiers">Raid Tiers</a></li>
+  <li><a href="#raid-tips" id="toc-raid-tips" class="nav-link" data-scroll-target="#raid-tips">Raid Tips</a></li>
+  </ul></li>
+  <li><a href="#weekly-schedule-events" id="toc-weekly-schedule-events" class="nav-link" data-scroll-target="#weekly-schedule-events">Weekly Schedule &amp; Events</a>
+  <ul class="collapse">
+  <li><a href="#daily-discoveries-forever-forward-season" id="toc-daily-discoveries-forever-forward-season" class="nav-link" data-scroll-target="#daily-discoveries-forever-forward-season">Daily Discoveries (Forever Forward Season)</a></li>
+  <li><a href="#community-days" id="toc-community-days" class="nav-link" data-scroll-target="#community-days">Community Days</a></li>
+  </ul></li>
+  <li><a href="#buddy-system" id="toc-buddy-system" class="nav-link" data-scroll-target="#buddy-system">Buddy System</a>
+  <ul class="collapse">
+  <li><a href="#buddy-levels" id="toc-buddy-levels" class="nav-link" data-scroll-target="#buddy-levels">Buddy Levels</a></li>
+  </ul></li>
+  <li><a href="#friends-trading" id="toc-friends-trading" class="nav-link" data-scroll-target="#friends-trading">Friends &amp; Trading</a>
+  <ul class="collapse">
+  <li><a href="#friendship-levels" id="toc-friendship-levels" class="nav-link" data-scroll-target="#friendship-levels">Friendship Levels</a></li>
+  <li><a href="#trading" id="toc-trading" class="nav-link" data-scroll-target="#trading">Trading</a></li>
+  <li><a href="#lucky-pokémon" id="toc-lucky-pokémon" class="nav-link" data-scroll-target="#lucky-pokémon">Lucky Pokémon</a></li>
+  </ul></li>
+  <li><a href="#eggs" id="toc-eggs" class="nav-link" data-scroll-target="#eggs">Eggs</a>
+  <ul class="collapse">
+  <li><a href="#egg-tiers" id="toc-egg-tiers" class="nav-link" data-scroll-target="#egg-tiers">Egg Tiers</a></li>
+  <li><a href="#egg-tips" id="toc-egg-tips" class="nav-link" data-scroll-target="#egg-tips">Egg Tips</a></li>
+  </ul></li>
+  <li><a href="#resources-economy" id="toc-resources-economy" class="nav-link" data-scroll-target="#resources-economy">Resources &amp; Economy</a>
+  <ul class="collapse">
+  <li><a href="#stardust" id="toc-stardust" class="nav-link" data-scroll-target="#stardust">Stardust</a></li>
+  <li><a href="#candy" id="toc-candy" class="nav-link" data-scroll-target="#candy">Candy</a></li>
+  <li><a href="#items-to-keep-vs-trash" id="toc-items-to-keep-vs-trash" class="nav-link" data-scroll-target="#items-to-keep-vs-trash">Items to Keep vs Trash</a></li>
+  </ul></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Pokémon GO Beginner’s Guide</h1>
+<p class="subtitle lead">A guide I made to make it easier for my friend Jay</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Katomil </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="catching" class="level1">
+<h1>Catching</h1>
+<p>You earn stardust, XP, and candy from every single catch. This is the core loop of the game — everything else (raiding, PvP, trading) is built on top of having caught a lot of stuff.</p>
+<section id="technique" class="level2">
+<h2 class="anchored" data-anchor-id="technique">Technique</h2>
+<ul>
+<li><strong>Curveballs.</strong> Spin the ball before you throw it. Every curveball gives a <strong>1.7× catch rate multiplier</strong> — that’s bigger than using a Razz Berry (1.5×). If you’re not curving every throw, start now.</li>
+<li><strong>Circle locking.</strong> Hold the ball, wait for the coloured circle to shrink to the size you want, then <em>let go</em> and wait for the Pokémon to attack. Throw during the attack animation — the circle stays locked at that size. This is how good players hit Excellent throws consistently.</li>
+<li><strong>Nice / Great / Excellent.</strong> Hitting inside the coloured circle gives bonus XP and catch rate. Smaller circle = harder to hit but better bonus. Aim for Great throws — Excellents will come with practice.</li>
+</ul>
+</section>
+<section id="catch-rate-multipliers" class="level2">
+<h2 class="anchored" data-anchor-id="catch-rate-multipliers">Catch Rate Multipliers</h2>
+<p>Everything multiplies together. Stacking technique + berry + ball type is how you catch things that seem impossible with a straight Poké Ball.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Multiplier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Curveball</td>
+<td>1.7×</td>
+</tr>
+<tr class="even">
+<td>Nice throw</td>
+<td>1.0–1.3×</td>
+</tr>
+<tr class="odd">
+<td>Great throw</td>
+<td>1.3–1.7×</td>
+</tr>
+<tr class="even">
+<td>Excellent throw</td>
+<td>1.7–2.0×</td>
+</tr>
+<tr class="odd">
+<td>Razz Berry</td>
+<td>1.5×</td>
+</tr>
+<tr class="even">
+<td>Silver Pinap Berry</td>
+<td>1.8×</td>
+</tr>
+<tr class="odd">
+<td>Golden Razz Berry</td>
+<td>2.5×</td>
+</tr>
+<tr class="even">
+<td>Great Ball (vs Poké Ball)</td>
+<td>1.5×</td>
+</tr>
+<tr class="odd">
+<td>Ultra Ball (vs Poké Ball)</td>
+<td>2.0×</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Worked example:</strong> Curved Excellent + Golden Razz + Ultra Ball = 1.7 × 2.0 × 2.5 × 2.0 = <strong>17× catch rate</strong>. Technique matters more than items.</p>
+</section>
+<section id="berries" class="level2">
+<h2 class="anchored" data-anchor-id="berries">Berries</h2>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 28%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Berry</th>
+<th>Effect</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Razz Berry</td>
+<td>1.5× catch rate</td>
+<td>Default “I want to catch this” berry</td>
+</tr>
+<tr class="even">
+<td>Golden Razz Berry</td>
+<td>2.5× catch rate</td>
+<td>Legendaries, rare spawns, shinies — anything you <em>can’t</em> let run</td>
+</tr>
+<tr class="odd">
+<td>Pinap Berry</td>
+<td>2× candy on catch</td>
+<td>Use on anything you need candy for (evolutions, powering up)</td>
+</tr>
+<tr class="even">
+<td>Silver Pinap Berry</td>
+<td>1.8× catch rate + 2.33× candy</td>
+<td>Best of both worlds — save for rare stuff you also need candy for</td>
+</tr>
+<tr class="odd">
+<td>Nanab Berry</td>
+<td>Calms movement</td>
+<td>Nearly useless. Feed to gym defenders for stardust or trash it</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tip:</strong> Shiny Pokémon from <strong>raids and Team GO Rocket</strong> are guaranteed catches (100% catch rate) — use a Pinap for double candy instead of a Razz. Wild shinies can still flee, so Golden Razz those.</p>
+</section>
+<section id="quick-catching" class="level2">
+<h2 class="anchored" data-anchor-id="quick-catching">Quick Catching</h2>
+<p>This trick skips the ~3-second catch animation. Saves an enormous amount of time during Community Days or grind sessions.</p>
+<ol type="1">
+<li>Start the encounter</li>
+<li>With your <strong>off-hand</strong>, drag the berry/ball selector tray to the side and <strong>hold it</strong></li>
+<li>With your <strong>main hand</strong>, throw the ball (curveball as usual)</li>
+<li>Once the ball hits, <strong>release</strong> your off-hand and tap the <strong>run button</strong> (top left)</li>
+<li>The catch processes server-side — if it worked, the Pokémon disappears from the map. If not, it’s still there, tap it again.</li>
+</ol>
+<p>Takes a few tries to get the timing down but once you have it, you’ll never go back.</p>
+</section>
+<section id="catch-rewards" class="level2">
+<h2 class="anchored" data-anchor-id="catch-rewards">Catch Rewards</h2>
+<p><strong>Stardust per catch:</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Catch Type</th>
+<th>Stardust</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base catch</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Weather-boosted</td>
+<td>125</td>
+</tr>
+<tr class="odd">
+<td>2nd-stage evolution (e.g.&nbsp;Haunter)</td>
+<td>300</td>
+</tr>
+<tr class="even">
+<td>3rd-stage evolution (e.g.&nbsp;Gengar)</td>
+<td>500</td>
+</tr>
+<tr class="odd">
+<td>With Star Piece active</td>
+<td>All above × 1.5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>XP bonuses (all stack):</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Action</th>
+<th>XP Bonus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base catch</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Curveball</td>
+<td>+20</td>
+</tr>
+<tr class="odd">
+<td>Nice throw</td>
+<td>+20</td>
+</tr>
+<tr class="even">
+<td>Great throw</td>
+<td>+100</td>
+</tr>
+<tr class="odd">
+<td>Excellent throw</td>
+<td>+1,000</td>
+</tr>
+<tr class="even">
+<td>First throw catch</td>
+<td>+50</td>
+</tr>
+<tr class="odd">
+<td>New Pokédex entry</td>
+<td>+1,000</td>
+</tr>
+<tr class="even">
+<td>With Lucky Egg active</td>
+<td>All above × 2</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="weather-adventure-effects" class="level2">
+<h2 class="anchored" data-anchor-id="weather-adventure-effects">Weather &amp; Adventure Effects</h2>
+<p><strong>Weather boost</strong> does three things at once:</p>
+<ol type="1">
+<li>Weather-matching Pokémon types spawn more frequently</li>
+<li>Those spawns are <strong>+5 levels</strong> higher than normal (this matters — see Trainer Level below)</li>
+<li>Catching them gives <strong>25% more stardust</strong> (125 instead of 100)</li>
+</ol>
+<p>The in-game weather indicator (top right) shows what types are boosted. If it says “Windy,” Dragon/Flying/Psychic types are boosted and appear at higher levels with bonus dust.</p>
+<p><strong>Adventure Sync</strong> tracks your walking distance even when the app is closed, using your phone’s health app (Google Fit / Apple Health). It matters for:</p>
+<ul>
+<li><strong>Egg hatching</strong> — distance counts even with the app closed</li>
+<li><strong>Buddy candy</strong> — same, counts toward buddy walking distance</li>
+<li><strong>Weekly rewards</strong> (Monday 9 AM): walk 25km for a 5km egg + stardust bundle; 50km for a 10km egg + more stardust + rare candy. Always aim for 50km.</li>
+</ul>
+<p><strong>Incense</strong> spawns one Pokémon near you every ~5 minutes stationary, or every ~1 minute while walking (or every 200m, whichever comes first). Useful in areas with few spawns, not worth it in cities. The <strong>Daily Adventure Incense</strong> (free, 15 min) only works while moving — one spawn every ~30 seconds if you keep walking.</p>
+<p><strong>Lures</strong> attach to PokéStops and attract spawns for 30 minutes. Special lure types (Glacial, Mossy, Magnetic, Rainy) attract specific types and enable certain evolutions.</p>
+</section>
+</section>
+<section id="trainer-level" class="level1">
+<h1>Trainer Level</h1>
+<p>Your trainer level isn’t just a number — it controls what you can find in the wild and what you can power up to.</p>
+<section id="wild-pokémon-level-cap" class="level2">
+<h2 class="anchored" data-anchor-id="wild-pokémon-level-cap">Wild Pokémon Level Cap</h2>
+<p>Every wild Pokémon has a level (hidden, but determines its CP). The level it can spawn at is capped by <strong>your trainer level</strong>, up to a hard ceiling:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Your Trainer Level</th>
+<th>Max Wild Pokémon Level</th>
+<th>With Weather Boost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1–29</td>
+<td>Same as your level</td>
+<td>Your level + 5</td>
+</tr>
+<tr class="even">
+<td>30+</td>
+<td>30</td>
+<td>35</td>
+</tr>
+</tbody>
+</table>
+<p>After level 30, every trainer sees the same wild spawns at the same level and IVs. Before that, a level 15 trainer and a level 25 trainer see the same species at a PokéStop, but the level 25 trainer’s version is stronger.</p>
+<p><strong>Weather boost adds +5 levels.</strong> This is huge early on — a level 20 trainer can find level 25 weather-boosted Pokémon that would normally be above their cap. Always check what’s weather-boosted.</p>
+</section>
+<section id="power-up-limits" class="level2">
+<h2 class="anchored" data-anchor-id="power-up-limits">Power-Up Limits</h2>
+<p>You can power up a Pokémon to <strong>your trainer level + 10</strong>, up to the game’s max of level 50 (level 51 with Best Buddy boost). Powering up past level 40 requires XL Candy, which you start earning at trainer level 31.</p>
+</section>
+<section id="key-level-gates" class="level2">
+<h2 class="anchored" data-anchor-id="key-level-gates">Key Level Gates</h2>
+<table class="table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>What Unlocks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>20</td>
+<td>Raid-caught Pokémon are level 20 (25 if weather-boosted)</td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>Wild spawns cap — you now see the same spawns as everyone else</td>
+</tr>
+<tr class="odd">
+<td>31</td>
+<td>XL Candy drops begin (needed for level 40→50 power-ups)</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>Can nominate new PokéStops via Wayfarer (after a short onboarding quiz)</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>Full XL Candy earning rate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Practical takeaway:</strong> Rushing to level 30 is worth it because you start seeing max-level wild Pokémon. After 30, levelling is still useful (higher power-up cap, XL candy) but less urgent.</p>
+</section>
+</section>
+<section id="understanding-stats" class="level1">
+<h1>Understanding Stats</h1>
+<section id="cp-combat-power" class="level2">
+<h2 class="anchored" data-anchor-id="cp-combat-power">CP (Combat Power)</h2>
+<p>The number above every Pokémon. It combines three hidden components into a single number. Higher CP generally means stronger, but <strong>CP lies</strong> — it doesn’t tell you whether a Pokémon is actually <em>good</em>, just how big its numbers are.</p>
+<section id="how-cp-is-actually-calculated" class="level3">
+<h3 class="anchored" data-anchor-id="how-cp-is-actually-calculated">How CP Is Actually Calculated</h3>
+<p><span class="math display">\[\text{CP} = \left\lfloor \frac{(\text{Atk}_\text{base} + \text{Atk}_\text{IV}) \times \sqrt{\text{Def}_\text{base} + \text{Def}_\text{IV}} \times \sqrt{\text{Sta}_\text{base} + \text{Sta}_\text{IV}}} {10} \times \text{CPM}^2 \right\rfloor\]</span></p>
+<p>Three ingredients:</p>
+<ol type="1">
+<li><strong>Base stats</strong> — fixed per species. Machamp has 234 base Attack. Blissey has 129. These never change.</li>
+<li><strong>IVs</strong> — your random roll of 0–15 on each stat. Added directly to the base stat.</li>
+<li><strong>CPM (CP Multiplier)</strong> — a scaling factor based on the Pokémon’s level (1–51). Higher level = higher CPM = higher CP.</li>
+</ol>
+<p>The critical thing: <strong>Attack enters the formula directly, but Defense and Stamina enter as square roots.</strong> This means +1 Attack IV inflates CP more than +1 Defense or +1 Stamina IV. This will matter when we get to PvP.</p>
+</section>
+</section>
+<section id="ivs-individual-values" class="level2">
+<h2 class="anchored" data-anchor-id="ivs-individual-values">IVs (Individual Values)</h2>
+<p>Every Pokémon has three hidden stats, each randomly rolled between 0 and 15:</p>
+<ul>
+<li><strong>Attack IV</strong> (0–15)</li>
+<li><strong>Defense IV</strong> (0–15)</li>
+<li><strong>HP / Stamina IV</strong> (0–15)</li>
+</ul>
+<p>Fixed at catch, can never be changed. A 15/15/15 is called a “hundo” (100%, 4-star). You check them in-game by tapping a Pokémon → <strong>Appraise</strong>.</p>
+<section id="the-math-how-much-do-ivs-actually-matter" class="level3">
+<h3 class="anchored" data-anchor-id="the-math-how-much-do-ivs-actually-matter">The Math: How Much Do IVs Actually Matter?</h3>
+<p>IVs are 0–15 points added onto a base stat that’s often 150–250+. Let’s do the maths and see how much that actually changes things.</p>
+<p><strong>Machamp</strong> — Base stats: 234 Atk / 159 Def / 207 Sta</p>
+<ul>
+<li>0 Attack IV → total Attack = 234. 15 Attack IV → total Attack = 249.</li>
+<li>Difference: 15/234 = <strong>6.4% more Attack</strong> from a perfect IV.</li>
+</ul>
+<p><strong>Blissey</strong> — Base stats: 129 Atk / 169 Def / 496 Sta</p>
+<ul>
+<li>0 Attack IV → total Attack = 129. 15 Attack IV → total Attack = 144.</li>
+<li>Difference: 15/129 = <strong>11.6% more Attack</strong> from a perfect IV.</li>
+<li>But Stamina? 15/496 = <strong>3.0%</strong>. Her HP base is so enormous that IVs barely nudge it.</li>
+</ul>
+<p><strong>The rule:</strong> IVs matter most where the base stat is lowest. On a species with 230+ base Attack, the IV is noise. On a species with 120 base Attack, the IV is a real swing.</p>
+<div id="cell-fig-iv-impact" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>pokemon <span class="op">=</span> {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Machamp'</span>: {<span class="st">'atk'</span>: <span class="dv">234</span>, <span class="st">'def'</span>: <span class="dv">159</span>, <span class="st">'sta'</span>: <span class="dv">207</span>},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Blissey'</span>: {<span class="st">'atk'</span>: <span class="dv">129</span>, <span class="st">'def'</span>: <span class="dv">169</span>, <span class="st">'sta'</span>: <span class="dv">496</span>},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">3</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="fl">0.35</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>stats <span class="op">=</span> [<span class="st">'Attack'</span>, <span class="st">'Defense'</span>, <span class="st">'Stamina'</span>]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>machamp_pct <span class="op">=</span> [<span class="dv">15</span><span class="op">/</span><span class="dv">234</span><span class="op">*</span><span class="dv">100</span>, <span class="dv">15</span><span class="op">/</span><span class="dv">159</span><span class="op">*</span><span class="dv">100</span>, <span class="dv">15</span><span class="op">/</span><span class="dv">207</span><span class="op">*</span><span class="dv">100</span>]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>blissey_pct <span class="op">=</span> [<span class="dv">15</span><span class="op">/</span><span class="dv">129</span><span class="op">*</span><span class="dv">100</span>, <span class="dv">15</span><span class="op">/</span><span class="dv">169</span><span class="op">*</span><span class="dv">100</span>, <span class="dv">15</span><span class="op">/</span><span class="dv">496</span><span class="op">*</span><span class="dv">100</span>]</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>bars1 <span class="op">=</span> ax.bar(x <span class="op">-</span> width<span class="op">/</span><span class="dv">2</span>, machamp_pct, width, label<span class="op">=</span><span class="st">'Machamp (234/159/207)'</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>               color<span class="op">=</span><span class="st">'#e74c3c'</span>, edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>bars2 <span class="op">=</span> ax.bar(x <span class="op">+</span> width<span class="op">/</span><span class="dv">2</span>, blissey_pct, width, label<span class="op">=</span><span class="st">'Blissey (129/169/496)'</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>               color<span class="op">=</span><span class="st">'#ff69b4'</span>, edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars1, machamp_pct):</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    ax.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f'</span><span class="sc">{</span>val<span class="sc">:.1f}</span><span class="ss">%'</span>, ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars2, blissey_pct):</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    ax.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f'</span><span class="sc">{</span>val<span class="sc">:.1f}</span><span class="ss">%'</span>, ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'% Stat Increase from 15 IV'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'IV Impact: 15 IV as </span><span class="sc">% o</span><span class="st">f Total Stat'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>ax.set_xticks(x)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>ax.set_xticklabels(stats, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(<span class="bu">max</span>(machamp_pct), <span class="bu">max</span>(blissey_pct)) <span class="op">+</span> <span class="dv">2</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>ax.spines[<span class="st">'top'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>ax.spines[<span class="st">'right'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-iv-impact" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iv-impact-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="guide_files/figure-html/fig-iv-impact-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iv-impact-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Same 15 IV points, very different impact. IVs are a bigger deal where the base stat is low.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="now-lets-look-at-actual-damage" class="level3">
+<h3 class="anchored" data-anchor-id="now-lets-look-at-actual-damage">Now Let’s Look at Actual Damage</h3>
+<p>The real question isn’t “how much does the stat change?” — it’s “does it change the damage I deal?” The damage formula in Pokémon GO is:</p>
+<p><span class="math display">\[\text{Damage} = \left\lfloor \frac{1}{2} \times \text{Power} \times \frac{\text{Atk}_\text{effective}}{\text{Def}_\text{effective}} \times \text{STAB} \times \text{Effectiveness} \right\rfloor + 1\]</span></p>
+<p>That floor (round down) is key — small stat differences often get erased completely.</p>
+<div id="cell-fig-damage-math" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>cpm_40 <span class="op">=</span> <span class="fl">0.7903</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Machamp using Counter (12 power, Fighting) vs Tyranitar (Dark/Rock)</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Tyranitar: base def 207</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>machamp_atk_15 <span class="op">=</span> (<span class="dv">234</span> <span class="op">+</span> <span class="dv">15</span>) <span class="op">*</span> cpm_40   <span class="co"># 196.8</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>machamp_atk_0  <span class="op">=</span> (<span class="dv">234</span> <span class="op">+</span> <span class="dv">0</span>)  <span class="op">*</span> cpm_40   <span class="co"># 184.9</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>ttar_def <span class="op">=</span> (<span class="dv">207</span> <span class="op">+</span> <span class="dv">15</span>) <span class="op">*</span> cpm_40          <span class="co"># 175.4</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>stab <span class="op">=</span> <span class="fl">1.2</span>        <span class="co"># Counter is Fighting, Machamp is Fighting</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>se <span class="op">=</span> <span class="fl">1.6</span>           <span class="co"># Fighting vs Dark/Rock</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>neutral <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>power_counter <span class="op">=</span> <span class="dv">12</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>power_rock_slide <span class="op">=</span> <span class="dv">50</span>  <span class="co"># neutral move for comparison</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> damage(power, atk, defn, stab_mult, eff):</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> math.floor(<span class="fl">0.5</span> <span class="op">*</span> power <span class="op">*</span> (atk <span class="op">/</span> defn) <span class="op">*</span> stab_mult <span class="op">*</span> eff) <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Scenario 1: Perfect IVs vs zero IVs (same move, same matchup)</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>dmg_15iv <span class="op">=</span> damage(power_counter, machamp_atk_15, ttar_def, stab, se)</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>dmg_0iv  <span class="op">=</span> damage(power_counter, machamp_atk_0,  ttar_def, stab, se)</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Scenario 2: Super effective vs neutral (same pokemon, same IVs)</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>dmg_se      <span class="op">=</span> damage(power_counter, machamp_atk_0, ttar_def, stab, se)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Use Rock Slide (Rock, 50 power) — not STAB, not SE vs Tyranitar (resisted actually)</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's instead compare: Counter (Fighting, SE) vs a hypothetical neutral fast move</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>dmg_neutral <span class="op">=</span> damage(power_counter, machamp_atk_15, ttar_def, stab, neutral)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Scenario 3: Shadow vs normal (15 IV both)</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>shadow_atk <span class="op">=</span> machamp_atk_15 <span class="op">*</span> <span class="fl">1.2</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>dmg_shadow <span class="op">=</span> damage(power_counter, shadow_atk, ttar_def, stab, se)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>dmg_normal <span class="op">=</span> damage(power_counter, machamp_atk_15, ttar_def, stab, se)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">5</span>))</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 1: IV comparison</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>colors1 <span class="op">=</span> [<span class="st">'#ef4444'</span>, <span class="st">'#fbbf24'</span>]</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>bars1 <span class="op">=</span> axes[<span class="dv">0</span>].bar([<span class="st">'15/15/15</span><span class="ch">\n</span><span class="st">IVs'</span>, <span class="st">'0/0/0</span><span class="ch">\n</span><span class="st">IVs'</span>], [dmg_15iv, dmg_0iv], color<span class="op">=</span>colors1,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>                     edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, width<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars1, [dmg_15iv, dmg_0iv]):</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">0</span>].text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>                 <span class="bu">str</span>(val), ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">16</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="st">'IVs: 15 vs 0 Attack</span><span class="ch">\n</span><span class="st">(Counter vs Tyranitar)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_ylabel(<span class="st">'Damage per Hit'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>pct_diff_iv <span class="op">=</span> <span class="bu">abs</span>(dmg_15iv <span class="op">-</span> dmg_0iv) <span class="op">/</span> dmg_0iv <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].text(<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="ss">f'Δ = </span><span class="sc">{</span>pct_diff_iv<span class="sc">:.0f}</span><span class="ss">%'</span>, transform<span class="op">=</span>axes[<span class="dv">0</span>].transAxes,</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, color<span class="op">=</span><span class="st">'gray'</span>, fontstyle<span class="op">=</span><span class="st">'italic'</span>)</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 2: Type effectiveness</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>colors2 <span class="op">=</span> [<span class="st">'#22c55e'</span>, <span class="st">'#94a3b8'</span>]</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>bars2 <span class="op">=</span> axes[<span class="dv">1</span>].bar([<span class="st">'Super</span><span class="ch">\n</span><span class="st">Effective'</span>, <span class="st">'Neutral'</span>], [dmg_se, dmg_neutral], color<span class="op">=</span>colors2,</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>                     edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, width<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars2, [dmg_se, dmg_neutral]):</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">1</span>].text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>                 <span class="bu">str</span>(val), ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">16</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_title(<span class="st">'Type: Super Effective vs Neutral</span><span class="ch">\n</span><span class="st">(0 IV SE vs 15 IV Neutral)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>pct_diff_type <span class="op">=</span> (dmg_se <span class="op">-</span> dmg_neutral) <span class="op">/</span> dmg_neutral <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].text(<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="ss">f'Δ = </span><span class="sc">{</span>pct_diff_type<span class="sc">:.0f}</span><span class="ss">%'</span>, transform<span class="op">=</span>axes[<span class="dv">1</span>].transAxes,</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, color<span class="op">=</span><span class="st">'gray'</span>, fontstyle<span class="op">=</span><span class="st">'italic'</span>)</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 3: Shadow vs normal</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>colors3 <span class="op">=</span> [<span class="st">'#8b5cf6'</span>, <span class="st">'#3b82f6'</span>]</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>bars3 <span class="op">=</span> axes[<span class="dv">2</span>].bar([<span class="st">'Shadow'</span>, <span class="st">'Normal'</span>], [dmg_shadow, dmg_normal], color<span class="op">=</span>colors3,</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>                     edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, width<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars3, [dmg_shadow, dmg_normal]):</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">2</span>].text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="fl">0.2</span>,</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>                 <span class="bu">str</span>(val), ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">16</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">2</span>].set_title(<span class="st">'Shadow Bonus</span><span class="ch">\n</span><span class="st">(15/15/15 both)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>pct_diff_shadow <span class="op">=</span> (dmg_shadow <span class="op">-</span> dmg_normal) <span class="op">/</span> dmg_normal <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">2</span>].text(<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="ss">f'Δ = </span><span class="sc">{</span>pct_diff_shadow<span class="sc">:.0f}</span><span class="ss">%'</span>, transform<span class="op">=</span>axes[<span class="dv">2</span>].transAxes,</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, color<span class="op">=</span><span class="st">'gray'</span>, fontstyle<span class="op">=</span><span class="st">'italic'</span>)</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax <span class="kw">in</span> axes:</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>    ax.spines[<span class="st">'top'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>    ax.spines[<span class="st">'right'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>    ax.set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(dmg_shadow, dmg_se) <span class="op">*</span> <span class="fl">1.2</span>)</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'What Actually Changes Your Damage — Machamp Counter vs Tyranitar (Level 40)'</span>,</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>             fontsize<span class="op">=</span><span class="dv">13</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-damage-math" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-damage-math-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="guide_files/figure-html/fig-damage-math-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-damage-math-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Three scenarios showing what actually changes damage output: IVs barely move the needle, type effectiveness dominates everything.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Takeaway:</strong> A 0-IV Machamp with the right type matchup outdamages a 15-IV Machamp with a neutral move. Pick the right Pokémon and the right move first — IVs are the last 5% of optimization.</p>
+</section>
+<section id="how-to-check-ivs" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-check-ivs">How to Check IVs</h3>
+<p>In-game: tap a Pokémon → <strong>Appraise</strong>. The bar chart shows Attack / Defense / HP. Three full bars = hundo.</p>
+<p>For more detail: use <strong>PokeGenie</strong> or <strong>CalcyIV</strong> (phone apps). They scan your screen and tell you the exact IVs and PvP rank (out of 4096 possible IV combinations).</p>
+<p>Don’t obsess over IVs yet — a rank 500 Pokémon of the right species beats a rank 1 Pokémon of the wrong species every time.</p>
+</section>
+</section>
+</section>
+<section id="type-effectiveness" class="level1">
+<h1>Type Effectiveness</h1>
+<p>This is the single most important battle mechanic. As the damage graph above showed, type advantage is worth more than IVs and Shadow bonus <em>combined</em>.</p>
+<p>Every Pokémon has one or two types. Every move has one type. If your move’s type is strong against the defender’s type, you deal more damage.</p>
+<section id="the-key-matchups" class="level2">
+<h2 class="anchored" data-anchor-id="the-key-matchups">The Key Matchups</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Attacking Type</th>
+<th>Strong Against</th>
+<th>This Pokémon Loses To</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Water</td>
+<td>Fire, Ground, Rock</td>
+<td>Grass, Electric</td>
+</tr>
+<tr class="even">
+<td>Fire</td>
+<td>Grass, Bug, Ice, Steel</td>
+<td>Water, Ground, Rock</td>
+</tr>
+<tr class="odd">
+<td>Grass</td>
+<td>Water, Ground, Rock</td>
+<td>Fire, Ice, Poison, Flying, Bug</td>
+</tr>
+<tr class="even">
+<td>Electric</td>
+<td>Water, Flying</td>
+<td>Ground (immune!)</td>
+</tr>
+<tr class="odd">
+<td>Fighting</td>
+<td>Normal, Ice, Rock, Dark, Steel</td>
+<td>Psychic, Flying, Fairy</td>
+</tr>
+<tr class="even">
+<td>Ground</td>
+<td>Fire, Electric, Rock, Poison, Steel</td>
+<td>Water, Grass, Ice</td>
+</tr>
+<tr class="odd">
+<td>Ice</td>
+<td>Grass, Ground, Flying, Dragon</td>
+<td>Fire, Fighting, Rock, Steel</td>
+</tr>
+<tr class="even">
+<td>Dragon</td>
+<td>Dragon</td>
+<td>Dragon, Ice, Fairy (immune!)</td>
+</tr>
+<tr class="odd">
+<td>Fairy</td>
+<td>Fighting, Dragon, Dark</td>
+<td>Poison, Steel</td>
+</tr>
+<tr class="even">
+<td>Steel</td>
+<td>Ice, Rock, Fairy</td>
+<td>Fire, Fighting, Ground</td>
+</tr>
+</tbody>
+</table>
+<p>You don’t need to memorise all 18 types. Start with the first five rows — they cover most of what you’ll encounter.</p>
+</section>
+<section id="multipliers" class="level2">
+<h2 class="anchored" data-anchor-id="multipliers">Multipliers</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Matchup</th>
+<th>Multiplier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Super effective</td>
+<td><strong>1.6×</strong></td>
+</tr>
+<tr class="even">
+<td>Not very effective</td>
+<td><strong>0.625×</strong></td>
+</tr>
+<tr class="odd">
+<td>Double super effective (both types weak)</td>
+<td><strong>2.56×</strong></td>
+</tr>
+<tr class="even">
+<td>Double resisted (both types resist)</td>
+<td><strong>0.391×</strong></td>
+</tr>
+</tbody>
+</table>
+<p>There’s no true immunity in Pokémon GO — Ground vs Flying (immune in the main games) is just triple-resisted (0.391×), not zero.</p>
+<p><strong>STAB (Same Type Attack Bonus):</strong> If the <em>move’s</em> type matches the <em>Pokémon’s</em> type, damage gets a <strong>1.2× bonus</strong>. A Water-type Pokémon using a Water-type move gets STAB. This stacks with super effective — a Water Pokémon using a Water move against a Fire Pokémon gets 1.2 × 1.6 = <strong>1.92×</strong>.</p>
+</section>
+</section>
+<section id="shadow-purified-pokémon" class="level1">
+<h1>Shadow &amp; Purified Pokémon</h1>
+<p>Team GO Rocket grunts, leaders, and Giovanni drop <strong>Shadow Pokémon</strong> when you beat them.</p>
+<section id="the-shadow-bonus" class="level2">
+<h2 class="anchored" data-anchor-id="the-shadow-bonus">The Shadow Bonus</h2>
+<p>Shadow Pokémon get a flat multiplier on their final stats:</p>
+<ul>
+<li>Shadow Attack = Normal Attack × <strong>1.2</strong> (+20% damage dealt)</li>
+<li>Shadow Defense = Normal Defense × <strong>0.833</strong> (~20% more damage taken)</li>
+</ul>
+<p>Glass cannon trade-off: hit harder, die faster.</p>
+<section id="the-math-is-20-a-big-deal" class="level3">
+<h3 class="anchored" data-anchor-id="the-math-is-20-a-big-deal">The Math: Is 20% a Big Deal?</h3>
+<p>Let’s put the Shadow bonus next to IVs to see the scale.</p>
+<p><strong>Machamp at level 40</strong> (CPM = 0.7903):</p>
+<table class="table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 35%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variant</th>
+<th>Effective Attack</th>
+<th>Difference from Normal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Normal, 15 Atk IV</td>
+<td>(234 + 15) × 0.79 = 196.8</td>
+<td>baseline</td>
+</tr>
+<tr class="even">
+<td>Normal, 0 Atk IV</td>
+<td>(234 + 0) × 0.79 = 184.9</td>
+<td>−6.0%</td>
+</tr>
+<tr class="odd">
+<td><strong>Shadow, 0 Atk IV</strong></td>
+<td>(234 + 0) × 0.79 × 1.2 = <strong>221.9</strong></td>
+<td><strong>+12.8%</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Shadow, 15 Atk IV</strong></td>
+<td>(234 + 15) × 0.79 × 1.2 = <strong>236.1</strong></td>
+<td><strong>+20.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A Shadow Machamp with <em>zero</em> Attack IVs still hits harder than a normal Machamp with <em>perfect</em> IVs. The Shadow bonus is roughly 3× the impact of going from 0 to 15 Attack IVs. IVs are the cherry on top; Shadow is the whole extra scoop.</p>
+<div id="cell-fig-shadow-comparison" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>base_atk, base_def, base_sta <span class="op">=</span> <span class="dv">234</span>, <span class="dv">159</span>, <span class="dv">207</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>iv <span class="op">=</span> <span class="dv">13</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>pure_iv <span class="op">=</span> <span class="dv">15</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>cpm <span class="op">=</span> <span class="fl">0.7903</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>forms <span class="op">=</span> [<span class="st">'Shadow</span><span class="ch">\n</span><span class="st">(13/13/13)'</span>, <span class="st">'Normal</span><span class="ch">\n</span><span class="st">(13/13/13)'</span>, <span class="st">'Purified</span><span class="ch">\n</span><span class="st">(15/15/15)'</span>]</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">'#8b5cf6'</span>, <span class="st">'#3b82f6'</span>, <span class="st">'#22c55e'</span>]</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>vals <span class="op">=</span> {</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Attack'</span>: [</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        (base_atk <span class="op">+</span> iv) <span class="op">*</span> cpm <span class="op">*</span> <span class="fl">1.2</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        (base_atk <span class="op">+</span> iv) <span class="op">*</span> cpm,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        (base_atk <span class="op">+</span> pure_iv) <span class="op">*</span> cpm,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Defense'</span>: [</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        (base_def <span class="op">+</span> iv) <span class="op">*</span> cpm <span class="op">*</span> <span class="fl">0.833</span>,</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        (base_def <span class="op">+</span> iv) <span class="op">*</span> cpm,</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        (base_def <span class="op">+</span> pure_iv) <span class="op">*</span> cpm,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Stamina'</span>: [</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>        <span class="bu">int</span>((base_sta <span class="op">+</span> iv) <span class="op">*</span> cpm),</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>        <span class="bu">int</span>((base_sta <span class="op">+</span> iv) <span class="op">*</span> cpm),</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="bu">int</span>((base_sta <span class="op">+</span> pure_iv) <span class="op">*</span> cpm),</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">13</span>, <span class="dv">5</span>))</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax, (stat_name, stat_vals) <span class="kw">in</span> <span class="bu">zip</span>(axes, vals.items()):</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    bars <span class="op">=</span> ax.bar(forms, stat_vals, color<span class="op">=</span>colors, edgecolor<span class="op">=</span><span class="st">'white'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars, stat_vals):</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>        label <span class="op">=</span> <span class="ss">f'</span><span class="sc">{</span>val<span class="sc">:.1f}</span><span class="ss">'</span> <span class="cf">if</span> <span class="bu">isinstance</span>(val, <span class="bu">float</span>) <span class="cf">else</span> <span class="bu">str</span>(val)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>        ax.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, bar.get_height() <span class="op">+</span> <span class="dv">1</span>,</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>                label, ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    ax.set_title(stat_name, fontsize<span class="op">=</span><span class="dv">13</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    ax.spines[<span class="st">'top'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>    ax.spines[<span class="st">'right'</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    ymin <span class="op">=</span> <span class="bu">min</span>(stat_vals) <span class="op">*</span> <span class="fl">0.88</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>    ymax <span class="op">=</span> <span class="bu">max</span>(stat_vals) <span class="op">*</span> <span class="fl">1.08</span></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>    ax.set_ylim(ymin, ymax)</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'Shadow vs Normal vs Purified — Machamp at Level 40'</span>,</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>             fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-shadow-comparison" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shadow-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="guide_files/figure-html/fig-shadow-comparison-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shadow-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Shadow vs Normal vs Purified — Machamp with 13/13/13 IVs (becomes 15/15/15 after purifying). Level 40.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Notice: Purified (15/15/15) has <em>slightly</em> higher base stats than Normal (13/13/13) because of the +2 IV boost, but it’s nowhere near the Shadow’s Attack. Purifying trades a massive damage bonus for a tiny stat bump and cheaper power-up costs.</p>
+</section>
+</section>
+<section id="what-purifying-does" class="level2">
+<h2 class="anchored" data-anchor-id="what-purifying-does">What Purifying Does</h2>
+<ul>
+<li><strong>Removes</strong> the Shadow bonus (back to 1.0× attack, 1.0× defense)</li>
+<li><strong>Adds +2 to each IV</strong> (capped at 15)</li>
+<li><strong>Reduces</strong> power-up stardust and candy cost by 20%</li>
+<li>Sets the Pokémon’s level to 25 (or stays if higher)</li>
+<li>Learns the charged move <strong>Return</strong> (mostly useless, but a few niche PvP uses)</li>
+</ul>
+</section>
+<section id="when-to-purify" class="level2">
+<h2 class="anchored" data-anchor-id="when-to-purify">When to Purify</h2>
+<p><strong>Default: don’t.</strong> The 20% damage bonus is permanent and irreversible. But there are real exceptions:</p>
+<table class="table">
+<colgroup>
+<col style="width: 56%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reason to Purify</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>IVs are 13/13/13 or higher</strong></td>
+<td>+2 to each IV → becomes a 15/15/15 hundo. If the species isn’t useful as a Shadow attacker anyway (e.g., Golbat, Raticate), take the free hundo.</td>
+</tr>
+<tr class="even">
+<td><strong>Purifier medal</strong></td>
+<td>The medal tracks total purifications (bronze → platinum). Grind it with <strong>cheap purifies</strong> — 1-candy species like Zubat, Aron, Starly. Never purify a good Shadow for medal progress.</td>
+</tr>
+<tr class="odd">
+<td><strong>Mega or Primal evolution</strong></td>
+<td>Shadow Pokémon <strong>cannot</strong> Mega Evolve or go Primal. If you need Mega Gengar, Mega Charizard, Primal Groudon — you <em>must</em> purify first. This is the one case where purifying a strong Shadow is correct.</td>
+</tr>
+<tr class="even">
+<td><strong>Return move (rare)</strong></td>
+<td>A few PvP Pokémon specifically want the move Return (e.g., Purified Sableye in Great League). Very niche.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The golden rule:</strong> Keep Shadows for raiding and damage-dealing. Purify junk for the medal, and purify 13+ IV specimens of species you don’t need as Shadow attackers for free hundos.</p>
+</section>
+</section>
+<section id="raids" class="level1">
+<h1>Raids</h1>
+<p>Raids are timed boss battles at gyms. You fight a super-powered Pokémon with a group (or solo for easy tiers), and if you win, you get a chance to catch it.</p>
+<section id="raid-tiers" class="level2">
+<h2 class="anchored" data-anchor-id="raid-tiers">Raid Tiers</h2>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 24%">
+<col style="width: 33%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tier</th>
+<th>Difficulty</th>
+<th>Can You Solo?</th>
+<th>What You Get</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1-star</td>
+<td>Easy</td>
+<td>Yes, easily</td>
+<td>Common Pokémon, rare candy, TMs</td>
+</tr>
+<tr class="even">
+<td>3-star</td>
+<td>Medium</td>
+<td>Yes, with decent counters</td>
+<td>Stronger Pokémon, more rewards</td>
+</tr>
+<tr class="odd">
+<td>5-star</td>
+<td>Hard</td>
+<td>No — need 3–6+ trainers</td>
+<td><strong>Legendaries</strong> — the main reason to raid</td>
+</tr>
+<tr class="even">
+<td>Mega</td>
+<td>Hard</td>
+<td>No — need 3–6+ trainers</td>
+<td>Mega Energy to Mega Evolve</td>
+</tr>
+<tr class="odd">
+<td>Elite / Primal</td>
+<td>Very Hard</td>
+<td>No — need 5–10+</td>
+<td>Primal Groudon/Kyogre, rare legendaries</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="raid-tips" class="level2">
+<h2 class="anchored" data-anchor-id="raid-tips">Raid Tips</h2>
+<ul>
+<li><strong>Type advantage is everything.</strong> A team of level 25 super-effective Pokémon beats a team of level 40 neutral-damage ones. Check the boss’s type and bring counters.</li>
+<li><strong>Use Pokégenie</strong> — the app has a raid lobby feature that matches you with remote raiders worldwide. No local group needed.</li>
+<li><strong>Remote Raid Passes</strong> let you join from anywhere but cost coins and are limited per day.</li>
+<li><strong>Raid-caught Pokémon are level 20</strong> (level 25 if weather-boosted). Their IVs are guaranteed 10+ on each stat (floor of 10/10/10).</li>
+<li><strong>Save Rare Candy for legendaries.</strong> You can’t catch or walk them easily, so Rare Candy is the only reliable way to power them up.</li>
+</ul>
+</section>
+</section>
+<section id="weekly-schedule-events" class="level1">
+<h1>Weekly Schedule &amp; Events</h1>
+<section id="daily-discoveries-forever-forward-season" class="level2">
+<h2 class="anchored" data-anchor-id="daily-discoveries-forever-forward-season">Daily Discoveries (Forever Forward Season)</h2>
+<p>Every day of the week has a themed bonus, active midnight to midnight local time. This schedule runs from June 2 to September 8, 2026.</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 36%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Event</th>
+<th>What It Does</th>
+<th>Worth It?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sunday</td>
+<td><strong>Scenic Sunday</strong></td>
+<td>More spawns on Routes, Incense boosted on Routes, reduced Buddy candy distance on Routes, up to 3 Mateo encounters</td>
+<td>If you walk Routes — good for buddy candy</td>
+</tr>
+<tr class="even">
+<td>Monday</td>
+<td><strong>Max Monday</strong></td>
+<td>Power Spots refresh faster, more Power Spots active (6 AM – 9 PM)</td>
+<td>If you do Dynamax/Max Battles</td>
+</tr>
+<tr class="odd">
+<td>Tuesday</td>
+<td><strong>Showcase Tuesday</strong></td>
+<td>Enter up to 5 PokéStop Showcases</td>
+<td>Low priority — Showcases are cosmetic</td>
+</tr>
+<tr class="even">
+<td>Wednesday</td>
+<td><strong>Raid Hour</strong></td>
+<td>Every gym spawns the current 5-star boss, 6–7 PM</td>
+<td><strong>Yes</strong> — best time to raid with groups</td>
+</tr>
+<tr class="odd">
+<td>Thursday</td>
+<td><strong>GO Battle Thursday</strong></td>
+<td>Up to 4× Stardust from PvP wins, 10 daily sets (50 battles) instead of 5</td>
+<td><strong>Yes</strong> — huge dust if you PvP at all</td>
+</tr>
+<tr class="even">
+<td>Friday</td>
+<td><strong>Friendship Friday</strong></td>
+<td>2 special trades, better Lucky odds, 10% less trade dust cost, 2 guaranteed XL candy from trades (level 31+)</td>
+<td><strong>Yes</strong> — do your important trades on Friday</td>
+</tr>
+<tr class="odd">
+<td>Saturday</td>
+<td>Community Day (monthly)</td>
+<td>See below</td>
+<td><strong>Always</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Also every week:</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Time</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monday</td>
+<td>9:00 AM</td>
+<td>Adventure Sync weekly rewards (walk 25/50 km)</td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td>6–7 PM</td>
+<td>Spotlight Hour (featured Pokémon + bonus)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="community-days" class="level2">
+<h2 class="anchored" data-anchor-id="community-days">Community Days</h2>
+<p>Monthly events featuring one Pokémon species for three hours. Why they matter:</p>
+<ul>
+<li><strong>Massive spawns</strong> — catch hundreds in three hours</li>
+<li><strong>Exclusive move</strong> — evolve during the event window (or up to 5 hours after) to get a special charged move that’s often the best move it can learn. Miss the window, miss the move.</li>
+<li><strong>Bonus stardust/XP</strong> — often 3× catch stardust. Stack a Star Piece for 4.5×.</li>
+</ul>
+<p><strong>Always play Community Days.</strong> Even if you don’t care about the featured Pokémon, the stardust alone is worth three hours.</p>
+</section>
+</section>
+<section id="buddy-system" class="level1">
+<h1>Buddy System</h1>
+<p>Set a Pokémon as your buddy to earn candy by walking (1km, 3km, 5km, or 20km per candy depending on species).</p>
+<section id="buddy-levels" class="level2">
+<h2 class="anchored" data-anchor-id="buddy-levels">Buddy Levels</h2>
+<p>You build buddy level by interacting daily (feed, play, battle, take snapshot).</p>
+<table class="table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 48%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Hearts Needed</th>
+<th>Reward</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Good Buddy</td>
+<td>1</td>
+<td>Buddy visible on map</td>
+</tr>
+<tr class="even">
+<td>Great Buddy</td>
+<td>70</td>
+<td><strong>Catch Assist</strong> — buddy swats away balls that would miss</td>
+</tr>
+<tr class="odd">
+<td>Ultra Buddy</td>
+<td>150</td>
+<td>Souvenirs (cosmetic)</td>
+</tr>
+<tr class="even">
+<td>Best Buddy</td>
+<td>300</td>
+<td><strong>+1 level boost</strong> when set as active buddy</td>
+</tr>
+</tbody>
+</table>
+<p>Best Buddy takes ~30 days of daily interaction. The +1 level boost matters for Pokémon that max out right at a CP cap — the extra level can push them above what’s normally achievable.</p>
+<p><strong>Tip:</strong> You can swap buddies freely. Earn your daily hearts on whoever you’re levelling, then swap back to your walking buddy for distance candy.</p>
+</section>
+</section>
+<section id="friends-trading" class="level1">
+<h1>Friends &amp; Trading</h1>
+<section id="friendship-levels" class="level2">
+<h2 class="anchored" data-anchor-id="friendship-levels">Friendship Levels</h2>
+<p>Add friends with trainer codes. Increase friendship by sending gifts, trading, raiding together, or battling.</p>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 48%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Interactions</th>
+<th>Bonus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Good Friend</td>
+<td>1 day</td>
+<td>Can trade; +1 raid ball</td>
+</tr>
+<tr class="even">
+<td>Great Friend</td>
+<td>7 days</td>
+<td>+2 raid balls; trade discount</td>
+</tr>
+<tr class="odd">
+<td>Ultra Friend</td>
+<td>30 days</td>
+<td>+4 raid balls; big trade discount</td>
+</tr>
+<tr class="even">
+<td>Best Friend</td>
+<td>90 days</td>
+<td>+5 raid balls; max trade discount; <strong>Lucky Friend</strong> eligible</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Opening a Lucky Egg right before hitting Best Friend</strong> gives 200,000 XP (100k base × 2). Coordinate with your friend to open the gift at the same time with a Lucky Egg running. This is one of the fastest XP gains in the game.</p>
+</section>
+<section id="trading" class="level2">
+<h2 class="anchored" data-anchor-id="trading">Trading</h2>
+<p>Trading costs stardust. The cost depends on friendship level and whether the Pokémon is new to the receiver’s Pokédex.</p>
+<p>Key rules:</p>
+<ul>
+<li><strong>Each Pokémon can only be traded once.</strong> Ever. No re-trading. This means Lucky Pokémon (which come from trades) can never be traded again.</li>
+<li><strong>IVs reroll on trade.</strong> The receiver gets new random IVs. Higher friendship = higher IV floor.</li>
+<li><strong>One Special Trade per day.</strong> Legendaries, shinies, and new Pokédex entries count as “special” trades.</li>
+</ul>
+</section>
+<section id="lucky-pokémon" class="level2">
+<h2 class="anchored" data-anchor-id="lucky-pokémon">Lucky Pokémon</h2>
+<p>A Lucky Pokémon has a 12/12/12 IV floor and costs <strong>half stardust</strong> to power up. They only come from trading — there’s a random chance any trade goes Lucky, but some things increase the odds:</p>
+<ol type="1">
+<li><strong>Lucky Friends</strong> — once you’re Best Friends, each daily interaction has a small chance to trigger Lucky Friend status. Your next trade is guaranteed Lucky.</li>
+<li><strong>Old Pokémon</strong> — trading a Pokémon caught in <strong>2020 or earlier</strong> guarantees a Lucky trade. Each player gets <strong>45 guaranteed Lucky trades</strong> total — once you’ve used yours up, you can’t trigger it from your side, but your trade partner can still trigger it from theirs if they have uses left. The limit counts for both players in each trade, even if only one sent the old Pokémon. There’s no in-game tracker for how many you’ve used.</li>
+<li><strong>Random</strong> — any trade has a small base chance to go Lucky regardless.</li>
+</ol>
+<p>If you’re building something expensive (legendary to level 50), getting a Lucky version first saves hundreds of thousands of dust.</p>
+</section>
+</section>
+<section id="eggs" class="level1">
+<h1>Eggs</h1>
+<p>You get eggs from spinning PokéStops, gifts, Adventure Sync rewards, and special research.</p>
+<section id="egg-tiers" class="level2">
+<h2 class="anchored" data-anchor-id="egg-tiers">Egg Tiers</h2>
+<table class="table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 25%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Distance</th>
+<th>Source</th>
+<th>What’s In It</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2 km</td>
+<td>PokéStops</td>
+<td>Common species, mostly filler</td>
+</tr>
+<tr class="even">
+<td>5 km</td>
+<td>PokéStops</td>
+<td>Mixed quality</td>
+</tr>
+<tr class="odd">
+<td>7 km</td>
+<td>Friend Gifts</td>
+<td>Regional Pokémon, baby Pokémon, event-dependent</td>
+</tr>
+<tr class="even">
+<td>10 km</td>
+<td>PokéStops</td>
+<td>Rare species, higher stardust on hatch</td>
+</tr>
+<tr class="odd">
+<td>12 km</td>
+<td>Rocket Leaders</td>
+<td>Shadow-available species, good dust</td>
+</tr>
+<tr class="even">
+<td>5/10 km</td>
+<td>Adventure Sync (Mon 9 AM)</td>
+<td>Exclusive pool — often has rare hatches</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="egg-tips" class="level2">
+<h2 class="anchored" data-anchor-id="egg-tips">Egg Tips</h2>
+<ul>
+<li>Eggs use your <strong>infinite incubator</strong> (orange) or <strong>limited-use incubators</strong> (blue, 3 uses). Use the infinite on 2km eggs (cycle fast), save limited incubators for 10km and 12km.</li>
+<li>Egg species and IVs are determined <strong>when you pick up the egg</strong>, not when it hatches. Clearing old eggs before an event means new event-pool eggs fill the slots.</li>
+<li>Hatched Pokémon have a <strong>10/10/10 IV floor</strong> — same as raid catches. They’re a decent source of high-IV Pokémon.</li>
+<li>Adventure Sync must be on for distance to count with the app closed.</li>
+</ul>
+</section>
+</section>
+<section id="resources-economy" class="level1">
+<h1>Resources &amp; Economy</h1>
+<section id="stardust" class="level2">
+<h2 class="anchored" data-anchor-id="stardust">Stardust</h2>
+<p>The universal currency. You need it for power-ups, second charged moves, and trading.</p>
+<p><strong>How to earn it:</strong></p>
+<ul>
+<li>Catching Pokémon (100–500 per catch, +25% weather boost)</li>
+<li>Hatching eggs (10km eggs give the most)</li>
+<li>GBL (Go Battle League) set rewards</li>
+<li>Adventure Sync weekly rewards (50km = big dust payout)</li>
+<li>Star Pieces (1.5× stardust for 30 min) — stack during Community Days or double-stardust events</li>
+</ul>
+<p><strong>How to not waste it:</strong></p>
+<ul>
+<li>Don’t power up anything without a specific purpose (raid team, PvP team)</li>
+<li>Second charged moves cost 10,000–100,000 dust depending on species</li>
+<li>Lucky Pokémon cost half to power up — get a Lucky version before investing if possible</li>
+<li>The biggest stardust sink is powering up to level 50 with XL candy. One Pokémon from 40→50 costs ~300,000 dust.</li>
+</ul>
+</section>
+<section id="candy" class="level2">
+<h2 class="anchored" data-anchor-id="candy">Candy</h2>
+<p>Species-specific. Needed for evolving and powering up.</p>
+<ul>
+<li><strong>Regular candy:</strong> catch (3), transfer (1), hatch, walk as buddy, Rare Candy</li>
+<li><strong>XL candy:</strong> earned from level 31+. Needed for power-ups past level 40. Sources: catching (chance-based), transferring, walking, trading, converting regular candy (100 regular → 1 XL).</li>
+</ul>
+<p><strong>Rare Candy</strong> (from raids and GBL) converts to any species’ candy. Save it for legendaries — you can’t catch or walk them easily.</p>
+</section>
+<section id="items-to-keep-vs-trash" class="level2">
+<h2 class="anchored" data-anchor-id="items-to-keep-vs-trash">Items to Keep vs Trash</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Keep</th>
+<th>Trash First</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ultra Balls</td>
+<td>Regular Potions</td>
+</tr>
+<tr class="even">
+<td>Pinap Berries</td>
+<td>Regular Revives</td>
+</tr>
+<tr class="odd">
+<td>Golden Razz Berries</td>
+<td>Nanab Berries</td>
+</tr>
+<tr class="even">
+<td>Max Potions, Max Revives</td>
+<td>Regular Poké Balls (if bag is full)</td>
+</tr>
+<tr class="odd">
+<td>Star Pieces, Lucky Eggs</td>
+<td>Lures (situational)</td>
+</tr>
+<tr class="even">
+<td>Raid Passes, TMs</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="glossary" class="level1">
+<h1>Glossary</h1>
+<table class="table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Hundo</strong></td>
+<td>15/15/15 IV Pokémon (100% / 4-star)</td>
+</tr>
+<tr class="even">
+<td><strong>Nundo</strong></td>
+<td>0/0/0 IV Pokémon (collectors love these)</td>
+</tr>
+<tr class="odd">
+<td><strong>Shiny</strong></td>
+<td>Rare colour variant, purely cosmetic. Guaranteed catch from raids and Rocket — wild shinies can still flee</td>
+</tr>
+<tr class="even">
+<td><strong>Shundo</strong></td>
+<td>A shiny hundo (shiny + 15/15/15). Extremely rare — flex material</td>
+</tr>
+<tr class="odd">
+<td><strong>Shadow</strong></td>
+<td>Rocket-caught Pokémon, 1.2× attack / 0.833× defense</td>
+</tr>
+<tr class="even">
+<td><strong>Purified</strong></td>
+<td>Ex-Shadow with +2 IVs, cheaper to power up, can Mega Evolve</td>
+</tr>
+<tr class="odd">
+<td><strong>Lucky</strong></td>
+<td>Traded Pokémon with 12/12/12 IV floor, 50% power-up discount</td>
+</tr>
+<tr class="even">
+<td><strong>STAB</strong></td>
+<td>Same Type Attack Bonus — 1.2× damage when move type matches Pokémon type</td>
+</tr>
+<tr class="odd">
+<td><strong>CMP</strong></td>
+<td>Charged Move Priority — when both players fire charged moves simultaneously, higher Attack stat goes first</td>
+</tr>
+<tr class="even">
+<td><strong>Farming down</strong></td>
+<td>Using only fast moves to defeat a weakened Pokémon, saving energy for the next one</td>
+</tr>
+<tr class="odd">
+<td><strong>Spice pick</strong></td>
+<td>An off-meta Pokémon used to surprise opponents</td>
+</tr>
+<tr class="even">
+<td><strong>XL candy</strong></td>
+<td>Special candy (from level 31+) needed to power up past level 40</td>
+</tr>
+<tr class="odd">
+<td><strong>CPM</strong></td>
+<td>CP Multiplier — level-based scaling factor in the CP formula</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="guide_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
