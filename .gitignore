@@ -1,0 +1,4 @@
+*.html
+guide_files/
+guide.ipynb
+.quarto/
